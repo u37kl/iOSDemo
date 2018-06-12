@@ -16,8 +16,19 @@
     if (self && dict) {
         _name = dict[@"name"];
         _descriptions = dict[@"description"];
+        _className = dict[@"className"];
         return self;
     }
     return nil;
+}
+
++(NSArray<KnowledgeModel *> *)getListFromArr:(NSArray *)arr
+{
+    NSMutableArray<KnowledgeModel *> *tempArr = [NSMutableArray arrayWithCapacity:arr.count];
+    for (NSDictionary *dict in arr) {
+        KnowledgeModel *model = [[KnowledgeModel alloc] initWithDict:dict];
+        [tempArr addObject:model];
+    }
+    return tempArr;
 }
 @end

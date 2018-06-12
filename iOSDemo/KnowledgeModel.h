@@ -11,6 +11,8 @@
 @interface KnowledgeModel : NSObject
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *descriptions;
+@property (nonatomic, copy) NSString *className;
 
 - (instancetype)initWithDict:(NSDictionary *)dict;
++(NSArray<KnowledgeModel *> *)getListFromArr:(NSArray *)arr;
 @end

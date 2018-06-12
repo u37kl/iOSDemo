@@ -14,7 +14,7 @@
     self = [super init];
     if (self && dict) {
         _name = dict[@"description"];
-        _row = [dict[@"row"] integerValue];
+        _list = [KnowledgeModel getListFromArr:dict[@"dataSource"]];
         return self;
     }
     return nil;

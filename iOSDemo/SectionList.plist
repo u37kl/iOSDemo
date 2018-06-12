@@ -3,10 +3,34 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>row</key>
-		<integer>1</integer>
+		<key>description</key>
+		<string>UI设计</string>
+		<key>dataSource</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>UIButton</string>
+				<key>description</key>
+				<string>按钮使用</string>
+				<key>className</key>
+				<string>UIButtonViewController</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
 		<key>description</key>
 		<string>对象之间通信</string>
+		<key>dataSource</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>iOS通知</string>
+				<key>description</key>
+				<string>对象之间通信方式</string>
+				<key>className</key>
+				<string>iOSNotificationViewController</string>
+			</dict>
+		</array>
 	</dict>
 </array>
 </plist>

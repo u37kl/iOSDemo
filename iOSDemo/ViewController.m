@@ -15,7 +15,6 @@
 #import "iOSNotificationViewController.h"
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, weak) UITableView *mainTableView;
-@property (nonatomic, copy) NSArray<KnowledgeModel *> *cellModelArray;
 @property (nonatomic, copy) NSArray<SectionModel *> *sectionModelArray;
 @end
 
@@ -54,13 +53,14 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     SectionModel *model = self.sectionModelArray[section];
-    return model.row;
+    return model.list.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    KnowledgeModel *model = self.sectionModelArray[indexPath.section].list[indexPath.row];
     MainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kMainTableViewCell];
-    [cell setModel:self.cellModelArray[indexPath.row]];
+    [cell setModel:model];
     return cell;
 }
 
@@ -98,7 +98,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    [self handleViewControllerPush:indexPath.row];
+    KnowledgeModel *model = self.sectionModelArray[indexPath.section].list[indexPath.row];
+    UIViewController *vc = (UIViewController *)[[NSClassFromString(model.className) alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
 
 -(void)handleViewControllerPush:(NSInteger)row
@@ -128,20 +131,20 @@
 }
 
 
-- (NSArray<KnowledgeModel *> *)cellModelArray
-{
-    if (!_cellModelArray) {
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"knowledgeList" ofType:@"plist"];
-        NSArray *arr = [NSArray arrayWithContentsOfFile:path];
-        NSMutableArray *arrM = [NSMutableArray arrayWithCapacity:arr.count];
-        for (NSDictionary *dict in arr) {
-            KnowledgeModel *model = [[KnowledgeModel alloc] initWithDict:dict];
-            [arrM addObject:model];
-        }
-        _cellModelArray = [arrM copy];
-    }
-    return _cellModelArray;
-}
+//- (NSArray<KnowledgeModel *> *)cellModelArray
+//{
+//    if (!_cellModelArray) {
+//        NSString *path = [[NSBundle mainBundle] pathForResource:@"knowledgeList" ofType:@"plist"];
+//        NSArray *arr = [NSArray arrayWithContentsOfFile:path];
+//        NSMutableArray *arrM = [NSMutableArray arrayWithCapacity:arr.count];
+//        for (NSDictionary *dict in arr) {
+//            KnowledgeModel *model = [[KnowledgeModel alloc] initWithDict:dict];
+//            [arrM addObject:model];
+//        }
+//        _cellModelArray = [arrM copy];
+//    }
+//    return _cellModelArray;
+//}
 
 - (NSArray<SectionModel *> *)sectionModelArray
 {

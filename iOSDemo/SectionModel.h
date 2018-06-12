@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "KnowledgeModel.h"
 @interface SectionModel : NSObject
 @property (nonatomic, copy) NSString *name;
-@property (nonatomic, assign) NSInteger row;
+@property (nonatomic, copy) NSArray<KnowledgeModel *> *list;
 
 - (instancetype)initWithDict:(NSDictionary *)dict;
 @end
