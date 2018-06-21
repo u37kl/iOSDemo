@@ -71,6 +71,17 @@ static JFScreenScale *_screenScale;
     return [self scale] * num;
 }
 
+
++(double)getWidthFromScale:(CGFloat)num
+{
+    return [self scale] * num;
+}
+
++(double)getHeightFromScale:(CGFloat)num
+{
+    return [self scale] * num;
+}
+
 +(double)getFloatFromScaleFloor:(CGFloat)num
 {
     double temp = [self scale] * num;

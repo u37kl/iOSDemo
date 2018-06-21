@@ -15,6 +15,14 @@
 				<key>className</key>
 				<string>UIButtonViewController</string>
 			</dict>
+			<dict>
+				<key>name</key>
+				<string>UIGestureRecognizer</string>
+				<key>description</key>
+				<string>手势详解</string>
+				<key>className</key>
+				<string>ZPGestureRecognizerViewController</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>
@@ -29,6 +37,21 @@
 				<string>对象之间通信方式</string>
 				<key>className</key>
 				<string>iOSNotificationViewController</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Web</string>
+		<key>dataSource</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>WKWebView</string>
+				<key>description</key>
+				<string>WKWebView使用</string>
+				<key>className</key>
+				<string>ZPWKWebViewController</string>
 			</dict>
 		</array>
 	</dict>

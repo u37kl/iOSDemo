@@ -9,7 +9,20 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+#ifdef MyDev
+#define ZPLog(n) NSLog(@"MyDev")
+#elif MyReleaseDev
+#define ZPLog(n) NSLog(@"MyReleaseDev")
+#else
+#define ZPLog(n) NSLog(@"Dev")
+#endif
+
 #import "UIColor+Custom.h"
+
+#define JFColorAlpha_v(rgbValue,a) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0x00FF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0x0000FF))/255.0 \
+alpha:a]
 
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
 green:((float)((rgbValue & 0x00FF00) >> 8))/255.0 \

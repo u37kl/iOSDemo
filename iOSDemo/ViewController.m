@@ -22,6 +22,7 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     UITableView *mainTableView = [[UITableView alloc] init];
     mainTableView.backgroundColor = [UIColor getUIColorFromRGB:0xe5e5e5];
@@ -41,6 +42,18 @@
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, getSize(70))];
     view.backgroundColor = [UIColor redColor];
     mainTableView.tableHeaderView = view;
+
+
+    ZPLog(@"");
+//    NSNumber *num1 = @(12.01);
+//    NSLog(@"%s", [num1 objCType]);
+//    if (strcmp([num objCType], @encode(double))) {
+//        return [NSString stringWithFormat:@".2%f", [num doubleValue]];
+//    }else if(strcmp([num objCType], @encode(float))){
+//        return [NSString stringWithFormat:@"%.2f", [num floatValue]];
+//    }else{
+//        return [NSString stringWithFormat:@"%ld", [num integerValue]];
+//    }
 }
 
 

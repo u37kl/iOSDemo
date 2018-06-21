@@ -18,7 +18,6 @@
 		D423656620A8231D00FFFD9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D423656520A8231D00FFFD9E /* Assets.xcassets */; };
 		D423656920A8231D00FFFD9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D423656720A8231D00FFFD9E /* LaunchScreen.storyboard */; };
 		D423656C20A8231D00FFFD9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D423656B20A8231D00FFFD9E /* main.m */; };
-		D423657320A8237C00FFFD9E /* knowledgeList.plist in Resources */ = {isa = PBXBuildFile; fileRef = D423657220A8237C00FFFD9E /* knowledgeList.plist */; };
 		D423657520A8258F00FFFD9E /* SectionList.plist in Resources */ = {isa = PBXBuildFile; fileRef = D423657420A8258F00FFFD9E /* SectionList.plist */; };
 		D423657820A826FF00FFFD9E /* KnowledgeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D423657720A826FF00FFFD9E /* KnowledgeModel.m */; };
 		D423657B20A8296800FFFD9E /* SectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D423657A20A8296800FFFD9E /* SectionModel.m */; };
@@ -37,7 +36,72 @@
 		D42365B220A8971200FFFD9E /* UIColor+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = D42365B120A8971200FFFD9E /* UIColor+Custom.m */; };
 		D42365B620A9DDEF00FFFD9E /* iOSNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42365B520A9DDEF00FFFD9E /* iOSNotificationViewController.m */; };
 		D42365BA20B701C700FFFD9E /* ZPURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42365B920B701C700FFFD9E /* ZPURLSessionViewController.m */; };
+		D489966D20D8AD9700E71DCA /* ZPGestureRecognizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D489966C20D8AD9600E71DCA /* ZPGestureRecognizerViewController.m */; };
+		D489967620D8AEAF00E71DCA /* JFDefaultSkin.m in Sources */ = {isa = PBXBuildFile; fileRef = D489967120D8AEAE00E71DCA /* JFDefaultSkin.m */; };
+		D489967720D8AEAF00E71DCA /* JFSKinManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D489967320D8AEAE00E71DCA /* JFSKinManager.m */; };
+		D489967820D8AEAF00E71DCA /* JFSkinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D489967520D8AEAE00E71DCA /* JFSkinModel.m */; };
+		D489967E20D8B1FD00E71DCA /* JFGestureListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D489967D20D8B1FD00E71DCA /* JFGestureListModel.m */; };
+		D48EE14220DAAF7A00356465 /* JFDefaultSkin.m in Sources */ = {isa = PBXBuildFile; fileRef = D489967120D8AEAE00E71DCA /* JFDefaultSkin.m */; };
+		D48EE14320DAAF7A00356465 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D423658620A8315C00FFFD9E /* MASConstraint.m */; };
+		D48EE14420DAAF7A00356465 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = D423658E20A8315C00FFFD9E /* MASViewAttribute.m */; };
+		D48EE14520DAAF7A00356465 /* ZPGestureRecognizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D489966C20D8AD9600E71DCA /* ZPGestureRecognizerViewController.m */; };
+		D48EE14620DAAF7A00356465 /* UIFont+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D420DBA320CE7A2D0080C931 /* UIFont+Extension.m */; };
+		D48EE14720DAAF7A00356465 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D423659A20A8315C00FFFD9E /* ViewController+MASAdditions.m */; };
+		D48EE14820DAAF7A00356465 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D423659220A8315C00FFFD9E /* NSArray+MASAdditions.m */; };
+		D48EE14920DAAF7A00356465 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D423657D20A82A9600FFFD9E /* MainTableViewCell.m */; };
+		D48EE14A20DAAF7A00356465 /* JFSkinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D489967520D8AEAE00E71DCA /* JFSkinModel.m */; };
+		D48EE14B20DAAF7A00356465 /* ZPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D420DB9B20CE74BC0080C931 /* ZPButton.m */; };
+		D48EE14C20DAAF7A00356465 /* ZPWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D5496320D23B8E007E32B3 /* ZPWKWebViewController.m */; };
+		D48EE14D20DAAF7A00356465 /* JFGestureListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D489967D20D8B1FD00E71DCA /* JFGestureListModel.m */; };
+		D48EE14E20DAAF7A00356465 /* UIButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D420DB9520CE631E0080C931 /* UIButtonViewController.m */; };
+		D48EE14F20DAAF7A00356465 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D423659020A8315C00FFFD9E /* MASViewConstraint.m */; };
+		D48EE15020DAAF7A00356465 /* JFScreenScale.m in Sources */ = {isa = PBXBuildFile; fileRef = D420DBA520CE7A770080C931 /* JFScreenScale.m */; };
+		D48EE15120DAAF7A00356465 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D423658A20A8315C00FFFD9E /* MASLayoutConstraint.m */; };
+		D48EE15220DAAF7A00356465 /* SectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D423657A20A8296800FFFD9E /* SectionModel.m */; };
+		D48EE15320DAAF7A00356465 /* JFSKinManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D489967320D8AEAE00E71DCA /* JFSKinManager.m */; };
+		D48EE15420DAAF7A00356465 /* KnowledgeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D423657720A826FF00FFFD9E /* KnowledgeModel.m */; };
+		D48EE15520DAAF7A00356465 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D423659720A8315C00FFFD9E /* View+MASAdditions.m */; };
+		D48EE15620DAAF7A00356465 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = D42365AB20A8849900FFFD9E /* NSString+Size.m */; };
+		D48EE15720DAAF7A00356465 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D420DBA020CE78FA0080C931 /* NSString+Extension.m */; };
+		D48EE15820DAAF7A00356465 /* ZPURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42365B920B701C700FFFD9E /* ZPURLSessionViewController.m */; };
+		D48EE15920DAAF7A00356465 /* iOSNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42365B520A9DDEF00FFFD9E /* iOSNotificationViewController.m */; };
+		D48EE15A20DAAF7A00356465 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D423658320A8315C00FFFD9E /* MASCompositeConstraint.m */; };
+		D48EE15B20DAAF7A00356465 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D423659520A8315C00FFFD9E /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		D48EE15C20DAAF7A00356465 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = D423658820A8315C00FFFD9E /* MASConstraintMaker.m */; };
+		D48EE15D20DAAF7A00356465 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D423656020A8231D00FFFD9E /* ViewController.m */; };
+		D48EE15E20DAAF7A00356465 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D423656B20A8231D00FFFD9E /* main.m */; };
+		D48EE15F20DAAF7A00356465 /* UIColor+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = D42365B120A8971200FFFD9E /* UIColor+Custom.m */; };
+		D48EE16020DAAF7A00356465 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D423655D20A8231D00FFFD9E /* AppDelegate.m */; };
+		D48EE16320DAAF7A00356465 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D423656720A8231D00FFFD9E /* LaunchScreen.storyboard */; };
+		D48EE16520DAAF7A00356465 /* SectionList.plist in Resources */ = {isa = PBXBuildFile; fileRef = D423657420A8258F00FFFD9E /* SectionList.plist */; };
+		D48EE16620DAAF7A00356465 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D423656520A8231D00FFFD9E /* Assets.xcassets */; };
+		D48EE16720DAAF7A00356465 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D423656220A8231D00FFFD9E /* Main.storyboard */; };
+		D48EE1F120DAB08600356465 /* iOSDemoiPad-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D48EE1F020DAB08600356465 /* iOSDemoiPad-info.plist */; };
+		D4D5496420D23B8E007E32B3 /* ZPWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D5496320D23B8E007E32B3 /* ZPWKWebViewController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D48EE08D20DAA95900356465 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48EE16820DAAF7A00356465 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D420DB9420CE631E0080C931 /* UIButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIButtonViewController.h; sourceTree = "<group>"; };
@@ -50,7 +114,7 @@
 		D420DBA320CE7A2D0080C931 /* UIFont+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Extension.m"; sourceTree = "<group>"; };
 		D420DBA520CE7A770080C931 /* JFScreenScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFScreenScale.m; sourceTree = "<group>"; };
 		D420DBA620CE7A770080C931 /* JFScreenScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFScreenScale.h; sourceTree = "<group>"; };
-		D423655920A8231D00FFFD9E /* iOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D423655920A8231D00FFFD9E /* iOSDemoiPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemoiPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D423655C20A8231D00FFFD9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D423655D20A8231D00FFFD9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D423655F20A8231D00FFFD9E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -60,7 +124,6 @@
 		D423656820A8231D00FFFD9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D423656A20A8231D00FFFD9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D423656B20A8231D00FFFD9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D423657220A8237C00FFFD9E /* knowledgeList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = knowledgeList.plist; sourceTree = "<group>"; };
 		D423657420A8258F00FFFD9E /* SectionList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SectionList.plist; sourceTree = "<group>"; };
 		D423657620A826FF00FFFD9E /* KnowledgeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KnowledgeModel.h; sourceTree = "<group>"; };
 		D423657720A826FF00FFFD9E /* KnowledgeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnowledgeModel.m; sourceTree = "<group>"; };
@@ -103,10 +166,31 @@
 		D42365B520A9DDEF00FFFD9E /* iOSNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSNotificationViewController.m; sourceTree = "<group>"; };
 		D42365B820B701C700FFFD9E /* ZPURLSessionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPURLSessionViewController.h; sourceTree = "<group>"; };
 		D42365B920B701C700FFFD9E /* ZPURLSessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPURLSessionViewController.m; sourceTree = "<group>"; };
+		D489966B20D8AD9600E71DCA /* ZPGestureRecognizerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPGestureRecognizerViewController.h; sourceTree = "<group>"; };
+		D489966C20D8AD9600E71DCA /* ZPGestureRecognizerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPGestureRecognizerViewController.m; sourceTree = "<group>"; };
+		D489967020D8AEAE00E71DCA /* JFDefaultSkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFDefaultSkin.h; sourceTree = "<group>"; };
+		D489967120D8AEAE00E71DCA /* JFDefaultSkin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFDefaultSkin.m; sourceTree = "<group>"; };
+		D489967220D8AEAE00E71DCA /* JFSKinManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFSKinManager.h; sourceTree = "<group>"; };
+		D489967320D8AEAE00E71DCA /* JFSKinManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFSKinManager.m; sourceTree = "<group>"; };
+		D489967420D8AEAE00E71DCA /* JFSkinModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFSkinModel.h; sourceTree = "<group>"; };
+		D489967520D8AEAE00E71DCA /* JFSkinModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFSkinModel.m; sourceTree = "<group>"; };
+		D489967C20D8B1FD00E71DCA /* JFGestureListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFGestureListModel.h; sourceTree = "<group>"; };
+		D489967D20D8B1FD00E71DCA /* JFGestureListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFGestureListModel.m; sourceTree = "<group>"; };
+		D48EE16F20DAAF7A00356465 /* iOSDemoiPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemoiPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D48EE1F020DAB08600356465 /* iOSDemoiPad-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iOSDemoiPad-info.plist"; sourceTree = "<group>"; };
+		D4D5496220D23B8E007E32B3 /* ZPWKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPWKWebViewController.h; sourceTree = "<group>"; };
+		D4D5496320D23B8E007E32B3 /* ZPWKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPWKWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D423655620A8231D00FFFD9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48EE16120DAAF7A00356465 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -119,6 +203,7 @@
 		D420DB9220CE62E80080C931 /* UI设计 */ = {
 			isa = PBXGroup;
 			children = (
+				D489966A20D8AD6200E71DCA /* 手势 */,
 				D420DB9320CE62FA0080C931 /* UIButton */,
 			);
 			path = "UI设计";
@@ -159,7 +244,8 @@
 		D423655A20A8231D00FFFD9E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D423655920A8231D00FFFD9E /* iOSDemo.app */,
+				D423655920A8231D00FFFD9E /* iOSDemoiPhone.app */,
+				D48EE16F20DAAF7A00356465 /* iOSDemoiPad.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,6 +253,8 @@
 		D423655B20A8231D00FFFD9E /* iOSDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D489966F20D8AEAE00E71DCA /* 皮肤管理 */,
+				D4D5496120D23B6F007E32B3 /* web */,
 				D420DB9D20CE78730080C931 /* Extension */,
 				D420DB9220CE62E80080C931 /* UI设计 */,
 				D42365B720B7017300FFFD9E /* NSURLSession(网络请求) */,
@@ -182,8 +270,8 @@
 				D423656520A8231D00FFFD9E /* Assets.xcassets */,
 				D423656720A8231D00FFFD9E /* LaunchScreen.storyboard */,
 				D423656A20A8231D00FFFD9E /* Info.plist */,
+				D48EE1F020DAB08600356465 /* iOSDemoiPad-info.plist */,
 				D423656B20A8231D00FFFD9E /* main.m */,
-				D423657220A8237C00FFFD9E /* knowledgeList.plist */,
 				D423657420A8258F00FFFD9E /* SectionList.plist */,
 				D423657620A826FF00FFFD9E /* KnowledgeModel.h */,
 				D423657720A826FF00FFFD9E /* KnowledgeModel.m */,
@@ -265,24 +353,76 @@
 			path = "NSURLSession(网络请求)";
 			sourceTree = "<group>";
 		};
+		D489966A20D8AD6200E71DCA /* 手势 */ = {
+			isa = PBXGroup;
+			children = (
+				D489966B20D8AD9600E71DCA /* ZPGestureRecognizerViewController.h */,
+				D489966C20D8AD9600E71DCA /* ZPGestureRecognizerViewController.m */,
+				D489967C20D8B1FD00E71DCA /* JFGestureListModel.h */,
+				D489967D20D8B1FD00E71DCA /* JFGestureListModel.m */,
+			);
+			path = "手势";
+			sourceTree = "<group>";
+		};
+		D489966F20D8AEAE00E71DCA /* 皮肤管理 */ = {
+			isa = PBXGroup;
+			children = (
+				D489967020D8AEAE00E71DCA /* JFDefaultSkin.h */,
+				D489967120D8AEAE00E71DCA /* JFDefaultSkin.m */,
+				D489967220D8AEAE00E71DCA /* JFSKinManager.h */,
+				D489967320D8AEAE00E71DCA /* JFSKinManager.m */,
+				D489967420D8AEAE00E71DCA /* JFSkinModel.h */,
+				D489967520D8AEAE00E71DCA /* JFSkinModel.m */,
+			);
+			path = "皮肤管理";
+			sourceTree = "<group>";
+		};
+		D4D5496120D23B6F007E32B3 /* web */ = {
+			isa = PBXGroup;
+			children = (
+				D4D5496220D23B8E007E32B3 /* ZPWKWebViewController.h */,
+				D4D5496320D23B8E007E32B3 /* ZPWKWebViewController.m */,
+			);
+			path = web;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D423655820A8231D00FFFD9E /* iOSDemo */ = {
+		D423655820A8231D00FFFD9E /* iOSDemoiPhone */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D423656F20A8231D00FFFD9E /* Build configuration list for PBXNativeTarget "iOSDemo" */;
+			buildConfigurationList = D423656F20A8231D00FFFD9E /* Build configuration list for PBXNativeTarget "iOSDemoiPhone" */;
 			buildPhases = (
 				D423655520A8231D00FFFD9E /* Sources */,
 				D423655620A8231D00FFFD9E /* Frameworks */,
 				D423655720A8231D00FFFD9E /* Resources */,
+				D48EE08D20DAA95900356465 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = iOSDemo;
+			name = iOSDemoiPhone;
 			productName = iOSDemo;
-			productReference = D423655920A8231D00FFFD9E /* iOSDemo.app */;
+			productReference = D423655920A8231D00FFFD9E /* iOSDemoiPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D48EE13E20DAAF7A00356465 /* iOSDemoiPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D48EE16A20DAAF7A00356465 /* Build configuration list for PBXNativeTarget "iOSDemoiPad" */;
+			buildPhases = (
+				D48EE14120DAAF7A00356465 /* Sources */,
+				D48EE16120DAAF7A00356465 /* Frameworks */,
+				D48EE16220DAAF7A00356465 /* Resources */,
+				D48EE16820DAAF7A00356465 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSDemoiPad;
+			productName = iOSDemo;
+			productReference = D48EE16F20DAAF7A00356465 /* iOSDemoiPad.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -296,6 +436,9 @@
 				TargetAttributes = {
 					D423655820A8231D00FFFD9E = {
 						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					D48EE13E20DAAF7A00356465 = {
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -313,7 +456,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D423655820A8231D00FFFD9E /* iOSDemo */,
+				D423655820A8231D00FFFD9E /* iOSDemoiPhone */,
+				D48EE13E20DAAF7A00356465 /* iOSDemoiPad */,
 			);
 		};
 /* End PBXProject section */
@@ -324,10 +468,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				D423656920A8231D00FFFD9E /* LaunchScreen.storyboard in Resources */,
-				D423657320A8237C00FFFD9E /* knowledgeList.plist in Resources */,
 				D423657520A8258F00FFFD9E /* SectionList.plist in Resources */,
 				D423656620A8231D00FFFD9E /* Assets.xcassets in Resources */,
 				D423656420A8231D00FFFD9E /* Main.storyboard in Resources */,
+				D48EE1F120DAB08600356465 /* iOSDemoiPad-info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48EE16220DAAF7A00356465 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48EE16320DAAF7A00356465 /* LaunchScreen.storyboard in Resources */,
+				D48EE16520DAAF7A00356465 /* SectionList.plist in Resources */,
+				D48EE16620DAAF7A00356465 /* Assets.xcassets in Resources */,
+				D48EE16720DAAF7A00356465 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,18 +493,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D489967620D8AEAF00E71DCA /* JFDefaultSkin.m in Sources */,
 				D423659C20A8315C00FFFD9E /* MASConstraint.m in Sources */,
 				D423659F20A8315C00FFFD9E /* MASViewAttribute.m in Sources */,
+				D489966D20D8AD9700E71DCA /* ZPGestureRecognizerViewController.m in Sources */,
 				D420DBA420CE7A2D0080C931 /* UIFont+Extension.m in Sources */,
 				D42365A420A8315C00FFFD9E /* ViewController+MASAdditions.m in Sources */,
 				D42365A120A8315C00FFFD9E /* NSArray+MASAdditions.m in Sources */,
 				D423657E20A82A9600FFFD9E /* MainTableViewCell.m in Sources */,
+				D489967820D8AEAF00E71DCA /* JFSkinModel.m in Sources */,
 				D420DB9C20CE74BC0080C931 /* ZPButton.m in Sources */,
+				D4D5496420D23B8E007E32B3 /* ZPWKWebViewController.m in Sources */,
+				D489967E20D8B1FD00E71DCA /* JFGestureListModel.m in Sources */,
 				D420DB9620CE631E0080C931 /* UIButtonViewController.m in Sources */,
 				D42365A020A8315C00FFFD9E /* MASViewConstraint.m in Sources */,
 				D420DBA720CE7A770080C931 /* JFScreenScale.m in Sources */,
 				D423659E20A8315C00FFFD9E /* MASLayoutConstraint.m in Sources */,
 				D423657B20A8296800FFFD9E /* SectionModel.m in Sources */,
+				D489967720D8AEAF00E71DCA /* JFSKinManager.m in Sources */,
 				D423657820A826FF00FFFD9E /* KnowledgeModel.m in Sources */,
 				D42365A320A8315C00FFFD9E /* View+MASAdditions.m in Sources */,
 				D42365AC20A8849900FFFD9E /* NSString+Size.m in Sources */,
@@ -363,6 +524,44 @@
 				D423656C20A8231D00FFFD9E /* main.m in Sources */,
 				D42365B220A8971200FFFD9E /* UIColor+Custom.m in Sources */,
 				D423655E20A8231D00FFFD9E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48EE14120DAAF7A00356465 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48EE14220DAAF7A00356465 /* JFDefaultSkin.m in Sources */,
+				D48EE14320DAAF7A00356465 /* MASConstraint.m in Sources */,
+				D48EE14420DAAF7A00356465 /* MASViewAttribute.m in Sources */,
+				D48EE14520DAAF7A00356465 /* ZPGestureRecognizerViewController.m in Sources */,
+				D48EE14620DAAF7A00356465 /* UIFont+Extension.m in Sources */,
+				D48EE14720DAAF7A00356465 /* ViewController+MASAdditions.m in Sources */,
+				D48EE14820DAAF7A00356465 /* NSArray+MASAdditions.m in Sources */,
+				D48EE14920DAAF7A00356465 /* MainTableViewCell.m in Sources */,
+				D48EE14A20DAAF7A00356465 /* JFSkinModel.m in Sources */,
+				D48EE14B20DAAF7A00356465 /* ZPButton.m in Sources */,
+				D48EE14C20DAAF7A00356465 /* ZPWKWebViewController.m in Sources */,
+				D48EE14D20DAAF7A00356465 /* JFGestureListModel.m in Sources */,
+				D48EE14E20DAAF7A00356465 /* UIButtonViewController.m in Sources */,
+				D48EE14F20DAAF7A00356465 /* MASViewConstraint.m in Sources */,
+				D48EE15020DAAF7A00356465 /* JFScreenScale.m in Sources */,
+				D48EE15120DAAF7A00356465 /* MASLayoutConstraint.m in Sources */,
+				D48EE15220DAAF7A00356465 /* SectionModel.m in Sources */,
+				D48EE15320DAAF7A00356465 /* JFSKinManager.m in Sources */,
+				D48EE15420DAAF7A00356465 /* KnowledgeModel.m in Sources */,
+				D48EE15520DAAF7A00356465 /* View+MASAdditions.m in Sources */,
+				D48EE15620DAAF7A00356465 /* NSString+Size.m in Sources */,
+				D48EE15720DAAF7A00356465 /* NSString+Extension.m in Sources */,
+				D48EE15820DAAF7A00356465 /* ZPURLSessionViewController.m in Sources */,
+				D48EE15920DAAF7A00356465 /* iOSNotificationViewController.m in Sources */,
+				D48EE15A20DAAF7A00356465 /* MASCompositeConstraint.m in Sources */,
+				D48EE15B20DAAF7A00356465 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				D48EE15C20DAAF7A00356465 /* MASConstraintMaker.m in Sources */,
+				D48EE15D20DAAF7A00356465 /* ViewController.m in Sources */,
+				D48EE15E20DAAF7A00356465 /* main.m in Sources */,
+				D48EE15F20DAAF7A00356465 /* UIColor+Custom.m in Sources */,
+				D48EE16020DAAF7A00356465 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +591,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -495,10 +695,13 @@
 		D423657020A8231D00FFFD9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APP_DISPLAY_NAME = "iPhone默认";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_NS_ASSERTIONS = YES;
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = iOSDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -509,16 +712,235 @@
 		D423657120A8231D00FFFD9E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APP_DISPLAY_NAME = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_NS_ASSERTIONS = YES;
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = iOSDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D48EE16B20DAAF7A00356465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_DISPLAY_NAME = "iPad默认";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/iOSDemo/iOSDemoiPad-info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D48EE16C20DAAF7A00356465 /* MyReleaseDev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_DISPLAY_NAME = "iPad生产";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/iOSDemo/iOSDemoiPad-info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = MyReleaseDev;
+		};
+		D48EE16D20DAAF7A00356465 /* MyDev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_DISPLAY_NAME = "iPad测试";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/iOSDemo/iOSDemoiPad-info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = MyDev;
+		};
+		D48EE16E20DAAF7A00356465 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_DISPLAY_NAME = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/iOSDemo/iOSDemoiPad-info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D4B425B020DA33B400556DE1 /* MyDev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = DevAppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"MyDev=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = MyDev;
+		};
+		D4B425B120DA33B400556DE1 /* MyDev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_DISPLAY_NAME = "iPhone测试";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
+				INFOPLIST_FILE = iOSDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Release;
+			name = MyDev;
+		};
+		D4B425B220DA33C200556DE1 /* MyReleaseDev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"MyReleaseDev=2",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = MyReleaseDev;
+		};
+		D4B425B320DA33C200556DE1 /* MyReleaseDev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_DISPLAY_NAME = "iPhone生产";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
+				INFOPLIST_FILE = iOSDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = MyReleaseDev;
 		};
 /* End XCBuildConfiguration section */
 
@@ -527,16 +949,31 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D423656D20A8231D00FFFD9E /* Debug */,
+				D4B425B220DA33C200556DE1 /* MyReleaseDev */,
+				D4B425B020DA33B400556DE1 /* MyDev */,
 				D423656E20A8231D00FFFD9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D423656F20A8231D00FFFD9E /* Build configuration list for PBXNativeTarget "iOSDemo" */ = {
+		D423656F20A8231D00FFFD9E /* Build configuration list for PBXNativeTarget "iOSDemoiPhone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D423657020A8231D00FFFD9E /* Debug */,
+				D4B425B320DA33C200556DE1 /* MyReleaseDev */,
+				D4B425B120DA33B400556DE1 /* MyDev */,
 				D423657120A8231D00FFFD9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D48EE16A20DAAF7A00356465 /* Build configuration list for PBXNativeTarget "iOSDemoiPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D48EE16B20DAAF7A00356465 /* Debug */,
+				D48EE16C20DAAF7A00356465 /* MyReleaseDev */,
+				D48EE16D20DAAF7A00356465 /* MyDev */,
+				D48EE16E20DAAF7A00356465 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

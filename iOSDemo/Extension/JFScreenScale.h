@@ -13,4 +13,7 @@
 +(double)getFloatFromScale:(CGFloat)num;
 +(double)getFloatFromScaleFloor:(CGFloat)num;
 +(double)getFloatFromScaleCeil:(CGFloat)num;
+
++(double)getHeightFromScale:(CGFloat)num;
++(double)getWidthFromScale:(CGFloat)num;
 @end
