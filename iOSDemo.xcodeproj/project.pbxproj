@@ -71,12 +71,14 @@
 		D48EE15D20DAAF7A00356465 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D423656020A8231D00FFFD9E /* ViewController.m */; };
 		D48EE15E20DAAF7A00356465 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D423656B20A8231D00FFFD9E /* main.m */; };
 		D48EE15F20DAAF7A00356465 /* UIColor+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = D42365B120A8971200FFFD9E /* UIColor+Custom.m */; };
-		D48EE16020DAAF7A00356465 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D423655D20A8231D00FFFD9E /* AppDelegate.m */; };
 		D48EE16320DAAF7A00356465 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D423656720A8231D00FFFD9E /* LaunchScreen.storyboard */; };
 		D48EE16520DAAF7A00356465 /* SectionList.plist in Resources */ = {isa = PBXBuildFile; fileRef = D423657420A8258F00FFFD9E /* SectionList.plist */; };
 		D48EE16620DAAF7A00356465 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D423656520A8231D00FFFD9E /* Assets.xcassets */; };
 		D48EE16720DAAF7A00356465 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D423656220A8231D00FFFD9E /* Main.storyboard */; };
 		D48EE1F120DAB08600356465 /* iOSDemoiPad-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D48EE1F020DAB08600356465 /* iOSDemoiPad-info.plist */; };
+		D48EE1FA20DB591E00356465 /* JFDateFormatTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D48EE1F820DB591E00356465 /* JFDateFormatTool.m */; };
+		D48EE1FB20DB591E00356465 /* JFDateFormatTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D48EE1F820DB591E00356465 /* JFDateFormatTool.m */; };
+		D4A2641420DCE41600E778B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D423655D20A8231D00FFFD9E /* AppDelegate.m */; };
 		D4D5496420D23B8E007E32B3 /* ZPWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D5496320D23B8E007E32B3 /* ZPWKWebViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -178,6 +180,9 @@
 		D489967D20D8B1FD00E71DCA /* JFGestureListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFGestureListModel.m; sourceTree = "<group>"; };
 		D48EE16F20DAAF7A00356465 /* iOSDemoiPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemoiPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D48EE1F020DAB08600356465 /* iOSDemoiPad-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iOSDemoiPad-info.plist"; sourceTree = "<group>"; };
+		D48EE1F820DB591E00356465 /* JFDateFormatTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFDateFormatTool.m; sourceTree = "<group>"; };
+		D48EE1F920DB591E00356465 /* JFDateFormatTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFDateFormatTool.h; sourceTree = "<group>"; };
+		D4A263FC20DCE21B00E778B3 /* testDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4D5496220D23B8E007E32B3 /* ZPWKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPWKWebViewController.h; sourceTree = "<group>"; };
 		D4D5496320D23B8E007E32B3 /* ZPWKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPWKWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -191,6 +196,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D48EE16120DAAF7A00356465 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A263F920DCE21B00E778B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -223,6 +235,8 @@
 		D420DB9D20CE78730080C931 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				D48EE1F920DB591E00356465 /* JFDateFormatTool.h */,
+				D48EE1F820DB591E00356465 /* JFDateFormatTool.m */,
 				D420DBA620CE7A770080C931 /* JFScreenScale.h */,
 				D420DBA520CE7A770080C931 /* JFScreenScale.m */,
 				D420DB9F20CE78FA0080C931 /* NSString+Extension.h */,
@@ -246,6 +260,7 @@
 			children = (
 				D423655920A8231D00FFFD9E /* iOSDemoiPhone.app */,
 				D48EE16F20DAAF7A00356465 /* iOSDemoiPad.app */,
+				D4A263FC20DCE21B00E778B3 /* testDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -425,6 +440,23 @@
 			productReference = D48EE16F20DAAF7A00356465 /* iOSDemoiPad.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D4A263FB20DCE21B00E778B3 /* testDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4A2641320DCE21B00E778B3 /* Build configuration list for PBXNativeTarget "testDemo" */;
+			buildPhases = (
+				D4A263F820DCE21B00E778B3 /* Sources */,
+				D4A263F920DCE21B00E778B3 /* Frameworks */,
+				D4A263FA20DCE21B00E778B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testDemo;
+			productName = testDemo;
+			productReference = D4A263FC20DCE21B00E778B3 /* testDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -439,6 +471,10 @@
 						ProvisioningStyle = Automatic;
 					};
 					D48EE13E20DAAF7A00356465 = {
+						ProvisioningStyle = Automatic;
+					};
+					D4A263FB20DCE21B00E778B3 = {
+						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -458,6 +494,7 @@
 			targets = (
 				D423655820A8231D00FFFD9E /* iOSDemoiPhone */,
 				D48EE13E20DAAF7A00356465 /* iOSDemoiPad */,
+				D4A263FB20DCE21B00E778B3 /* testDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -486,6 +523,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D4A263FA20DCE21B00E778B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -495,6 +539,7 @@
 			files = (
 				D489967620D8AEAF00E71DCA /* JFDefaultSkin.m in Sources */,
 				D423659C20A8315C00FFFD9E /* MASConstraint.m in Sources */,
+				D48EE1FB20DB591E00356465 /* JFDateFormatTool.m in Sources */,
 				D423659F20A8315C00FFFD9E /* MASViewAttribute.m in Sources */,
 				D489966D20D8AD9700E71DCA /* ZPGestureRecognizerViewController.m in Sources */,
 				D420DBA420CE7A2D0080C931 /* UIFont+Extension.m in Sources */,
@@ -533,7 +578,9 @@
 			files = (
 				D48EE14220DAAF7A00356465 /* JFDefaultSkin.m in Sources */,
 				D48EE14320DAAF7A00356465 /* MASConstraint.m in Sources */,
+				D48EE1FA20DB591E00356465 /* JFDateFormatTool.m in Sources */,
 				D48EE14420DAAF7A00356465 /* MASViewAttribute.m in Sources */,
+				D4A2641420DCE41600E778B3 /* AppDelegate.m in Sources */,
 				D48EE14520DAAF7A00356465 /* ZPGestureRecognizerViewController.m in Sources */,
 				D48EE14620DAAF7A00356465 /* UIFont+Extension.m in Sources */,
 				D48EE14720DAAF7A00356465 /* ViewController+MASAdditions.m in Sources */,
@@ -561,7 +608,13 @@
 				D48EE15D20DAAF7A00356465 /* ViewController.m in Sources */,
 				D48EE15E20DAAF7A00356465 /* main.m in Sources */,
 				D48EE15F20DAAF7A00356465 /* UIColor+Custom.m in Sources */,
-				D48EE16020DAAF7A00356465 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A263F820DCE21B00E778B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -732,7 +785,9 @@
 			buildSettings = {
 				APP_DISPLAY_NAME = "iPad默认";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U23ERTLBUC;
 				ENABLE_NS_ASSERTIONS = YES;
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/iOSDemo/iOSDemoiPad-info.plist";
@@ -740,16 +795,19 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		D48EE16C20DAAF7A00356465 /* MyReleaseDev */ = {
+		D48EE16C20DAAF7A00356465 /* MyTestRelease */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APP_DISPLAY_NAME = "iPad生产";
+				APP_DISPLAY_NAME = "iPad外部测试";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U23ERTLBUC;
 				ENABLE_NS_ASSERTIONS = YES;
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/iOSDemo/iOSDemoiPad-info.plist";
@@ -757,16 +815,19 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = MyReleaseDev;
+			name = MyTestRelease;
 		};
-		D48EE16D20DAAF7A00356465 /* MyDev */ = {
+		D48EE16D20DAAF7A00356465 /* MyTestDev */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APP_DISPLAY_NAME = "iPad测试";
+				APP_DISPLAY_NAME = "iPad内部测试";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U23ERTLBUC;
 				ENABLE_NS_ASSERTIONS = YES;
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/iOSDemo/iOSDemoiPad-info.plist";
@@ -774,16 +835,19 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = MyDev;
+			name = MyTestDev;
 		};
 		D48EE16E20DAAF7A00356465 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APP_DISPLAY_NAME = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U23ERTLBUC;
 				ENABLE_NS_ASSERTIONS = YES;
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/iOSDemo/iOSDemoiPad-info.plist";
@@ -791,12 +855,65 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		D4B425B020DA33B400556DE1 /* MyDev */ = {
+		D4A2640F20DCE21B00E778B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = testDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.testDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D4A2641020DCE21B00E778B3 /* MyTestRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = testDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.testDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = MyTestRelease;
+		};
+		D4A2641120DCE21B00E778B3 /* MyTestDev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = testDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.testDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = MyTestDev;
+		};
+		D4A2641220DCE21B00E778B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = testDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.testDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D4B425B020DA33B400556DE1 /* MyTestDev */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -836,7 +953,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"MyDev=1",
+					"MyTestDev=2",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -850,12 +967,12 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
-			name = MyDev;
+			name = MyTestDev;
 		};
-		D4B425B120DA33B400556DE1 /* MyDev */ = {
+		D4B425B120DA33B400556DE1 /* MyTestDev */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APP_DISPLAY_NAME = "iPhone测试";
+				APP_DISPLAY_NAME = "手机内部测试";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_NS_ASSERTIONS = YES;
@@ -867,9 +984,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = MyDev;
+			name = MyTestDev;
 		};
-		D4B425B220DA33C200556DE1 /* MyReleaseDev */ = {
+		D4B425B220DA33C200556DE1 /* MyTestRelease */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -909,7 +1026,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"MyReleaseDev=2",
+					"MyTestRelease=3",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -923,12 +1040,12 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
-			name = MyReleaseDev;
+			name = MyTestRelease;
 		};
-		D4B425B320DA33C200556DE1 /* MyReleaseDev */ = {
+		D4B425B320DA33C200556DE1 /* MyTestRelease */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APP_DISPLAY_NAME = "iPhone生产";
+				APP_DISPLAY_NAME = "手机外部测试";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_NS_ASSERTIONS = YES;
@@ -940,7 +1057,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = MyReleaseDev;
+			name = MyTestRelease;
 		};
 /* End XCBuildConfiguration section */
 
@@ -949,34 +1066,45 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D423656D20A8231D00FFFD9E /* Debug */,
-				D4B425B220DA33C200556DE1 /* MyReleaseDev */,
-				D4B425B020DA33B400556DE1 /* MyDev */,
+				D4B425B220DA33C200556DE1 /* MyTestRelease */,
+				D4B425B020DA33B400556DE1 /* MyTestDev */,
 				D423656E20A8231D00FFFD9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		D423656F20A8231D00FFFD9E /* Build configuration list for PBXNativeTarget "iOSDemoiPhone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D423657020A8231D00FFFD9E /* Debug */,
-				D4B425B320DA33C200556DE1 /* MyReleaseDev */,
-				D4B425B120DA33B400556DE1 /* MyDev */,
+				D4B425B320DA33C200556DE1 /* MyTestRelease */,
+				D4B425B120DA33B400556DE1 /* MyTestDev */,
 				D423657120A8231D00FFFD9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		D48EE16A20DAAF7A00356465 /* Build configuration list for PBXNativeTarget "iOSDemoiPad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D48EE16B20DAAF7A00356465 /* Debug */,
-				D48EE16C20DAAF7A00356465 /* MyReleaseDev */,
-				D48EE16D20DAAF7A00356465 /* MyDev */,
+				D48EE16C20DAAF7A00356465 /* MyTestRelease */,
+				D48EE16D20DAAF7A00356465 /* MyTestDev */,
 				D48EE16E20DAAF7A00356465 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
+		};
+		D4A2641320DCE21B00E778B3 /* Build configuration list for PBXNativeTarget "testDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4A2640F20DCE21B00E778B3 /* Debug */,
+				D4A2641020DCE21B00E778B3 /* MyTestRelease */,
+				D4A2641120DCE21B00E778B3 /* MyTestDev */,
+				D4A2641220DCE21B00E778B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

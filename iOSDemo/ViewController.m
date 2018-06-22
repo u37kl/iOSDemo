@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "Masonry.h"
-
+#import "JFDateFormatTool.h"
 
 #import "KnowledgeModel.h"
 #import "SectionModel.h"
@@ -43,17 +43,9 @@
     view.backgroundColor = [UIColor redColor];
     mainTableView.tableHeaderView = view;
 
-
-    ZPLog(@"");
-//    NSNumber *num1 = @(12.01);
-//    NSLog(@"%s", [num1 objCType]);
-//    if (strcmp([num objCType], @encode(double))) {
-//        return [NSString stringWithFormat:@".2%f", [num doubleValue]];
-//    }else if(strcmp([num objCType], @encode(float))){
-//        return [NSString stringWithFormat:@"%.2f", [num floatValue]];
-//    }else{
-//        return [NSString stringWithFormat:@"%ld", [num integerValue]];
-//    }
+    NSString *str = @"2018-06-20 15:20:00";
+    NSString *date = [JFDateFormatTool getFormatTime:str];
+    NSLog(@"date --- %@", date);
 }
 
 
