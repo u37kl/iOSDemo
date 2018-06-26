@@ -8,8 +8,7 @@
 
 #import "ViewController.h"
 #import "Masonry.h"
-#import "JFDateFormatTool.h"
-
+#import <Otherframework/Otherframework.h>
 #import "KnowledgeModel.h"
 #import "SectionModel.h"
 #import "MainTableViewCell.h"
@@ -46,6 +45,7 @@
     NSString *str = @"2018-06-20 15:20:00";
     NSString *date = [JFDateFormatTool getFormatTime:str];
     NSLog(@"date --- %@", date);
+    
 }
 
 

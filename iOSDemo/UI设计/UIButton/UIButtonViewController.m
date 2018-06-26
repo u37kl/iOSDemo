@@ -7,7 +7,7 @@
 //
 
 #import "UIButtonViewController.h"
-#import "UIFont+Extension.h"
+//#import "UIFont+Extension.h"
 #import "ZPButton.h"
 @interface UIButtonViewController ()
 
@@ -57,7 +57,7 @@
     ZPButton *btn = [[ZPButton alloc] init];
     btn.btnStyle = ZPButtonStyleImgTop;
     btn.titleLabel.textAlignment = NSTextAlignmentCenter;
-    btn.titleLabel.font = [UIFont getPFRWithSize:12];
+//    btn.titleLabel.font = [UIFont getPFRWithSize:12];
     [btn setTitle:@"呵呵" forState:UIControlStateNormal];
     [btn setImage:[UIImage imageNamed:@"叹号"] forState:UIControlStateNormal];
 //    [btn setTitle:@"呵呵" forState:UIControlStateSelected | UIControlStateHighlighted];

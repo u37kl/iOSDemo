@@ -10,12 +10,19 @@
 #define PrefixHeader_pch
 
 #ifdef MyDev
+
+// 可以在此定义项目中网络请求路径
 #define ZPLog(n) NSLog(@"MyDev")
+
 #elif MyReleaseDev
 #define ZPLog(n) NSLog(@"MyReleaseDev")
+
 #else
 #define ZPLog(n) NSLog(@"Dev")
+
 #endif
+
+
 
 #import "UIColor+Custom.h"
 

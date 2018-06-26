@@ -7,7 +7,7 @@
 //
 
 #import "ZPButton.h"
-#import "NSString+Extension.h"
+//#import "NSString+Extension.h"
 
 @interface ZPButton()
 @property(nonatomic, weak) UIImage *normalImg;
@@ -22,6 +22,7 @@
 @end
 
 @implementation ZPButton
+
 
 - (CGRect)contentRectForBounds:(CGRect)bounds
 {
@@ -88,19 +89,19 @@
 
 
 -(CGRect)setRightImgStyle{
-        CGSize sizeOfStr = [self.normalStr getSizeFromStrFontSize:12];
+    CGSize sizeOfStr = CGSizeZero;//[self.normalStr getSizeFromStrFontSize:12];
     CGSize sizeOfImg = self.normalImg.size;
     return CGRectMake(sizeOfStr.width + 8, self.frame.size.height *0.5 - sizeOfImg.height*0.5, sizeOfImg.width, sizeOfImg.height);
 }
 
 -(CGRect)setBottomStrStyle{
-    CGSize sizeOfStr = [self.normalStr getSizeFromStrFontSize:12];
+    CGSize sizeOfStr = CGSizeZero;//[self.normalStr getSizeFromStrFontSize:12];
     CGSize sizeOfImg = self.normalImg.size;
     return CGRectMake(0, self.frame.size.height - sizeOfStr.height, self.frame.size.width, sizeOfStr.height);
 }
 
 -(CGRect)setLeftStrStyle{
-    CGSize sizeOfStr = [self.normalStr getSizeFromStrFontSize:12];
+    CGSize sizeOfStr = CGSizeZero;//[self.normalStr getSizeFromStrFontSize:12];
     return CGRectMake(0, self.frame.size.height *0.5 - sizeOfStr.height*0.5, sizeOfStr.width, sizeOfStr.height);
 }
 

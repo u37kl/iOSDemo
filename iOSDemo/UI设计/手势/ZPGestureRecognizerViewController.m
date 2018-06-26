@@ -9,7 +9,9 @@
 #import "ZPGestureRecognizerViewController.h"
 #import "JFSKinManager.h"
 #import "Masonry.h"
-#import "JFScreenScale.h"
+//#import "Otherframework.h"
+
+//#import "JFScreenScale.h"
 #import "JFGestureListModel.h"
 @interface ZPGestureRecognizerViewController ()<UITableViewDelegate, UITableViewDataSource, UINavigationControllerDelegate>
 @property (nonatomic, weak) UITableView *tableView;
@@ -68,7 +70,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [JFScreenScale getHeightFromScale:60];
+    return  60;//    return [JFScreenScale getHeightFromScale:60];
 }
 
 

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <CoreGraphics/CoreGraphics.h>
 @interface NSString (Extension)
 -(CGSize)getSizeFromStrFontSize:(CGFloat)size;
 @end
