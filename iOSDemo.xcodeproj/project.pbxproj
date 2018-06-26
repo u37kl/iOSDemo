@@ -471,10 +471,6 @@
 					D48EE13E20DAAF7A00356465 = {
 						ProvisioningStyle = Automatic;
 					};
-					D4A263FB20DCE21B00E778B3 = {
-						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
-					};
 				};
 			};
 			buildConfigurationList = D423655420A8231D00FFFD9E /* Build configuration list for PBXProject "iOSDemo" */;
@@ -492,7 +488,6 @@
 			targets = (
 				D423655820A8231D00FFFD9E /* iOSDemoiPhone */,
 				D48EE13E20DAAF7A00356465 /* iOSDemoiPad */,
-				D4A263FB20DCE21B00E778B3 /* testDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -518,13 +513,6 @@
 				D48EE16520DAAF7A00356465 /* SectionList.plist in Resources */,
 				D48EE16620DAAF7A00356465 /* Assets.xcassets in Resources */,
 				D48EE16720DAAF7A00356465 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D4A263FA20DCE21B00E778B3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,13 +586,6 @@
 				D48EE15D20DAAF7A00356465 /* ViewController.m in Sources */,
 				D48EE15E20DAAF7A00356465 /* main.m in Sources */,
 				D48EE15F20DAAF7A00356465 /* UIColor+Custom.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D4A263F820DCE21B00E778B3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,13 +726,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_NS_ASSERTIONS = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
+				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator";
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = iOSDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
+				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -767,13 +748,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_NS_ASSERTIONS = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
+				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator";
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = iOSDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
+				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -863,58 +844,6 @@
 			};
 			name = Release;
 		};
-		D4A2640F20DCE21B00E778B3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = testDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.testDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		D4A2641020DCE21B00E778B3 /* MyTestRelease */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = testDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.testDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = MyTestRelease;
-		};
-		D4A2641120DCE21B00E778B3 /* MyTestDev */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = testDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.testDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = MyTestDev;
-		};
-		D4A2641220DCE21B00E778B3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = testDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.testDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		D4B425B020DA33B400556DE1 /* MyTestDev */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -981,13 +910,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				ENABLE_NS_ASSERTIONS = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
+				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator";
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = iOSDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
+				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1060,13 +989,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_NS_ASSERTIONS = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
+				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator";
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = iOSDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
+				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1106,17 +1035,6 @@
 				D48EE16C20DAAF7A00356465 /* MyTestRelease */,
 				D48EE16D20DAAF7A00356465 /* MyTestDev */,
 				D48EE16E20DAAF7A00356465 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		D4A2641320DCE21B00E778B3 /* Build configuration list for PBXNativeTarget "testDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D4A2640F20DCE21B00E778B3 /* Debug */,
-				D4A2641020DCE21B00E778B3 /* MyTestRelease */,
-				D4A2641120DCE21B00E778B3 /* MyTestDev */,
-				D4A2641220DCE21B00E778B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
