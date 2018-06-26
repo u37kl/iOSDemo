@@ -71,9 +71,6 @@
 		D48EE16720DAAF7A00356465 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D423656220A8231D00FFFD9E /* Main.storyboard */; };
 		D48EE1F120DAB08600356465 /* iOSDemoiPad-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D48EE1F020DAB08600356465 /* iOSDemoiPad-info.plist */; };
 		D4A2641420DCE41600E778B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D423655D20A8231D00FFFD9E /* AppDelegate.m */; };
-		D4C23F3C20E141CC005F198B /* Otherframework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C23F3B20E141CC005F198B /* Otherframework.framework */; };
-		D4C23F3D20E141CC005F198B /* Otherframework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D4C23F3B20E141CC005F198B /* Otherframework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D4C23F3E20E142A3005F198B /* libAFile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C23F3F20E142A3005F198B /* libAFile.a */; };
 		D4D5496420D23B8E007E32B3 /* ZPWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D5496320D23B8E007E32B3 /* ZPWKWebViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -104,7 +101,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D4C23F3D20E141CC005F198B /* Otherframework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,8 +187,6 @@
 		D48EE16F20DAAF7A00356465 /* iOSDemoiPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemoiPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D48EE1F020DAB08600356465 /* iOSDemoiPad-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iOSDemoiPad-info.plist"; sourceTree = "<group>"; };
 		D4A263FC20DCE21B00E778B3 /* testDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4C23F3B20E141CC005F198B /* Otherframework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Otherframework.framework; path = "../Release-iphonesimulator/Otherframework.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4C23F3F20E142A3005F198B /* libAFile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; name = libAFile.a; path = "../Release-iphonesimulator/libAFile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4D5496220D23B8E007E32B3 /* ZPWKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPWKWebViewController.h; sourceTree = "<group>"; };
 		D4D5496320D23B8E007E32B3 /* ZPWKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPWKWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -202,8 +196,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4C23F3E20E142A3005F198B /* libAFile.a in Frameworks */,
-				D4C23F3C20E141CC005F198B /* Otherframework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,8 +384,6 @@
 		D4A2646E20DCF78200E778B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D4C23F3B20E141CC005F198B /* Otherframework.framework */,
-				D4C23F3F20E142A3005F198B /* libAFile.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -750,43 +740,45 @@
 		D423657020A8231D00FFFD9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				APP_DISPLAY_NAME = "iPhone默认";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_NS_ASSERTIONS = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/DerivedData/iOSDemo/Build/Products/Release-iphonesimulator";
+				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = iOSDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
+				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
 			};
 			name = Debug;
 		};
 		D423657120A8231D00FFFD9E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				APP_DISPLAY_NAME = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_NS_ASSERTIONS = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/DerivedData/iOSDemo/Build/Products/Release-iphonesimulator";
+				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = iOSDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
+				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
 			};
 			name = Release;
 		};
@@ -983,24 +975,23 @@
 		D4B425B120DA33B400556DE1 /* MyTestDev */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				APP_DISPLAY_NAME = "手机内部测试";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev;
 				CODE_SIGN_STYLE = Automatic;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				ENABLE_NS_ASSERTIONS = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/DerivedData/iOSDemo/Build/Products/Release-iphonesimulator";
+				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = iOSDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(BUILD_ROOT)/**",
-					"$(PROJECT_DIR)",
-				);
+				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
 			};
 			name = MyTestDev;
 		};
@@ -1064,21 +1055,22 @@
 		D4B425B320DA33C200556DE1 /* MyTestRelease */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				APP_DISPLAY_NAME = "手机外部测试";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_NS_ASSERTIONS = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/DerivedData/iOSDemo/Build/Products/Release-iphonesimulator";
+				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = iOSDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
+				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
 			};
 			name = MyTestRelease;
 		};
