@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D43D1BC220E320B800B776D6 /* NSString+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = D43D1BC120E320B800B776D6 /* NSString+Test.m */; };
+		D43D1BC520E321D900B776D6 /* NSString+Test.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D43D1BC020E320B800B776D6 /* NSString+Test.h */; };
 		D4AE8FEE20DD01C8006A24AB /* AFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AE8FED20DD01C8006A24AB /* AFile.m */; };
 		D4AE8FEF20DD01C8006A24AB /* AFile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D4AE8FEC20DD01C8006A24AB /* AFile.h */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D4D544A820E0DD7300CCF5A2 /* AFTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D544A720E0DD7200CCF5A2 /* AFTest.m */; };
@@ -16,18 +18,21 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		D4AE8FE720DD01C8006A24AB /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 8;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				D43D1BC520E321D900B776D6 /* NSString+Test.h in CopyFiles */,
 				D4D544A920E0DD7B00CCF5A2 /* AFTest.h in CopyFiles */,
 				D4AE8FEF20DD01C8006A24AB /* AFile.h in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D43D1BC020E320B800B776D6 /* NSString+Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Test.h"; sourceTree = "<group>"; };
+		D43D1BC120E320B800B776D6 /* NSString+Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Test.m"; sourceTree = "<group>"; };
 		D4AE8FE920DD01C8006A24AB /* libAFile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFile.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4AE8FEC20DD01C8006A24AB /* AFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFile.h; sourceTree = "<group>"; };
 		D4AE8FED20DD01C8006A24AB /* AFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFile.m; sourceTree = "<group>"; };
@@ -69,6 +74,8 @@
 				D4AE8FED20DD01C8006A24AB /* AFile.m */,
 				D4D544A620E0DD7200CCF5A2 /* AFTest.h */,
 				D4D544A720E0DD7200CCF5A2 /* AFTest.m */,
+				D43D1BC020E320B800B776D6 /* NSString+Test.h */,
+				D43D1BC120E320B800B776D6 /* NSString+Test.m */,
 			);
 			path = AFile;
 			sourceTree = "<group>";
@@ -131,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4D544A820E0DD7300CCF5A2 /* AFTest.m in Sources */,
+				D43D1BC220E320B800B776D6 /* NSString+Test.m in Sources */,
 				D4AE8FEE20DD01C8006A24AB /* AFile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,14 +8,17 @@
 
 #import "NSString+Extension.h"
 #import "UIFont+Extension.h"
+
+void runNSNumberXxxForLib()
+{
+    
+}
 @implementation NSString (Extension)
 
 -(CGSize)getSizeFromStrFontSize:(CGFloat)size
 {
-    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithCapacity:2];
-    [dict setObject:[UIFont getPFRWithSize:size] forKey:NSFontAttributeName];
 
-    CGSize temp = [self boundingRectWithSize:CGSizeMake(2000, 200) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:nil context:nil].size;
-    return temp;
+    CGSize temp = [self boundingRectWithSize:CGSizeMake(2000, 200) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{@"NSFontAttributeName":[UIFont getPFRWithSize:size]} context:nil].size;
+    return CGSizeMake(temp.width + 1, temp.height);
 }
 @end

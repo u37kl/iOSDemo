@@ -16,5 +16,7 @@ typedef NS_ENUM(NSInteger, ZPButtonStyle){
 
 @interface ZPButton : UIButton
 @property (nonatomic, assign) ZPButtonStyle btnStyle;
-
+@property (nonatomic, assign) CGFloat titleAndImgEdge;
+@property (nonatomic, assign) CGFloat imgAndSuperTopEdge;
+@property (nonatomic, assign) CGFloat titleAndSuperLeftEdge;
 @end

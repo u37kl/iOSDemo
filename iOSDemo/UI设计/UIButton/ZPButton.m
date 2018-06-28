@@ -7,7 +7,8 @@
 //
 
 #import "ZPButton.h"
-//#import "NSString+Extension.h"
+#import <Otherframework/NSString+Extension.h>
+
 
 @interface ZPButton()
 @property(nonatomic, weak) UIImage *normalImg;
@@ -82,31 +83,32 @@
 }
 
 -(CGRect)setTopImgStyle{
-//    CGSize sizeOfStr = [self.normalStr getSizeFromStrFontSize:12];
+    
     CGSize sizeOfImg = self.normalImg.size;
-    return CGRectMake(self.frame.size.width *0.5 - sizeOfImg.width*0.5, 0, sizeOfImg.width, sizeOfImg.height);
-}
-
-
--(CGRect)setRightImgStyle{
-    CGSize sizeOfStr = CGSizeZero;//[self.normalStr getSizeFromStrFontSize:12];
-    CGSize sizeOfImg = self.normalImg.size;
-    return CGRectMake(sizeOfStr.width + 8, self.frame.size.height *0.5 - sizeOfImg.height*0.5, sizeOfImg.width, sizeOfImg.height);
+    return CGRectMake(self.frame.size.width *0.5 - sizeOfImg.width*0.5, self.imgAndSuperTopEdge, sizeOfImg.width, sizeOfImg.height);
 }
 
 -(CGRect)setBottomStrStyle{
-    CGSize sizeOfStr = CGSizeZero;//[self.normalStr getSizeFromStrFontSize:12];
+    CGSize sizeOfStr = [self.normalStr getSizeFromStrFontSize:12];
     CGSize sizeOfImg = self.normalImg.size;
-    return CGRectMake(0, self.frame.size.height - sizeOfStr.height, self.frame.size.width, sizeOfStr.height);
+    return CGRectMake(0, sizeOfImg.height + self.titleAndImgEdge, self.frame.size.width, sizeOfStr.height);
+}
+
+
+
+-(CGRect)setRightImgStyle{
+    CGSize sizeOfStr = [self.normalStr getSizeFromStrFontSize:12];
+    CGSize sizeOfImg = self.normalImg.size;
+    return CGRectMake(sizeOfStr.width + self.titleAndImgEdge, self.frame.size.height *0.5 - sizeOfImg.height*0.5, sizeOfImg.width, sizeOfImg.height);
 }
 
 -(CGRect)setLeftStrStyle{
-    CGSize sizeOfStr = CGSizeZero;//[self.normalStr getSizeFromStrFontSize:12];
-    return CGRectMake(0, self.frame.size.height *0.5 - sizeOfStr.height*0.5, sizeOfStr.width, sizeOfStr.height);
+    CGSize sizeOfStr = [self.normalStr getSizeFromStrFontSize:20];
+    return CGRectMake(self.titleAndSuperLeftEdge, self.frame.size.height *0.5 - sizeOfStr.height*0.5, sizeOfStr.width, sizeOfStr.height);
 }
 
 
-
+#pragma mark - 设置按钮的文字和图片
 
 - (void)setTitle:(NSString *)title forState:(UIControlState)state
 {
