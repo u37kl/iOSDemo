@@ -116,6 +116,10 @@
 		D4CC6D6620E48B1E00D5B059 /* ZPPanGestureTest1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CC6D5820E4857100D5B059 /* ZPPanGestureTest1ViewController.m */; };
 		D4CC6D6D20E4AAC400D5B059 /* UIRotationGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CC6D6C20E4AAC400D5B059 /* UIRotationGestureViewController.m */; };
 		D4CC6D6E20E4AE1C00D5B059 /* UIRotationGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CC6D6C20E4AAC400D5B059 /* UIRotationGestureViewController.m */; };
+		D4CC6D7120E4D62700D5B059 /* ZPTapGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CC6D7020E4D62700D5B059 /* ZPTapGestureViewController.m */; };
+		D4CC6D7220E4E09900D5B059 /* ZPTapGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CC6D7020E4D62700D5B059 /* ZPTapGestureViewController.m */; };
+		D4CC6D7620E4E14100D5B059 /* ZPLongPressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CC6D7520E4E14100D5B059 /* ZPLongPressViewController.m */; };
+		D4CC6D7720E4E2C600D5B059 /* ZPLongPressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CC6D7520E4E14100D5B059 /* ZPLongPressViewController.m */; };
 		D4D5496420D23B8E007E32B3 /* ZPWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D5496320D23B8E007E32B3 /* ZPWKWebViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -266,6 +270,10 @@
 		D4CC6D6120E4895100D5B059 /* Otherframework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Otherframework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4CC6D6B20E4AAC400D5B059 /* UIRotationGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIRotationGestureViewController.h; sourceTree = "<group>"; };
 		D4CC6D6C20E4AAC400D5B059 /* UIRotationGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIRotationGestureViewController.m; sourceTree = "<group>"; };
+		D4CC6D6F20E4D62700D5B059 /* ZPTapGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPTapGestureViewController.h; sourceTree = "<group>"; };
+		D4CC6D7020E4D62700D5B059 /* ZPTapGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPTapGestureViewController.m; sourceTree = "<group>"; };
+		D4CC6D7420E4E14100D5B059 /* ZPLongPressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPLongPressViewController.h; sourceTree = "<group>"; };
+		D4CC6D7520E4E14100D5B059 /* ZPLongPressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPLongPressViewController.m; sourceTree = "<group>"; };
 		D4D5496220D23B8E007E32B3 /* ZPWKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPWKWebViewController.h; sourceTree = "<group>"; };
 		D4D5496320D23B8E007E32B3 /* ZPWKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPWKWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -454,9 +462,9 @@
 		D489966A20D8AD6200E71DCA /* 手势 */ = {
 			isa = PBXGroup;
 			children = (
+				D4CC6D7320E4E12400D5B059 /* 长按手势 */,
 				D4CC6D6A20E4AA6000D5B059 /* 轻扫手势 */,
-				D4CC6D6920E4AA5100D5B059 /* 旋转手势 */,
-				D4CC6D6820E4AA4300D5B059 /* 缩放手势 */,
+				D4CC6D6920E4AA5100D5B059 /* 旋转缩放手势 */,
 				D4CC6D6720E4AA3600D5B059 /* 点击手势 */,
 				D4CC6D5620E4854F00D5B059 /* 拖拽手势 */,
 				D43D1BD020E331DF00B776D6 /* 手势实验 */,
@@ -504,24 +512,19 @@
 		D4CC6D6720E4AA3600D5B059 /* 点击手势 */ = {
 			isa = PBXGroup;
 			children = (
+				D4CC6D6F20E4D62700D5B059 /* ZPTapGestureViewController.h */,
+				D4CC6D7020E4D62700D5B059 /* ZPTapGestureViewController.m */,
 			);
 			path = "点击手势";
 			sourceTree = "<group>";
 		};
-		D4CC6D6820E4AA4300D5B059 /* 缩放手势 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "缩放手势";
-			sourceTree = "<group>";
-		};
-		D4CC6D6920E4AA5100D5B059 /* 旋转手势 */ = {
+		D4CC6D6920E4AA5100D5B059 /* 旋转缩放手势 */ = {
 			isa = PBXGroup;
 			children = (
 				D4CC6D6B20E4AAC400D5B059 /* UIRotationGestureViewController.h */,
 				D4CC6D6C20E4AAC400D5B059 /* UIRotationGestureViewController.m */,
 			);
-			path = "旋转手势";
+			path = "旋转缩放手势";
 			sourceTree = "<group>";
 		};
 		D4CC6D6A20E4AA6000D5B059 /* 轻扫手势 */ = {
@@ -529,6 +532,15 @@
 			children = (
 			);
 			path = "轻扫手势";
+			sourceTree = "<group>";
+		};
+		D4CC6D7320E4E12400D5B059 /* 长按手势 */ = {
+			isa = PBXGroup;
+			children = (
+				D4CC6D7420E4E14100D5B059 /* ZPLongPressViewController.h */,
+				D4CC6D7520E4E14100D5B059 /* ZPLongPressViewController.m */,
+			);
+			path = "长按手势";
 			sourceTree = "<group>";
 		};
 		D4D5496120D23B6F007E32B3 /* web */ = {
@@ -684,6 +696,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4CC6D7120E4D62700D5B059 /* ZPTapGestureViewController.m in Sources */,
 				D489967620D8AEAF00E71DCA /* JFDefaultSkin.m in Sources */,
 				D423659C20A8315C00FFFD9E /* MASConstraint.m in Sources */,
 				D423659F20A8315C00FFFD9E /* MASViewAttribute.m in Sources */,
@@ -707,6 +720,7 @@
 				D42365B620A9DDEF00FFFD9E /* iOSNotificationViewController.m in Sources */,
 				D43D1BD920E3394500B776D6 /* UIGestureRecognizer+Name.m in Sources */,
 				D423659B20A8315C00FFFD9E /* MASCompositeConstraint.m in Sources */,
+				D4CC6D7620E4E14100D5B059 /* ZPLongPressViewController.m in Sources */,
 				D42365A220A8315C00FFFD9E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				D423659D20A8315C00FFFD9E /* MASConstraintMaker.m in Sources */,
 				D423656120A8231D00FFFD9E /* ViewController.m in Sources */,
@@ -724,6 +738,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4CC6D7220E4E09900D5B059 /* ZPTapGestureViewController.m in Sources */,
 				D43D1BDC20E35F0B00B776D6 /* JFDefaultSkin.m in Sources */,
 				D43D1BDD20E35F0B00B776D6 /* MASConstraint.m in Sources */,
 				D43D1BDE20E35F0B00B776D6 /* MASViewAttribute.m in Sources */,
@@ -747,6 +762,7 @@
 				D43D1BF020E35F0B00B776D6 /* iOSNotificationViewController.m in Sources */,
 				D43D1BF120E35F0B00B776D6 /* UIGestureRecognizer+Name.m in Sources */,
 				D43D1BF220E35F0B00B776D6 /* MASCompositeConstraint.m in Sources */,
+				D4CC6D7720E4E2C600D5B059 /* ZPLongPressViewController.m in Sources */,
 				D43D1BF320E35F0B00B776D6 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				D43D1BF420E35F0B00B776D6 /* MASConstraintMaker.m in Sources */,
 				D43D1BF520E35F0B00B776D6 /* ViewController.m in Sources */,

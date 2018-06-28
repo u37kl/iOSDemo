@@ -9,10 +9,7 @@
 #import "NSString+Extension.h"
 #import "UIFont+Extension.h"
 
-void runNSNumberXxxForLib()
-{
-    
-}
+
 @implementation NSString (Extension)
 
 -(CGSize)getSizeFromStrFontSize:(CGFloat)size

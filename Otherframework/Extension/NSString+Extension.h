@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
-void runNSNumberXxxForLib();
+
 @interface NSString (Extension)
 -(CGSize)getSizeFromStrFontSize:(CGFloat)size;
 @end

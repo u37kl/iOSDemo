@@ -118,9 +118,20 @@
         [arr addObject:model3];
         
         JFGestureListModel *model4 = [[JFGestureListModel alloc] init];
-        model4.title = @"旋转手势";
+        model4.title = @"旋转缩放手势";
         model4.viewControllerName = @"UIRotationGestureViewController";
         [arr addObject:model4];
+
+        JFGestureListModel *model5 = [[JFGestureListModel alloc] init];
+        model5.title = @"点击手势";
+        model5.viewControllerName = @"ZPTapGestureViewController";
+        [arr addObject:model5];
+
+        JFGestureListModel *model6 = [[JFGestureListModel alloc] init];
+        model6.title = @"长按手势";
+        model6.viewControllerName = @"ZPLongPressViewController";
+        [arr addObject:model6];
+        
         _dataSource = arr;
     }
     return _dataSource;
