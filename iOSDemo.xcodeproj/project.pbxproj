@@ -110,8 +110,12 @@
 		D48EE16720DAAF7A00356465 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D423656220A8231D00FFFD9E /* Main.storyboard */; };
 		D48EE1F120DAB08600356465 /* iOSDemoiPad-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D48EE1F020DAB08600356465 /* iOSDemoiPad-info.plist */; };
 		D4A2641420DCE41600E778B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D423655D20A8231D00FFFD9E /* AppDelegate.m */; };
-		D4CFE10120E3997C007C398B /* libAFile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4CFE10320E3997C007C398B /* libAFile.a */; };
-		D4CFE10220E3997C007C398B /* Otherframework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4CFE10420E3997C007C398B /* Otherframework.framework */; };
+		D4CC6D5920E4857100D5B059 /* ZPPanGestureTest1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CC6D5820E4857100D5B059 /* ZPPanGestureTest1ViewController.m */; };
+		D4CC6D5E20E4895100D5B059 /* libAFile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4CC6D6020E4895100D5B059 /* libAFile.a */; };
+		D4CC6D5F20E4895100D5B059 /* Otherframework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4CC6D6120E4895100D5B059 /* Otherframework.framework */; };
+		D4CC6D6620E48B1E00D5B059 /* ZPPanGestureTest1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CC6D5820E4857100D5B059 /* ZPPanGestureTest1ViewController.m */; };
+		D4CC6D6D20E4AAC400D5B059 /* UIRotationGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CC6D6C20E4AAC400D5B059 /* UIRotationGestureViewController.m */; };
+		D4CC6D6E20E4AE1C00D5B059 /* UIRotationGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CC6D6C20E4AAC400D5B059 /* UIRotationGestureViewController.m */; };
 		D4D5496420D23B8E007E32B3 /* ZPWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D5496320D23B8E007E32B3 /* ZPWKWebViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -256,8 +260,12 @@
 		D48EE16F20DAAF7A00356465 /* iOSDemoiPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemoiPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D48EE1F020DAB08600356465 /* iOSDemoiPad-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iOSDemoiPad-info.plist"; sourceTree = "<group>"; };
 		D4A263FC20DCE21B00E778B3 /* testDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4CFE10320E3997C007C398B /* libAFile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFile.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4CFE10420E3997C007C398B /* Otherframework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Otherframework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4CC6D5720E4857100D5B059 /* ZPPanGestureTest1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPPanGestureTest1ViewController.h; sourceTree = "<group>"; };
+		D4CC6D5820E4857100D5B059 /* ZPPanGestureTest1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPPanGestureTest1ViewController.m; sourceTree = "<group>"; };
+		D4CC6D6020E4895100D5B059 /* libAFile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFile.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4CC6D6120E4895100D5B059 /* Otherframework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Otherframework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4CC6D6B20E4AAC400D5B059 /* UIRotationGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIRotationGestureViewController.h; sourceTree = "<group>"; };
+		D4CC6D6C20E4AAC400D5B059 /* UIRotationGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIRotationGestureViewController.m; sourceTree = "<group>"; };
 		D4D5496220D23B8E007E32B3 /* ZPWKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPWKWebViewController.h; sourceTree = "<group>"; };
 		D4D5496320D23B8E007E32B3 /* ZPWKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPWKWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -267,8 +275,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4CFE10120E3997C007C398B /* libAFile.a in Frameworks */,
-				D4CFE10220E3997C007C398B /* Otherframework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +282,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4CC6D5E20E4895100D5B059 /* libAFile.a in Frameworks */,
+				D4CC6D5F20E4895100D5B059 /* Otherframework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +454,11 @@
 		D489966A20D8AD6200E71DCA /* 手势 */ = {
 			isa = PBXGroup;
 			children = (
+				D4CC6D6A20E4AA6000D5B059 /* 轻扫手势 */,
+				D4CC6D6920E4AA5100D5B059 /* 旋转手势 */,
+				D4CC6D6820E4AA4300D5B059 /* 缩放手势 */,
+				D4CC6D6720E4AA3600D5B059 /* 点击手势 */,
+				D4CC6D5620E4854F00D5B059 /* 拖拽手势 */,
 				D43D1BD020E331DF00B776D6 /* 手势实验 */,
 				D489966B20D8AD9600E71DCA /* ZPGestureRecognizerViewController.h */,
 				D489966C20D8AD9600E71DCA /* ZPGestureRecognizerViewController.m */,
@@ -473,10 +486,49 @@
 		D4A2646E20DCF78200E778B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D4CFE10320E3997C007C398B /* libAFile.a */,
-				D4CFE10420E3997C007C398B /* Otherframework.framework */,
+				D4CC6D6020E4895100D5B059 /* libAFile.a */,
+				D4CC6D6120E4895100D5B059 /* Otherframework.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4CC6D5620E4854F00D5B059 /* 拖拽手势 */ = {
+			isa = PBXGroup;
+			children = (
+				D4CC6D5720E4857100D5B059 /* ZPPanGestureTest1ViewController.h */,
+				D4CC6D5820E4857100D5B059 /* ZPPanGestureTest1ViewController.m */,
+			);
+			path = "拖拽手势";
+			sourceTree = "<group>";
+		};
+		D4CC6D6720E4AA3600D5B059 /* 点击手势 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "点击手势";
+			sourceTree = "<group>";
+		};
+		D4CC6D6820E4AA4300D5B059 /* 缩放手势 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "缩放手势";
+			sourceTree = "<group>";
+		};
+		D4CC6D6920E4AA5100D5B059 /* 旋转手势 */ = {
+			isa = PBXGroup;
+			children = (
+				D4CC6D6B20E4AAC400D5B059 /* UIRotationGestureViewController.h */,
+				D4CC6D6C20E4AAC400D5B059 /* UIRotationGestureViewController.m */,
+			);
+			path = "旋转手势";
+			sourceTree = "<group>";
+		};
+		D4CC6D6A20E4AA6000D5B059 /* 轻扫手势 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "轻扫手势";
 			sourceTree = "<group>";
 		};
 		D4D5496120D23B6F007E32B3 /* web */ = {
@@ -660,6 +712,8 @@
 				D423656120A8231D00FFFD9E /* ViewController.m in Sources */,
 				D436843920E39BC40082BC58 /* ZPTestsGestureRecognizerViewController.m in Sources */,
 				D43D1BD320E3324100B776D6 /* ZPTestGestureRecognizerViewController.m in Sources */,
+				D4CC6D5920E4857100D5B059 /* ZPPanGestureTest1ViewController.m in Sources */,
+				D4CC6D6D20E4AAC400D5B059 /* UIRotationGestureViewController.m in Sources */,
 				D423656C20A8231D00FFFD9E /* main.m in Sources */,
 				D42365B220A8971200FFFD9E /* UIColor+Custom.m in Sources */,
 				D423655E20A8231D00FFFD9E /* AppDelegate.m in Sources */,
@@ -698,6 +752,8 @@
 				D43D1BF520E35F0B00B776D6 /* ViewController.m in Sources */,
 				D436843A20E39BCF0082BC58 /* ZPTestsGestureRecognizerViewController.m in Sources */,
 				D43D1BF620E35F0B00B776D6 /* ZPTestGestureRecognizerViewController.m in Sources */,
+				D4CC6D6620E48B1E00D5B059 /* ZPPanGestureTest1ViewController.m in Sources */,
+				D4CC6D6E20E4AE1C00D5B059 /* UIRotationGestureViewController.m in Sources */,
 				D43D1BF720E35F0B00B776D6 /* main.m in Sources */,
 				D43D1BF820E35F0B00B776D6 /* UIColor+Custom.m in Sources */,
 				D43D1BF920E35F0B00B776D6 /* AppDelegate.m in Sources */,
@@ -881,20 +937,20 @@
 				DEVELOPMENT_TEAM = U23ERTLBUC;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
+				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
-				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator";
+				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos";
 				INFOPLIST_FILE = iOSDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
+				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
+				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 			};
 			name = Debug;
 		};
@@ -909,13 +965,13 @@
 				DEVELOPMENT_TEAM = U23ERTLBUC;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
+				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
-				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator";
+				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos";
 				INFOPLIST_FILE = iOSDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
+				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo;
@@ -923,7 +979,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
+				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 			};
 			name = Release;
 		};
@@ -939,7 +995,7 @@
 				ENABLE_NS_ASSERTIONS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
-				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos";
+				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				INFOPLIST_FILE = "$(SRCROOT)/iOSDemo/iphoneTestRelease-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -965,7 +1021,7 @@
 				ENABLE_NS_ASSERTIONS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
-				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos";
+				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				INFOPLIST_FILE = "$(SRCROOT)/iOSDemo/iphoneTestRelease-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -992,7 +1048,7 @@
 				ENABLE_NS_ASSERTIONS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
-				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos";
+				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				INFOPLIST_FILE = "$(SRCROOT)/iOSDemo/iphoneTestRelease-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1018,7 +1074,7 @@
 				ENABLE_NS_ASSERTIONS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
-				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos";
+				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				INFOPLIST_FILE = "$(SRCROOT)/iOSDemo/iphoneTestRelease-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1184,20 +1240,20 @@
 				DEVELOPMENT_TEAM = U23ERTLBUC;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
+				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
-				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator";
+				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos";
 				INFOPLIST_FILE = iOSDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
+				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
+				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 			};
 			name = MyTestDev;
 		};
@@ -1270,20 +1326,20 @@
 				DEVELOPMENT_TEAM = U23ERTLBUC;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
+				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
-				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator";
+				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos";
 				INFOPLIST_FILE = iOSDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
+				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphonesimulator/**";
+				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 			};
 			name = MyTestRelease;
 		};

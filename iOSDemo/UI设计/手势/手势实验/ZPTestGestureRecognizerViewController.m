@@ -29,7 +29,7 @@ typedef NS_ENUM(NSUInteger, GestureDirection){
     [super viewDidLoad];
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.view.backgroundColor = [JFSKinManager skinManager].model.backColor;
-    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureHandle:)];
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureHandleRoot:)];
     pan.gestureName = @"根view";
     pan.delegate = self;
     [self.view addGestureRecognizer:pan];
@@ -40,7 +40,7 @@ typedef NS_ENUM(NSUInteger, GestureDirection){
 {
     UIView *orangeView = [[UIView alloc] init];
     orangeView.backgroundColor = [UIColor orangeColor];
-    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]  initWithTarget:self action:@selector(panGestureHandle:)];
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]  initWithTarget:self action:@selector(panGestureHandleOrange:)];
     pan.delegate = self;
     pan.gestureName = @"橙色view";
     [orangeView addGestureRecognizer:pan];
@@ -53,7 +53,7 @@ typedef NS_ENUM(NSUInteger, GestureDirection){
     
     UIView *blueView = [[UIView alloc] init];
     blueView.backgroundColor = [UIColor blueColor];
-    UIPanGestureRecognizer *pan1 = [[UIPanGestureRecognizer alloc]  initWithTarget:self action:@selector(panGestureHandle:)];
+    UIPanGestureRecognizer *pan1 = [[UIPanGestureRecognizer alloc]  initWithTarget:self action:@selector(panGestureHandleBlue:)];
     pan1.delegate = self;
     pan1.gestureName = @"蓝色view";
     self.blueView = blueView;
@@ -66,7 +66,7 @@ typedef NS_ENUM(NSUInteger, GestureDirection){
     
     UIView *greenView = [[UIView alloc] init];
     greenView.backgroundColor = [UIColor greenColor];
-    UIPanGestureRecognizer *pan2 = [[UIPanGestureRecognizer alloc]  initWithTarget:self action:@selector(panGestureHandle:)];
+    UIPanGestureRecognizer *pan2 = [[UIPanGestureRecognizer alloc]  initWithTarget:self action:@selector(panGestureHandleGreen:)];
     pan2.delegate = self;
     pan2.gestureName = @"绿色view";
     [greenView addGestureRecognizer:pan2];
@@ -81,41 +81,10 @@ typedef NS_ENUM(NSUInteger, GestureDirection){
 }
 
 
-- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
-{
-    CGPoint sourceP = [gestureRecognizer locationInView:gestureRecognizer.view];
-    UIPanGestureRecognizer *pan = (UIPanGestureRecognizer *)gestureRecognizer;
-    CGPoint vP = [pan velocityInView:gestureRecognizer.view];
-    GestureDirection type = [self getDirection:vP];
-    if (gestureRecognizer.view == self.orangeView) {
-        if (sourceP.x <= 40) {
-            return YES;
-        }else{
-            return NO;
-        }
-    }else if(gestureRecognizer.view == self.blueView){
-        if (sourceP.x >= 40 && type == GestureDirectionRight) {
-            return YES;
-        }else{
-            return NO;
-        }
-    }else if(gestureRecognizer.view == self.greenView){
-        if (type == GestureDirectionLeft) {
-            return YES;
-        }else{
-            return NO;
-        }
-    }else if(gestureRecognizer.view == self.view){
-        if (type == GestureDirectionTop || type == GestureDirectionBottom) {
-            return YES;
-        }else{
-            return NO;
-        }
-    }
-    return NO;
-}
 
 
+#pragma mark - 计算拖拽方向
+// 将用户的拖拽方向划分到四个象限，45度、135度、225度、315度不考虑(忽略对角线方向拖拽)
 -(GestureDirection)getDirection:(CGPoint)point
 {
     CGFloat fabsX = fabs(point.x);
@@ -157,12 +126,59 @@ typedef NS_ENUM(NSUInteger, GestureDirection){
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
 {
     
-    CGPoint sourceP = [gestureRecognizer locationInView:gestureRecognizer.view];
-    UIPanGestureRecognizer *pan = (UIPanGestureRecognizer *)gestureRecognizer;
-    CGPoint nextP = [pan translationInView:gestureRecognizer.view];
-//    NSLog(@"shouldReceiveTouch --- %@ --- %f=%f ", gestureRecognizer.gestureName, nextP.x, nextP.y);
+    CGPoint point = [touch locationInView:gestureRecognizer.view];
+
+    
+    if (gestureRecognizer.view == self.orangeView) {
+        if (point.x <= 40) {
+            return YES;
+        }else{
+            return NO;
+        }
+    }else if(gestureRecognizer.view == self.blueView){
+        if (point.x > 40) {
+            return YES;
+        }else{
+            return NO;
+        }
+    }
     return YES;
 }
+
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+{
+    if (![gestureRecognizer isKindOfClass:[UIPanGestureRecognizer class]]) {
+        return NO;
+    }
+    UIPanGestureRecognizer *pan = (UIPanGestureRecognizer *)gestureRecognizer;
+    CGPoint vP = [pan velocityInView:gestureRecognizer.view];
+    GestureDirection type = [self getDirection:vP];
+    if (gestureRecognizer.view == self.orangeView) {
+        if (type == GestureDirectionRight) {
+            return YES;
+        }
+    }else if(gestureRecognizer.view == self.blueView){
+        if (type == GestureDirectionRight) {
+            return YES;
+        }else{
+            return NO;
+        }
+    }else if(gestureRecognizer.view == self.greenView){
+        if (type == GestureDirectionLeft) {
+            return YES;
+        }else{
+            return NO;
+        }
+    }else if(gestureRecognizer.view == self.view){
+        if (type == GestureDirectionTop || type == GestureDirectionBottom) {
+            return YES;
+        }else{
+            return NO;
+        }
+    }
+    return NO;
+}
+
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceivePress:(UIPress *)press
 {
@@ -179,10 +195,33 @@ typedef NS_ENUM(NSUInteger, GestureDirection){
 //}
 
 #pragma mark - 拖拽手势识别
--(void)panGestureHandle:(UIPanGestureRecognizer *)gesture
+-(void)panGestureHandleRoot:(UIPanGestureRecognizer *)gesture
 {
-    NSLog(@"gestureName --- %@", gesture.gestureName);
+    CGPoint p = [gesture translationInView:gesture.view];
+    if (p.y > 0) {
+        NSLog(@"%@ --- 下滑", gesture.gestureName);
+    }else{
+        NSLog(@"%@ --- 上滑", gesture.gestureName);
+    }
 }
+
+-(void)panGestureHandleOrange:(UIPanGestureRecognizer *)gesture
+{
+    NSLog(@"%@ --- 右滑", gesture.gestureName);
+}
+
+
+-(void)panGestureHandleBlue:(UIPanGestureRecognizer *)gesture
+{
+    NSLog(@"%@ --- 右滑", gesture.gestureName);
+}
+
+
+-(void)panGestureHandleGreen:(UIPanGestureRecognizer *)gesture
+{
+    NSLog(@"%@ --- 左滑", gesture.gestureName);
+}
+
 
 
 @end

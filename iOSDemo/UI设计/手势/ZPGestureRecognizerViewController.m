@@ -113,13 +113,13 @@
         [arr addObject:model2];
         
         JFGestureListModel *model3 = [[JFGestureListModel alloc] init];
-        model3.title = @"长按手势";
-        model3.viewControllerName = @"";
+        model3.title = @"拖拽手势";
+        model3.viewControllerName = @"ZPPanGestureTest1ViewController";
         [arr addObject:model3];
         
         JFGestureListModel *model4 = [[JFGestureListModel alloc] init];
-        model4.title = @"点击手势";
-        model4.viewControllerName = @"";
+        model4.title = @"旋转手势";
+        model4.viewControllerName = @"UIRotationGestureViewController";
         [arr addObject:model4];
         _dataSource = arr;
     }

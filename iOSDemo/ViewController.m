@@ -46,9 +46,9 @@
 //        NSString *str = @"2018-06-20 15:20:00";
 //        NSString *date = [JFDateFormatTool getFormatTime:str];
 //        NSLog(@"date --- %@", date);
-//    [JFScreenScale getFloatFromScale:12];
-//    [@"sdf" getSizeFromStrFontSize:12];
-//      [@"呵呵" testStr];
+    [JFScreenScale getFloatFromScale:12];
+    [@"sdf" getSizeFromStrFontSize:12];
+      [@"呵呵" testStr];
 }
 
 
