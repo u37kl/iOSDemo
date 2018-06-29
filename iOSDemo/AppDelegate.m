@@ -20,7 +20,24 @@
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mainVC];
     self.window.rootViewController = nav;
     [self.window makeKeyWindow];
+    [self load3DTouch];
     return YES;
+}
+
+-(void)load3DTouch
+{
+    if(@available(iOS 9.0, *)){
+        UIApplicationShortcutItem *item1 = [[UIApplicationShortcutItem alloc] initWithType:@"item1" localizedTitle:@"我的消息" localizedSubtitle:nil icon:nil userInfo:nil];
+        
+        UIApplicationShortcutIcon *icon2 = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeAdd];
+        UIApplicationShortcutItem *item2 = [[UIApplicationShortcutItem alloc] initWithType:@"item2" localizedTitle:@"发布动态" localizedSubtitle:nil icon:icon2 userInfo:nil];
+        
+        UIApplicationShortcutIcon *icon3 = [UIApplicationShortcutIcon iconWithTemplateImageName:@"3d_icon"];
+        UIApplicationShortcutItem *item3= [[UIApplicationShortcutItem alloc] initWithType:@"item3" localizedTitle:@"搜索寻味师" localizedSubtitle:nil icon:icon3 userInfo:nil];
+        [[UIApplication sharedApplication] setShortcutItems:@[item3,item2,item1]];
+    }
+
+    
 }
 
 

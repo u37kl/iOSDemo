@@ -131,6 +131,17 @@
         model6.title = @"长按手势";
         model6.viewControllerName = @"ZPLongPressViewController";
         [arr addObject:model6];
+
+        JFGestureListModel *model7 = [[JFGestureListModel alloc] init];
+        model7.title = @"手势与触摸";
+        model7.viewControllerName = @"ZPBasePropertyGestureViewController";
+        [arr addObject:model7];
+        
+        JFGestureListModel *model8 = [[JFGestureListModel alloc] init];
+        model8.title = @"屏幕边缘手势手势识别";
+        model8.viewControllerName = @"ZPScreenGestureViewController";
+        [arr addObject:model8];
+        
         
         _dataSource = arr;
     }

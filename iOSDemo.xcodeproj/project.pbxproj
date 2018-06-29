@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D41CF5BD20E6063B00D10B3A /* ZPBasePropertyGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D41CF5BC20E6063B00D10B3A /* ZPBasePropertyGestureViewController.m */; };
+		D41CF5BE20E6064000D10B3A /* ZPBasePropertyGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D41CF5BC20E6063B00D10B3A /* ZPBasePropertyGestureViewController.m */; };
+		D41CF5C220E6145900D10B3A /* ZPScreenGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D41CF5C120E6145900D10B3A /* ZPScreenGestureViewController.m */; };
 		D420DB9620CE631E0080C931 /* UIButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D420DB9520CE631E0080C931 /* UIButtonViewController.m */; };
 		D420DB9C20CE74BC0080C931 /* ZPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D420DB9B20CE74BC0080C931 /* ZPButton.m */; };
 		D423655E20A8231D00FFFD9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D423655D20A8231D00FFFD9E /* AppDelegate.m */; };
@@ -187,6 +190,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D41CF5BB20E6063B00D10B3A /* ZPBasePropertyGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPBasePropertyGestureViewController.h; sourceTree = "<group>"; };
+		D41CF5BC20E6063B00D10B3A /* ZPBasePropertyGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPBasePropertyGestureViewController.m; sourceTree = "<group>"; };
+		D41CF5C020E6145900D10B3A /* ZPScreenGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPScreenGestureViewController.h; sourceTree = "<group>"; };
+		D41CF5C120E6145900D10B3A /* ZPScreenGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPScreenGestureViewController.m; sourceTree = "<group>"; };
 		D420DB9420CE631E0080C931 /* UIButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIButtonViewController.h; sourceTree = "<group>"; };
 		D420DB9520CE631E0080C931 /* UIButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIButtonViewController.m; sourceTree = "<group>"; };
 		D420DB9A20CE74BC0080C931 /* ZPButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPButton.h; sourceTree = "<group>"; };
@@ -305,9 +312,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D41CF5BF20E6143600D10B3A /* 从屏幕边缘滑动手势 */ = {
+			isa = PBXGroup;
+			children = (
+				D41CF5C020E6145900D10B3A /* ZPScreenGestureViewController.h */,
+				D41CF5C120E6145900D10B3A /* ZPScreenGestureViewController.m */,
+			);
+			path = "从屏幕边缘滑动手势";
+			sourceTree = "<group>";
+		};
+		D41CF5C320E619DB00D10B3A /* 转场动画 */ = {
+			isa = PBXGroup;
+			children = (
+				D41CF5C420E619F400D10B3A /* 3dTouch */,
+			);
+			path = "转场动画";
+			sourceTree = "<group>";
+		};
+		D41CF5C420E619F400D10B3A /* 3dTouch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 3dTouch;
+			sourceTree = "<group>";
+		};
 		D420DB9220CE62E80080C931 /* UI设计 */ = {
 			isa = PBXGroup;
 			children = (
+				D41CF5C320E619DB00D10B3A /* 转场动画 */,
 				D489966A20D8AD6200E71DCA /* 手势 */,
 				D420DB9320CE62FA0080C931 /* UIButton */,
 			);
@@ -455,6 +487,8 @@
 				D436843720E39BC40082BC58 /* ZPTestsGestureRecognizerViewController.m */,
 				D43D1BD120E3324100B776D6 /* ZPTestGestureRecognizerViewController.h */,
 				D43D1BD220E3324100B776D6 /* ZPTestGestureRecognizerViewController.m */,
+				D41CF5BB20E6063B00D10B3A /* ZPBasePropertyGestureViewController.h */,
+				D41CF5BC20E6063B00D10B3A /* ZPBasePropertyGestureViewController.m */,
 			);
 			path = "手势实验";
 			sourceTree = "<group>";
@@ -462,6 +496,7 @@
 		D489966A20D8AD6200E71DCA /* 手势 */ = {
 			isa = PBXGroup;
 			children = (
+				D41CF5BF20E6143600D10B3A /* 从屏幕边缘滑动手势 */,
 				D4CC6D7320E4E12400D5B059 /* 长按手势 */,
 				D4CC6D6A20E4AA6000D5B059 /* 轻扫手势 */,
 				D4CC6D6920E4AA5100D5B059 /* 旋转缩放手势 */,
@@ -708,9 +743,11 @@
 				D420DB9C20CE74BC0080C931 /* ZPButton.m in Sources */,
 				D4D5496420D23B8E007E32B3 /* ZPWKWebViewController.m in Sources */,
 				D489967E20D8B1FD00E71DCA /* JFGestureListModel.m in Sources */,
+				D41CF5BD20E6063B00D10B3A /* ZPBasePropertyGestureViewController.m in Sources */,
 				D420DB9620CE631E0080C931 /* UIButtonViewController.m in Sources */,
 				D42365A020A8315C00FFFD9E /* MASViewConstraint.m in Sources */,
 				D423659E20A8315C00FFFD9E /* MASLayoutConstraint.m in Sources */,
+				D41CF5C220E6145900D10B3A /* ZPScreenGestureViewController.m in Sources */,
 				D423657B20A8296800FFFD9E /* SectionModel.m in Sources */,
 				D489967720D8AEAF00E71DCA /* JFSKinManager.m in Sources */,
 				D423657820A826FF00FFFD9E /* KnowledgeModel.m in Sources */,
@@ -750,6 +787,7 @@
 				D43D1BE420E35F0B00B776D6 /* ZPButton.m in Sources */,
 				D43D1BE520E35F0B00B776D6 /* ZPWKWebViewController.m in Sources */,
 				D43D1BE620E35F0B00B776D6 /* JFGestureListModel.m in Sources */,
+				D41CF5BE20E6064000D10B3A /* ZPBasePropertyGestureViewController.m in Sources */,
 				D43D1BE720E35F0B00B776D6 /* UIButtonViewController.m in Sources */,
 				D43D1BE820E35F0B00B776D6 /* MASViewConstraint.m in Sources */,
 				D43D1BE920E35F0B00B776D6 /* MASLayoutConstraint.m in Sources */,
