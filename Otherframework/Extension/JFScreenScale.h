@@ -15,4 +15,6 @@
 
 +(double)getHeightFromScale:(CGFloat)num;
 +(double)getWidthFromScale:(CGFloat)num;
++(CGFloat)getDeviceHeight;
++(CGFloat)getDeviceWidth;
 @end

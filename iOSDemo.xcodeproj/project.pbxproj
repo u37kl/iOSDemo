@@ -10,11 +10,12 @@
 		D41CF5BD20E6063B00D10B3A /* ZPBasePropertyGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D41CF5BC20E6063B00D10B3A /* ZPBasePropertyGestureViewController.m */; };
 		D41CF5BE20E6064000D10B3A /* ZPBasePropertyGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D41CF5BC20E6063B00D10B3A /* ZPBasePropertyGestureViewController.m */; };
 		D41CF5C220E6145900D10B3A /* ZPScreenGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D41CF5C120E6145900D10B3A /* ZPScreenGestureViewController.m */; };
+		D41CF5C820E61BCB00D10B3A /* ZPImageBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D41CF5C720E61BCB00D10B3A /* ZPImageBrowseViewController.m */; };
+		D41CF5C920E632E600D10B3A /* ZPImageBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D41CF5C720E61BCB00D10B3A /* ZPImageBrowseViewController.m */; };
 		D420DB9620CE631E0080C931 /* UIButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D420DB9520CE631E0080C931 /* UIButtonViewController.m */; };
 		D420DB9C20CE74BC0080C931 /* ZPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D420DB9B20CE74BC0080C931 /* ZPButton.m */; };
 		D423655E20A8231D00FFFD9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D423655D20A8231D00FFFD9E /* AppDelegate.m */; };
 		D423656120A8231D00FFFD9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D423656020A8231D00FFFD9E /* ViewController.m */; };
-		D423656420A8231D00FFFD9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D423656220A8231D00FFFD9E /* Main.storyboard */; };
 		D423656620A8231D00FFFD9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D423656520A8231D00FFFD9E /* Assets.xcassets */; };
 		D423656920A8231D00FFFD9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D423656720A8231D00FFFD9E /* LaunchScreen.storyboard */; };
 		D423656C20A8231D00FFFD9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D423656B20A8231D00FFFD9E /* main.m */; };
@@ -73,7 +74,6 @@
 		D43D1BFE20E35F0B00B776D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D423656720A8231D00FFFD9E /* LaunchScreen.storyboard */; };
 		D43D1BFF20E35F0B00B776D6 /* SectionList.plist in Resources */ = {isa = PBXBuildFile; fileRef = D423657420A8258F00FFFD9E /* SectionList.plist */; };
 		D43D1C0020E35F0B00B776D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D423656520A8231D00FFFD9E /* Assets.xcassets */; };
-		D43D1C0120E35F0B00B776D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D423656220A8231D00FFFD9E /* Main.storyboard */; };
 		D43D1C0220E35F0B00B776D6 /* iOSDemoiPad-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D48EE1F020DAB08600356465 /* iOSDemoiPad-info.plist */; };
 		D489966D20D8AD9700E71DCA /* ZPGestureRecognizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D489966C20D8AD9600E71DCA /* ZPGestureRecognizerViewController.m */; };
 		D489967620D8AEAF00E71DCA /* JFDefaultSkin.m in Sources */ = {isa = PBXBuildFile; fileRef = D489967120D8AEAE00E71DCA /* JFDefaultSkin.m */; };
@@ -110,9 +110,10 @@
 		D48EE16320DAAF7A00356465 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D423656720A8231D00FFFD9E /* LaunchScreen.storyboard */; };
 		D48EE16520DAAF7A00356465 /* SectionList.plist in Resources */ = {isa = PBXBuildFile; fileRef = D423657420A8258F00FFFD9E /* SectionList.plist */; };
 		D48EE16620DAAF7A00356465 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D423656520A8231D00FFFD9E /* Assets.xcassets */; };
-		D48EE16720DAAF7A00356465 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D423656220A8231D00FFFD9E /* Main.storyboard */; };
 		D48EE1F120DAB08600356465 /* iOSDemoiPad-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D48EE1F020DAB08600356465 /* iOSDemoiPad-info.plist */; };
 		D4A2641420DCE41600E778B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D423655D20A8231D00FFFD9E /* AppDelegate.m */; };
+		D4C76CE220E9D88500815A03 /* ZPImageBrowseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C76CE120E9D88500815A03 /* ZPImageBrowseModel.m */; };
+		D4C76CE320E9E5AC00815A03 /* ZPImageBrowseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C76CE120E9D88500815A03 /* ZPImageBrowseModel.m */; };
 		D4CC6D5920E4857100D5B059 /* ZPPanGestureTest1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CC6D5820E4857100D5B059 /* ZPPanGestureTest1ViewController.m */; };
 		D4CC6D5E20E4895100D5B059 /* libAFile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4CC6D6020E4895100D5B059 /* libAFile.a */; };
 		D4CC6D5F20E4895100D5B059 /* Otherframework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4CC6D6120E4895100D5B059 /* Otherframework.framework */; };
@@ -194,6 +195,8 @@
 		D41CF5BC20E6063B00D10B3A /* ZPBasePropertyGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPBasePropertyGestureViewController.m; sourceTree = "<group>"; };
 		D41CF5C020E6145900D10B3A /* ZPScreenGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPScreenGestureViewController.h; sourceTree = "<group>"; };
 		D41CF5C120E6145900D10B3A /* ZPScreenGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPScreenGestureViewController.m; sourceTree = "<group>"; };
+		D41CF5C620E61BCB00D10B3A /* ZPImageBrowseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPImageBrowseViewController.h; sourceTree = "<group>"; };
+		D41CF5C720E61BCB00D10B3A /* ZPImageBrowseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPImageBrowseViewController.m; sourceTree = "<group>"; };
 		D420DB9420CE631E0080C931 /* UIButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIButtonViewController.h; sourceTree = "<group>"; };
 		D420DB9520CE631E0080C931 /* UIButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIButtonViewController.m; sourceTree = "<group>"; };
 		D420DB9A20CE74BC0080C931 /* ZPButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPButton.h; sourceTree = "<group>"; };
@@ -203,7 +206,6 @@
 		D423655D20A8231D00FFFD9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D423655F20A8231D00FFFD9E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D423656020A8231D00FFFD9E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D423656320A8231D00FFFD9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D423656520A8231D00FFFD9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D423656820A8231D00FFFD9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D423656A20A8231D00FFFD9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -271,6 +273,8 @@
 		D48EE16F20DAAF7A00356465 /* iOSDemoiPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemoiPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D48EE1F020DAB08600356465 /* iOSDemoiPad-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iOSDemoiPad-info.plist"; sourceTree = "<group>"; };
 		D4A263FC20DCE21B00E778B3 /* testDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C76CE020E9D88500815A03 /* ZPImageBrowseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPImageBrowseModel.h; sourceTree = "<group>"; };
+		D4C76CE120E9D88500815A03 /* ZPImageBrowseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPImageBrowseModel.m; sourceTree = "<group>"; };
 		D4CC6D5720E4857100D5B059 /* ZPPanGestureTest1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPPanGestureTest1ViewController.h; sourceTree = "<group>"; };
 		D4CC6D5820E4857100D5B059 /* ZPPanGestureTest1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPPanGestureTest1ViewController.m; sourceTree = "<group>"; };
 		D4CC6D6020E4895100D5B059 /* libAFile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFile.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -336,9 +340,21 @@
 			path = 3dTouch;
 			sourceTree = "<group>";
 		};
+		D41CF5C520E61BA100D10B3A /* 图片浏览器 */ = {
+			isa = PBXGroup;
+			children = (
+				D41CF5C620E61BCB00D10B3A /* ZPImageBrowseViewController.h */,
+				D41CF5C720E61BCB00D10B3A /* ZPImageBrowseViewController.m */,
+				D4C76CE020E9D88500815A03 /* ZPImageBrowseModel.h */,
+				D4C76CE120E9D88500815A03 /* ZPImageBrowseModel.m */,
+			);
+			path = "图片浏览器";
+			sourceTree = "<group>";
+		};
 		D420DB9220CE62E80080C931 /* UI设计 */ = {
 			isa = PBXGroup;
 			children = (
+				D4C76CE420EA33F000815A03 /* UIScrollView */,
 				D41CF5C320E619DB00D10B3A /* 转场动画 */,
 				D489966A20D8AD6200E71DCA /* 手势 */,
 				D420DB9320CE62FA0080C931 /* UIButton */,
@@ -392,7 +408,6 @@
 				D423655D20A8231D00FFFD9E /* AppDelegate.m */,
 				D423655F20A8231D00FFFD9E /* ViewController.h */,
 				D423656020A8231D00FFFD9E /* ViewController.m */,
-				D423656220A8231D00FFFD9E /* Main.storyboard */,
 				D423656520A8231D00FFFD9E /* Assets.xcassets */,
 				D423656720A8231D00FFFD9E /* LaunchScreen.storyboard */,
 				D423656A20A8231D00FFFD9E /* Info.plist */,
@@ -496,6 +511,7 @@
 		D489966A20D8AD6200E71DCA /* 手势 */ = {
 			isa = PBXGroup;
 			children = (
+				D41CF5C520E61BA100D10B3A /* 图片浏览器 */,
 				D41CF5BF20E6143600D10B3A /* 从屏幕边缘滑动手势 */,
 				D4CC6D7320E4E12400D5B059 /* 长按手势 */,
 				D4CC6D6A20E4AA6000D5B059 /* 轻扫手势 */,
@@ -533,6 +549,21 @@
 				D4CC6D6120E4895100D5B059 /* Otherframework.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4C76CE420EA33F000815A03 /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				D4C76CE520EA33FC00815A03 /* UIScrollView嵌套 */,
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		D4C76CE520EA33FC00815A03 /* UIScrollView嵌套 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "UIScrollView嵌套";
 			sourceTree = "<group>";
 		};
 		D4CC6D5620E4854F00D5B059 /* 拖拽手势 */ = {
@@ -696,7 +727,6 @@
 				D423656920A8231D00FFFD9E /* LaunchScreen.storyboard in Resources */,
 				D423657520A8258F00FFFD9E /* SectionList.plist in Resources */,
 				D423656620A8231D00FFFD9E /* Assets.xcassets in Resources */,
-				D423656420A8231D00FFFD9E /* Main.storyboard in Resources */,
 				D48EE1F120DAB08600356465 /* iOSDemoiPad-info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -708,7 +738,6 @@
 				D43D1BFE20E35F0B00B776D6 /* LaunchScreen.storyboard in Resources */,
 				D43D1BFF20E35F0B00B776D6 /* SectionList.plist in Resources */,
 				D43D1C0020E35F0B00B776D6 /* Assets.xcassets in Resources */,
-				D43D1C0120E35F0B00B776D6 /* Main.storyboard in Resources */,
 				D43D1C0220E35F0B00B776D6 /* iOSDemoiPad-info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -720,7 +749,6 @@
 				D48EE16320DAAF7A00356465 /* LaunchScreen.storyboard in Resources */,
 				D48EE16520DAAF7A00356465 /* SectionList.plist in Resources */,
 				D48EE16620DAAF7A00356465 /* Assets.xcassets in Resources */,
-				D48EE16720DAAF7A00356465 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -759,6 +787,8 @@
 				D423659B20A8315C00FFFD9E /* MASCompositeConstraint.m in Sources */,
 				D4CC6D7620E4E14100D5B059 /* ZPLongPressViewController.m in Sources */,
 				D42365A220A8315C00FFFD9E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				D41CF5C820E61BCB00D10B3A /* ZPImageBrowseViewController.m in Sources */,
+				D4C76CE220E9D88500815A03 /* ZPImageBrowseModel.m in Sources */,
 				D423659D20A8315C00FFFD9E /* MASConstraintMaker.m in Sources */,
 				D423656120A8231D00FFFD9E /* ViewController.m in Sources */,
 				D436843920E39BC40082BC58 /* ZPTestsGestureRecognizerViewController.m in Sources */,
@@ -776,6 +806,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4CC6D7220E4E09900D5B059 /* ZPTapGestureViewController.m in Sources */,
+				D41CF5C920E632E600D10B3A /* ZPImageBrowseViewController.m in Sources */,
 				D43D1BDC20E35F0B00B776D6 /* JFDefaultSkin.m in Sources */,
 				D43D1BDD20E35F0B00B776D6 /* MASConstraint.m in Sources */,
 				D43D1BDE20E35F0B00B776D6 /* MASViewAttribute.m in Sources */,
@@ -789,6 +820,7 @@
 				D43D1BE620E35F0B00B776D6 /* JFGestureListModel.m in Sources */,
 				D41CF5BE20E6064000D10B3A /* ZPBasePropertyGestureViewController.m in Sources */,
 				D43D1BE720E35F0B00B776D6 /* UIButtonViewController.m in Sources */,
+				D4C76CE320E9E5AC00815A03 /* ZPImageBrowseModel.m in Sources */,
 				D43D1BE820E35F0B00B776D6 /* MASViewConstraint.m in Sources */,
 				D43D1BE920E35F0B00B776D6 /* MASLayoutConstraint.m in Sources */,
 				D43D1BEA20E35F0B00B776D6 /* SectionModel.m in Sources */,
@@ -852,14 +884,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D423656220A8231D00FFFD9E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D423656320A8231D00FFFD9E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D423656720A8231D00FFFD9E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

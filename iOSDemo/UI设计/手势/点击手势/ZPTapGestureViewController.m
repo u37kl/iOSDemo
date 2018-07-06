@@ -43,18 +43,28 @@
         make.right.bottom.equalTo(self.view).offset(-90);
     }];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]  initWithTarget:self action:@selector(rotationGestureHandle:)];
-    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc]  initWithTarget:self action:@selector(rotationGestureHandle:)];
+    tap.delaysTouchesEnded = YES;
+    tap.name = @"UITapGestureRecognizer";
     tap.delegate = self;
+    
+    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc]  initWithTarget:self action:@selector(rotationGestureHandle:)];
+    longPress.name = @"UILongPressGestureRecognizer";
     longPress.delegate = self;
     [redView addGestureRecognizer:tap];
     [redView addGestureRecognizer:longPress];
+    
+}
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+{
+    NSLog(@"%@ --- %@", gestureRecognizer.name, otherGestureRecognizer.name);
+    return YES;
 }
 
 
 -(void)rotationGestureHandle:(UIGestureRecognizer  *)gesture
 {
     if ([gesture isKindOfClass:[UITapGestureRecognizer class]]) {
-        
         NSLog(@"用户点击图片");
     }else if([gesture isKindOfClass:[UILongPressGestureRecognizer class]]){
         NSLog(@"用户长按图片");
@@ -67,14 +77,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

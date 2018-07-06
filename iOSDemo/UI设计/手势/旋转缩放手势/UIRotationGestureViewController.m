@@ -59,8 +59,11 @@
         ro.rotation = 0;
     }else if([gesture isKindOfClass:[UIPinchGestureRecognizer class]]){
         UIPinchGestureRecognizer *pin = (UIPinchGestureRecognizer *)gesture;
+        CGFloat x = self.redView.width *pin.scale - self.redView.width;
+        CGFloat y = self.redView.height *pin.scale - self.redView.height;
         self.redView.transform = CGAffineTransformScale(self.redView.transform, pin.scale, pin.scale);
         pin.scale = 1;
+        
         NSLog(@"%f --- %@", pin.scale,NSStringFromCGRect(self.redView.frame));
     }
 

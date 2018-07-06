@@ -142,6 +142,12 @@
         model8.viewControllerName = @"ZPScreenGestureViewController";
         [arr addObject:model8];
         
+        JFGestureListModel *model9 = [[JFGestureListModel alloc] init];
+        model9.title = @"图片浏览器";
+        model9.viewControllerName = @"ZPImageBrowseViewController";
+        [arr addObject:model9];
+        
+
         
         _dataSource = arr;
     }

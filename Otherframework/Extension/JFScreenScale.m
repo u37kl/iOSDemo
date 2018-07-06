@@ -95,4 +95,13 @@ static JFScreenScale *_screenScale;
     return ceil(temp);
 }
 
++(CGFloat)getDeviceHeight
+{
+    return [UIScreen mainScreen].bounds.size.height;
+}
++(CGFloat)getDeviceWidth
+{
+    return [UIScreen mainScreen].bounds.size.width;
+}
+
 @end
