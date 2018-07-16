@@ -23,6 +23,14 @@
 				<key>className</key>
 				<string>ZPGestureRecognizerViewController</string>
 			</dict>
+			<dict>
+				<key>name</key>
+				<string>UIScrollView</string>
+				<key>description</key>
+				<string>UIScrollView控件</string>
+				<key>className</key>
+				<string>ZPFile3DScrollViewController</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>

@@ -112,6 +112,12 @@
 		D48EE16620DAAF7A00356465 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D423656520A8231D00FFFD9E /* Assets.xcassets */; };
 		D48EE1F120DAB08600356465 /* iOSDemoiPad-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D48EE1F020DAB08600356465 /* iOSDemoiPad-info.plist */; };
 		D4A2641420DCE41600E778B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D423655D20A8231D00FFFD9E /* AppDelegate.m */; };
+		D4B1EF7120F6EC6D00A01161 /* ZPFile3DScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B1EF7020F6EC6D00A01161 /* ZPFile3DScrollViewController.m */; };
+		D4B1EF7420F6EDCB00A01161 /* ZPRepeatPlayScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B1EF7320F6EDCB00A01161 /* ZPRepeatPlayScrollView.m */; };
+		D4B1EF7520F7117500A01161 /* ZPFile3DScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B1EF7020F6EC6D00A01161 /* ZPFile3DScrollViewController.m */; };
+		D4B1EF7620F7119200A01161 /* ZPRepeatPlayScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B1EF7320F6EDCB00A01161 /* ZPRepeatPlayScrollView.m */; };
+		D4B1EF7920F859E900A01161 /* ZPPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B1EF7820F859E900A01161 /* ZPPageControl.m */; };
+		D4B1EF7A20F859EA00A01161 /* ZPPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B1EF7820F859E900A01161 /* ZPPageControl.m */; };
 		D4C76CE220E9D88500815A03 /* ZPImageBrowseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C76CE120E9D88500815A03 /* ZPImageBrowseModel.m */; };
 		D4C76CE320E9E5AC00815A03 /* ZPImageBrowseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C76CE120E9D88500815A03 /* ZPImageBrowseModel.m */; };
 		D4CC6D5920E4857100D5B059 /* ZPPanGestureTest1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CC6D5820E4857100D5B059 /* ZPPanGestureTest1ViewController.m */; };
@@ -125,6 +131,8 @@
 		D4CC6D7620E4E14100D5B059 /* ZPLongPressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CC6D7520E4E14100D5B059 /* ZPLongPressViewController.m */; };
 		D4CC6D7720E4E2C600D5B059 /* ZPLongPressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CC6D7520E4E14100D5B059 /* ZPLongPressViewController.m */; };
 		D4D5496420D23B8E007E32B3 /* ZPWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D5496320D23B8E007E32B3 /* ZPWKWebViewController.m */; };
+		D4FFE02220F30D6A00ED8276 /* ZPScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FFE02120F30D6A00ED8276 /* ZPScrollViewController.m */; };
+		D4FFE02320F30F5200ED8276 /* ZPScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FFE02120F30D6A00ED8276 /* ZPScrollViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -273,6 +281,12 @@
 		D48EE16F20DAAF7A00356465 /* iOSDemoiPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemoiPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D48EE1F020DAB08600356465 /* iOSDemoiPad-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iOSDemoiPad-info.plist"; sourceTree = "<group>"; };
 		D4A263FC20DCE21B00E778B3 /* testDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4B1EF6F20F6EC6D00A01161 /* ZPFile3DScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPFile3DScrollViewController.h; sourceTree = "<group>"; };
+		D4B1EF7020F6EC6D00A01161 /* ZPFile3DScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPFile3DScrollViewController.m; sourceTree = "<group>"; };
+		D4B1EF7220F6EDCB00A01161 /* ZPRepeatPlayScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPRepeatPlayScrollView.h; sourceTree = "<group>"; };
+		D4B1EF7320F6EDCB00A01161 /* ZPRepeatPlayScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPRepeatPlayScrollView.m; sourceTree = "<group>"; };
+		D4B1EF7720F859E900A01161 /* ZPPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPPageControl.h; sourceTree = "<group>"; };
+		D4B1EF7820F859E900A01161 /* ZPPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPPageControl.m; sourceTree = "<group>"; };
 		D4C76CE020E9D88500815A03 /* ZPImageBrowseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPImageBrowseModel.h; sourceTree = "<group>"; };
 		D4C76CE120E9D88500815A03 /* ZPImageBrowseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPImageBrowseModel.m; sourceTree = "<group>"; };
 		D4CC6D5720E4857100D5B059 /* ZPPanGestureTest1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPPanGestureTest1ViewController.h; sourceTree = "<group>"; };
@@ -287,6 +301,8 @@
 		D4CC6D7520E4E14100D5B059 /* ZPLongPressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPLongPressViewController.m; sourceTree = "<group>"; };
 		D4D5496220D23B8E007E32B3 /* ZPWKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPWKWebViewController.h; sourceTree = "<group>"; };
 		D4D5496320D23B8E007E32B3 /* ZPWKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPWKWebViewController.m; sourceTree = "<group>"; };
+		D4FFE02020F30D6A00ED8276 /* ZPScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPScrollViewController.h; sourceTree = "<group>"; };
+		D4FFE02120F30D6A00ED8276 /* ZPScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPScrollViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -551,9 +567,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D4B1EF6E20F6EBD800A01161 /* 文件3D浏览 */ = {
+			isa = PBXGroup;
+			children = (
+				D4B1EF6F20F6EC6D00A01161 /* ZPFile3DScrollViewController.h */,
+				D4B1EF7020F6EC6D00A01161 /* ZPFile3DScrollViewController.m */,
+				D4B1EF7220F6EDCB00A01161 /* ZPRepeatPlayScrollView.h */,
+				D4B1EF7320F6EDCB00A01161 /* ZPRepeatPlayScrollView.m */,
+				D4B1EF7720F859E900A01161 /* ZPPageControl.h */,
+				D4B1EF7820F859E900A01161 /* ZPPageControl.m */,
+			);
+			path = "文件3D浏览";
+			sourceTree = "<group>";
+		};
 		D4C76CE420EA33F000815A03 /* UIScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				D4B1EF6E20F6EBD800A01161 /* 文件3D浏览 */,
 				D4C76CE520EA33FC00815A03 /* UIScrollView嵌套 */,
 			);
 			path = UIScrollView;
@@ -562,6 +592,8 @@
 		D4C76CE520EA33FC00815A03 /* UIScrollView嵌套 */ = {
 			isa = PBXGroup;
 			children = (
+				D4FFE02020F30D6A00ED8276 /* ZPScrollViewController.h */,
+				D4FFE02120F30D6A00ED8276 /* ZPScrollViewController.m */,
 			);
 			path = "UIScrollView嵌套";
 			sourceTree = "<group>";
@@ -762,8 +794,10 @@
 				D4CC6D7120E4D62700D5B059 /* ZPTapGestureViewController.m in Sources */,
 				D489967620D8AEAF00E71DCA /* JFDefaultSkin.m in Sources */,
 				D423659C20A8315C00FFFD9E /* MASConstraint.m in Sources */,
+				D4FFE02220F30D6A00ED8276 /* ZPScrollViewController.m in Sources */,
 				D423659F20A8315C00FFFD9E /* MASViewAttribute.m in Sources */,
 				D489966D20D8AD9700E71DCA /* ZPGestureRecognizerViewController.m in Sources */,
+				D4B1EF7420F6EDCB00A01161 /* ZPRepeatPlayScrollView.m in Sources */,
 				D42365A420A8315C00FFFD9E /* ViewController+MASAdditions.m in Sources */,
 				D42365A120A8315C00FFFD9E /* NSArray+MASAdditions.m in Sources */,
 				D423657E20A82A9600FFFD9E /* MainTableViewCell.m in Sources */,
@@ -779,6 +813,7 @@
 				D423657B20A8296800FFFD9E /* SectionModel.m in Sources */,
 				D489967720D8AEAF00E71DCA /* JFSKinManager.m in Sources */,
 				D423657820A826FF00FFFD9E /* KnowledgeModel.m in Sources */,
+				D4B1EF7920F859E900A01161 /* ZPPageControl.m in Sources */,
 				D42365A320A8315C00FFFD9E /* View+MASAdditions.m in Sources */,
 				D42365AC20A8849900FFFD9E /* NSString+Size.m in Sources */,
 				D42365BA20B701C700FFFD9E /* ZPURLSessionViewController.m in Sources */,
@@ -794,6 +829,7 @@
 				D436843920E39BC40082BC58 /* ZPTestsGestureRecognizerViewController.m in Sources */,
 				D43D1BD320E3324100B776D6 /* ZPTestGestureRecognizerViewController.m in Sources */,
 				D4CC6D5920E4857100D5B059 /* ZPPanGestureTest1ViewController.m in Sources */,
+				D4B1EF7120F6EC6D00A01161 /* ZPFile3DScrollViewController.m in Sources */,
 				D4CC6D6D20E4AAC400D5B059 /* UIRotationGestureViewController.m in Sources */,
 				D423656C20A8231D00FFFD9E /* main.m in Sources */,
 				D42365B220A8971200FFFD9E /* UIColor+Custom.m in Sources */,
@@ -809,7 +845,9 @@
 				D41CF5C920E632E600D10B3A /* ZPImageBrowseViewController.m in Sources */,
 				D43D1BDC20E35F0B00B776D6 /* JFDefaultSkin.m in Sources */,
 				D43D1BDD20E35F0B00B776D6 /* MASConstraint.m in Sources */,
+				D4B1EF7A20F859EA00A01161 /* ZPPageControl.m in Sources */,
 				D43D1BDE20E35F0B00B776D6 /* MASViewAttribute.m in Sources */,
+				D4B1EF7620F7119200A01161 /* ZPRepeatPlayScrollView.m in Sources */,
 				D43D1BDF20E35F0B00B776D6 /* ZPGestureRecognizerViewController.m in Sources */,
 				D43D1BE020E35F0B00B776D6 /* ViewController+MASAdditions.m in Sources */,
 				D43D1BE120E35F0B00B776D6 /* NSArray+MASAdditions.m in Sources */,
@@ -821,6 +859,7 @@
 				D41CF5BE20E6064000D10B3A /* ZPBasePropertyGestureViewController.m in Sources */,
 				D43D1BE720E35F0B00B776D6 /* UIButtonViewController.m in Sources */,
 				D4C76CE320E9E5AC00815A03 /* ZPImageBrowseModel.m in Sources */,
+				D4B1EF7520F7117500A01161 /* ZPFile3DScrollViewController.m in Sources */,
 				D43D1BE820E35F0B00B776D6 /* MASViewConstraint.m in Sources */,
 				D43D1BE920E35F0B00B776D6 /* MASLayoutConstraint.m in Sources */,
 				D43D1BEA20E35F0B00B776D6 /* SectionModel.m in Sources */,
@@ -835,6 +874,7 @@
 				D4CC6D7720E4E2C600D5B059 /* ZPLongPressViewController.m in Sources */,
 				D43D1BF320E35F0B00B776D6 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				D43D1BF420E35F0B00B776D6 /* MASConstraintMaker.m in Sources */,
+				D4FFE02320F30F5200ED8276 /* ZPScrollViewController.m in Sources */,
 				D43D1BF520E35F0B00B776D6 /* ViewController.m in Sources */,
 				D436843A20E39BCF0082BC58 /* ZPTestsGestureRecognizerViewController.m in Sources */,
 				D43D1BF620E35F0B00B776D6 /* ZPTestGestureRecognizerViewController.m in Sources */,
