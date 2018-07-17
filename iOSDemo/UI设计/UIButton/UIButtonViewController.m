@@ -10,8 +10,9 @@
 #import <Otherframework/Otherframework.h>
 #import <Otherframework/NSString+Extension.h>
 #import "ZPButton.h"
+#import "Masonry.h"
 @interface UIButtonViewController ()
-
+@property (nonatomic, weak) UIButton *btn;
 @end
 
 @implementation UIButtonViewController
@@ -22,13 +23,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
 //    [self test1];
 //    [self test2];
+    [self test3];
     
-    
-    UIFont *f = [UIFont getPFBWithSize:12];
-    CGSize str1 = [@"呵呵" getSizeFromStrFontSize:12];
-    CGSize str2 = [@"呵呵" getSizeFromStrFontSize:20];
-    CGSize str3 = [@"呵呵哈" getSizeFromStrFontSize:12];
-    NSLog(@"");
 }
 
 #pragma mark - 测试如何从普通状态过渡到选择状态，从选中状态过渡到普通状态
@@ -89,6 +85,65 @@
     btn1.backgroundColor = [UIColor redColor];
     [self.view addSubview:btn1];
 }
+
+-(void)test3{
+    UIButton *btn = [[UIButton alloc] init];
+    btn.backgroundColor = [UIColor redColor];
+    [btn setTitle:@"当前网络不可用，请检查你的网络设置" forState:UIControlStateNormal];
+    [btn setTitle:@"当前网络不可用，请检查你的网络设置" forState:UIControlStateHighlighted];
+    btn.tag = 0;
+    [self.view addSubview:btn];
+    self.btn = btn;
+    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.top.right.equalTo(self.view);
+        make.height.mas_equalTo(0);
+    }];
+    
+    UIButton *btn1 = [[UIButton alloc] init];
+    btn1.backgroundColor = [UIColor redColor];
+    [btn1 addTarget:self action:@selector(updateLayout) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn1];
+    [btn1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.bottom.right.equalTo(self.view);
+        make.height.mas_equalTo(50);
+    }];
+    
+    UIView *subView = [[UIView alloc] init];
+    subView.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:subView];
+    [subView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self.view);
+        make.top.equalTo(btn.mas_bottom);
+        make.bottom.equalTo(btn1.mas_top);
+    }];
+}
+
+-(void)updateLayout
+{
+    if (self.btn.tag == 0) {
+        
+        [self.btn mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.height.mas_equalTo(60);
+        }];
+        self.btn.tag = 1;
+    }else{
+        [self.btn mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.height.mas_equalTo(0);
+        }];
+        self.btn.tag = 0;
+    }
+    
+    [self.btn setNeedsUpdateConstraints];
+    [UIView animateWithDuration:4 animations:^{
+        [self.view layoutIfNeeded];
+    }];
+    
+    [self.btn setNeedsUpdateConstraints];
+    [UIView animateWithDuration:4 animations:^{
+        [self.view layoutIfNeeded];
+    }];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
