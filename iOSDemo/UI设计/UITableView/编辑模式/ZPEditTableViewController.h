@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#define kZPEditTableViewCell @"ZPEditTableViewCell"
 @interface ZPEditTableViewController : UIViewController
 
 @end

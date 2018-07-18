@@ -14,6 +14,9 @@
 		D41CF5C920E632E600D10B3A /* ZPImageBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D41CF5C720E61BCB00D10B3A /* ZPImageBrowseViewController.m */; };
 		D420DB9620CE631E0080C931 /* UIButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D420DB9520CE631E0080C931 /* UIButtonViewController.m */; };
 		D420DB9C20CE74BC0080C931 /* ZPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D420DB9B20CE74BC0080C931 /* ZPButton.m */; };
+		D420FF1F20FEED6900047B97 /* ZPEditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D420FF1E20FEED6900047B97 /* ZPEditTableViewCell.m */; };
+		D420FF2020FEEE2000047B97 /* ZPEditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D420FF1E20FEED6900047B97 /* ZPEditTableViewCell.m */; };
+		D420FF2520FF31AC00047B97 /* ZPCellSlideTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D420FF2420FF31AC00047B97 /* ZPCellSlideTableViewController.m */; };
 		D423655E20A8231D00FFFD9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D423655D20A8231D00FFFD9E /* AppDelegate.m */; };
 		D423656120A8231D00FFFD9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D423656020A8231D00FFFD9E /* ViewController.m */; };
 		D423656620A8231D00FFFD9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D423656520A8231D00FFFD9E /* Assets.xcassets */; };
@@ -211,6 +214,10 @@
 		D420DB9520CE631E0080C931 /* UIButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIButtonViewController.m; sourceTree = "<group>"; };
 		D420DB9A20CE74BC0080C931 /* ZPButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPButton.h; sourceTree = "<group>"; };
 		D420DB9B20CE74BC0080C931 /* ZPButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPButton.m; sourceTree = "<group>"; };
+		D420FF1D20FEED6900047B97 /* ZPEditTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPEditTableViewCell.h; sourceTree = "<group>"; };
+		D420FF1E20FEED6900047B97 /* ZPEditTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPEditTableViewCell.m; sourceTree = "<group>"; };
+		D420FF2320FF31AC00047B97 /* ZPCellSlideTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPCellSlideTableViewController.h; sourceTree = "<group>"; };
+		D420FF2420FF31AC00047B97 /* ZPCellSlideTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPCellSlideTableViewController.m; sourceTree = "<group>"; };
 		D423655920A8231D00FFFD9E /* iOSDemoiPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemoiPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D423655C20A8231D00FFFD9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D423655D20A8231D00FFFD9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -394,6 +401,22 @@
 			path = UIButton;
 			sourceTree = "<group>";
 		};
+		D420FF2120FF314800047B97 /* cell侧滑 */ = {
+			isa = PBXGroup;
+			children = (
+				D420FF2320FF31AC00047B97 /* ZPCellSlideTableViewController.h */,
+				D420FF2420FF31AC00047B97 /* ZPCellSlideTableViewController.m */,
+			);
+			path = "cell侧滑";
+			sourceTree = "<group>";
+		};
+		D420FF2220FF315400047B97 /* tableView刷新 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "tableView刷新";
+			sourceTree = "<group>";
+		};
 		D423655020A8231D00FFFD9E = {
 			isa = PBXGroup;
 			children = (
@@ -532,6 +555,8 @@
 		D465E9F920FC62DF00D3C957 /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
+				D420FF2220FF315400047B97 /* tableView刷新 */,
+				D420FF2120FF314800047B97 /* cell侧滑 */,
 				D465E9FA20FC631300D3C957 /* 编辑模式 */,
 			);
 			path = UITableView;
@@ -542,6 +567,8 @@
 			children = (
 				D465E9FB20FC639C00D3C957 /* ZPEditTableViewController.h */,
 				D465E9FC20FC639C00D3C957 /* ZPEditTableViewController.m */,
+				D420FF1D20FEED6900047B97 /* ZPEditTableViewCell.h */,
+				D420FF1E20FEED6900047B97 /* ZPEditTableViewCell.m */,
 			);
 			path = "编辑模式";
 			sourceTree = "<group>";
@@ -743,10 +770,10 @@
 				TargetAttributes = {
 					D423655820A8231D00FFFD9E = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					D43D1BDA20E35F0B00B776D6 = {
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					D48EE13E20DAAF7A00356465 = {
 						ProvisioningStyle = Automatic;
@@ -819,6 +846,7 @@
 				D4FFE02220F30D6A00ED8276 /* ZPScrollViewController.m in Sources */,
 				D423659F20A8315C00FFFD9E /* MASViewAttribute.m in Sources */,
 				D489966D20D8AD9700E71DCA /* ZPGestureRecognizerViewController.m in Sources */,
+				D420FF2520FF31AC00047B97 /* ZPCellSlideTableViewController.m in Sources */,
 				D4B1EF7420F6EDCB00A01161 /* ZPRepeatPlayScrollView.m in Sources */,
 				D42365A420A8315C00FFFD9E /* ViewController+MASAdditions.m in Sources */,
 				D42365A120A8315C00FFFD9E /* NSArray+MASAdditions.m in Sources */,
@@ -848,6 +876,7 @@
 				D41CF5C820E61BCB00D10B3A /* ZPImageBrowseViewController.m in Sources */,
 				D4C76CE220E9D88500815A03 /* ZPImageBrowseModel.m in Sources */,
 				D423659D20A8315C00FFFD9E /* MASConstraintMaker.m in Sources */,
+				D420FF1F20FEED6900047B97 /* ZPEditTableViewCell.m in Sources */,
 				D423656120A8231D00FFFD9E /* ViewController.m in Sources */,
 				D436843920E39BC40082BC58 /* ZPTestsGestureRecognizerViewController.m in Sources */,
 				D43D1BD320E3324100B776D6 /* ZPTestGestureRecognizerViewController.m in Sources */,
@@ -891,6 +920,7 @@
 				D465E9FE20FC63A300D3C957 /* ZPEditTableViewController.m in Sources */,
 				D43D1BED20E35F0B00B776D6 /* View+MASAdditions.m in Sources */,
 				D43D1BEE20E35F0B00B776D6 /* NSString+Size.m in Sources */,
+				D420FF2020FEEE2000047B97 /* ZPEditTableViewCell.m in Sources */,
 				D43D1BEF20E35F0B00B776D6 /* ZPURLSessionViewController.m in Sources */,
 				D43D1BF020E35F0B00B776D6 /* iOSNotificationViewController.m in Sources */,
 				D43D1BF120E35F0B00B776D6 /* UIGestureRecognizer+Name.m in Sources */,
@@ -1075,8 +1105,8 @@
 				APP_DISPLAY_NAME = "iPhone默认";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U23ERTLBUC;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3VENH5K5W4;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
@@ -1088,9 +1118,10 @@
 				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anXinZhuoYueOaSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "1951219d-ff58-442d-9d72-eb775210910c";
+				PROVISIONING_PROFILE_SPECIFIER = anxinoasystemDev;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 			};
@@ -1102,9 +1133,9 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				APP_DISPLAY_NAME = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U23ERTLBUC;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3VENH5K5W4;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
@@ -1116,9 +1147,10 @@
 				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anXinZhuoYueOaSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "8e580755-e142-45f9-89ef-30b9383e68b3";
+				PROVISIONING_PROFILE_SPECIFIER = anxinoasystemDistribution;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
@@ -1132,8 +1164,8 @@
 				APP_DISPLAY_NAME = "iPhone默认";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U23ERTLBUC;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3VENH5K5W4;
 				ENABLE_NS_ASSERTIONS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
@@ -1143,9 +1175,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anXinZhuoYueOaSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "1951219d-ff58-442d-9d72-eb775210910c";
+				PROVISIONING_PROFILE_SPECIFIER = anxinoasystemDev;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 			};
@@ -1158,8 +1191,8 @@
 				APP_DISPLAY_NAME = "手机外部测试";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U23ERTLBUC;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3VENH5K5W4;
 				ENABLE_NS_ASSERTIONS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
@@ -1169,9 +1202,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anXinZhuoYueOaSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "1951219d-ff58-442d-9d72-eb775210910c";
+				PROVISIONING_PROFILE_SPECIFIER = anxinoasystemDev;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 			};
@@ -1184,9 +1218,9 @@
 				APP_DISPLAY_NAME = "手机内部测试";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				DEVELOPMENT_TEAM = U23ERTLBUC;
+				DEVELOPMENT_TEAM = 3VENH5K5W4;
 				ENABLE_NS_ASSERTIONS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
@@ -1196,9 +1230,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anXinZhuoYueOaSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "1951219d-ff58-442d-9d72-eb775210910c";
+				PROVISIONING_PROFILE_SPECIFIER = anxinoasystemDev;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 			};
@@ -1210,9 +1245,9 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				APP_DISPLAY_NAME = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U23ERTLBUC;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3VENH5K5W4;
 				ENABLE_NS_ASSERTIONS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
@@ -1222,9 +1257,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anXinZhuoYueOaSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "8e580755-e142-45f9-89ef-30b9383e68b3";
+				PROVISIONING_PROFILE_SPECIFIER = anxinoasystemDistribution;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
@@ -1377,9 +1413,9 @@
 				APP_DISPLAY_NAME = "手机内部测试";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				DEVELOPMENT_TEAM = U23ERTLBUC;
+				DEVELOPMENT_TEAM = 3VENH5K5W4;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
@@ -1391,9 +1427,10 @@
 				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anXinZhuoYueOaSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "1951219d-ff58-442d-9d72-eb775210910c";
+				PROVISIONING_PROFILE_SPECIFIER = anxinoasystemDev;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 			};
@@ -1463,9 +1500,9 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				APP_DISPLAY_NAME = "手机外部测试";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U23ERTLBUC;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3VENH5K5W4;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
@@ -1477,9 +1514,10 @@
 				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zpsss.iOSDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anXinZhuoYueOaSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "8e580755-e142-45f9-89ef-30b9383e68b3";
+				PROVISIONING_PROFILE_SPECIFIER = anxinoasystemDistribution;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 			};
