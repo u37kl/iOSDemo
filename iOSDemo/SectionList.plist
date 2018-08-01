@@ -53,6 +53,14 @@
 				<key>className</key>
 				<string>ZPEditTableViewController</string>
 			</dict>
+			<dict>
+				<key>name</key>
+				<string>UITableiViewCell侧滑</string>
+				<key>description</key>
+				<string>cell的侧滑</string>
+				<key>className</key>
+				<string>ZPCellSlideTableViewController</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>

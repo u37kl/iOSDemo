@@ -40,6 +40,9 @@
 		D42365B220A8971200FFFD9E /* UIColor+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = D42365B120A8971200FFFD9E /* UIColor+Custom.m */; };
 		D42365B620A9DDEF00FFFD9E /* iOSNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42365B520A9DDEF00FFFD9E /* iOSNotificationViewController.m */; };
 		D42365BA20B701C700FFFD9E /* ZPURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42365B920B701C700FFFD9E /* ZPURLSessionViewController.m */; };
+		D4306B7821086C0500947AB6 /* ZPTableSlideCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4306B7721086C0500947AB6 /* ZPTableSlideCell.m */; };
+		D4306B79210875FF00947AB6 /* ZPCellSlideTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D420FF2420FF31AC00047B97 /* ZPCellSlideTableViewController.m */; };
+		D4306B7A2108760400947AB6 /* ZPTableSlideCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4306B7721086C0500947AB6 /* ZPTableSlideCell.m */; };
 		D436843920E39BC40082BC58 /* ZPTestsGestureRecognizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D436843720E39BC40082BC58 /* ZPTestsGestureRecognizerViewController.m */; };
 		D436843A20E39BCF0082BC58 /* ZPTestsGestureRecognizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D436843720E39BC40082BC58 /* ZPTestsGestureRecognizerViewController.m */; };
 		D43D1BD320E3324100B776D6 /* ZPTestGestureRecognizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D43D1BD220E3324100B776D6 /* ZPTestGestureRecognizerViewController.m */; };
@@ -78,6 +81,10 @@
 		D43D1BFF20E35F0B00B776D6 /* SectionList.plist in Resources */ = {isa = PBXBuildFile; fileRef = D423657420A8258F00FFFD9E /* SectionList.plist */; };
 		D43D1C0020E35F0B00B776D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D423656520A8231D00FFFD9E /* Assets.xcassets */; };
 		D43D1C0220E35F0B00B776D6 /* iOSDemoiPad-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D48EE1F020DAB08600356465 /* iOSDemoiPad-info.plist */; };
+		D4609465210EBE720060C61E /* ZPHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4609464210EBE720060C61E /* ZPHomeTableViewCell.m */; };
+		D4609469210EBEC00060C61E /* LYHomeCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D4609468210EBEC00060C61E /* LYHomeCellModel.m */; };
+		D460946A210EBEF60060C61E /* ZPHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4609464210EBE720060C61E /* ZPHomeTableViewCell.m */; };
+		D460946B210EBEF90060C61E /* LYHomeCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D4609468210EBEC00060C61E /* LYHomeCellModel.m */; };
 		D465E9FD20FC639C00D3C957 /* ZPEditTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D465E9FC20FC639C00D3C957 /* ZPEditTableViewController.m */; };
 		D465E9FE20FC63A300D3C957 /* ZPEditTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D465E9FC20FC639C00D3C957 /* ZPEditTableViewController.m */; };
 		D489966D20D8AD9700E71DCA /* ZPGestureRecognizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D489966C20D8AD9600E71DCA /* ZPGestureRecognizerViewController.m */; };
@@ -126,8 +133,6 @@
 		D4C76CE220E9D88500815A03 /* ZPImageBrowseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C76CE120E9D88500815A03 /* ZPImageBrowseModel.m */; };
 		D4C76CE320E9E5AC00815A03 /* ZPImageBrowseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C76CE120E9D88500815A03 /* ZPImageBrowseModel.m */; };
 		D4CC6D5920E4857100D5B059 /* ZPPanGestureTest1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CC6D5820E4857100D5B059 /* ZPPanGestureTest1ViewController.m */; };
-		D4CC6D5E20E4895100D5B059 /* libAFile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4CC6D6020E4895100D5B059 /* libAFile.a */; };
-		D4CC6D5F20E4895100D5B059 /* Otherframework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4CC6D6120E4895100D5B059 /* Otherframework.framework */; };
 		D4CC6D6620E48B1E00D5B059 /* ZPPanGestureTest1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CC6D5820E4857100D5B059 /* ZPPanGestureTest1ViewController.m */; };
 		D4CC6D6D20E4AAC400D5B059 /* UIRotationGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CC6D6C20E4AAC400D5B059 /* UIRotationGestureViewController.m */; };
 		D4CC6D6E20E4AE1C00D5B059 /* UIRotationGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CC6D6C20E4AAC400D5B059 /* UIRotationGestureViewController.m */; };
@@ -269,6 +274,8 @@
 		D42365B520A9DDEF00FFFD9E /* iOSNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSNotificationViewController.m; sourceTree = "<group>"; };
 		D42365B820B701C700FFFD9E /* ZPURLSessionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPURLSessionViewController.h; sourceTree = "<group>"; };
 		D42365B920B701C700FFFD9E /* ZPURLSessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPURLSessionViewController.m; sourceTree = "<group>"; };
+		D4306B7621086C0500947AB6 /* ZPTableSlideCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPTableSlideCell.h; sourceTree = "<group>"; };
+		D4306B7721086C0500947AB6 /* ZPTableSlideCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPTableSlideCell.m; sourceTree = "<group>"; };
 		D436843720E39BC40082BC58 /* ZPTestsGestureRecognizerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPTestsGestureRecognizerViewController.m; sourceTree = "<group>"; };
 		D436843820E39BC40082BC58 /* ZPTestsGestureRecognizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPTestsGestureRecognizerViewController.h; sourceTree = "<group>"; };
 		D43D1BD120E3324100B776D6 /* ZPTestGestureRecognizerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPTestGestureRecognizerViewController.h; sourceTree = "<group>"; };
@@ -277,6 +284,10 @@
 		D43D1BD820E3394500B776D6 /* UIGestureRecognizer+Name.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+Name.m"; sourceTree = "<group>"; };
 		D43D1C0A20E35F0B00B776D6 /* iphoneTestRelease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iphoneTestRelease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D43D1C0B20E35F0B00B776D6 /* iphoneTestRelease-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "iphoneTestRelease-Info.plist"; path = "/Users/ww/Desktop/iOSDemo1/iOSDemo/iphoneTestRelease-Info.plist"; sourceTree = "<absolute>"; };
+		D4609463210EBE720060C61E /* ZPHomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPHomeTableViewCell.h; sourceTree = "<group>"; };
+		D4609464210EBE720060C61E /* ZPHomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPHomeTableViewCell.m; sourceTree = "<group>"; };
+		D4609467210EBEC00060C61E /* LYHomeCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYHomeCellModel.h; sourceTree = "<group>"; };
+		D4609468210EBEC00060C61E /* LYHomeCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYHomeCellModel.m; sourceTree = "<group>"; };
 		D465E9FB20FC639C00D3C957 /* ZPEditTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPEditTableViewController.h; sourceTree = "<group>"; };
 		D465E9FC20FC639C00D3C957 /* ZPEditTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPEditTableViewController.m; sourceTree = "<group>"; };
 		D489966B20D8AD9600E71DCA /* ZPGestureRecognizerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPGestureRecognizerViewController.h; sourceTree = "<group>"; };
@@ -328,8 +339,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4CC6D5E20E4895100D5B059 /* libAFile.a in Frameworks */,
-				D4CC6D5F20E4895100D5B059 /* Otherframework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,8 +413,13 @@
 		D420FF2120FF314800047B97 /* cell侧滑 */ = {
 			isa = PBXGroup;
 			children = (
+				D4609466210EBEB80060C61E /* model */,
 				D420FF2320FF31AC00047B97 /* ZPCellSlideTableViewController.h */,
 				D420FF2420FF31AC00047B97 /* ZPCellSlideTableViewController.m */,
+				D4306B7621086C0500947AB6 /* ZPTableSlideCell.h */,
+				D4306B7721086C0500947AB6 /* ZPTableSlideCell.m */,
+				D4609463210EBE720060C61E /* ZPHomeTableViewCell.h */,
+				D4609464210EBE720060C61E /* ZPHomeTableViewCell.m */,
 			);
 			path = "cell侧滑";
 			sourceTree = "<group>";
@@ -550,6 +564,15 @@
 				D41CF5BC20E6063B00D10B3A /* ZPBasePropertyGestureViewController.m */,
 			);
 			path = "手势实验";
+			sourceTree = "<group>";
+		};
+		D4609466210EBEB80060C61E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D4609467210EBEC00060C61E /* LYHomeCellModel.h */,
+				D4609468210EBEC00060C61E /* LYHomeCellModel.m */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		D465E9F920FC62DF00D3C957 /* UITableView */ = {
@@ -845,11 +868,13 @@
 				D423659C20A8315C00FFFD9E /* MASConstraint.m in Sources */,
 				D4FFE02220F30D6A00ED8276 /* ZPScrollViewController.m in Sources */,
 				D423659F20A8315C00FFFD9E /* MASViewAttribute.m in Sources */,
+				D4609469210EBEC00060C61E /* LYHomeCellModel.m in Sources */,
 				D489966D20D8AD9700E71DCA /* ZPGestureRecognizerViewController.m in Sources */,
 				D420FF2520FF31AC00047B97 /* ZPCellSlideTableViewController.m in Sources */,
 				D4B1EF7420F6EDCB00A01161 /* ZPRepeatPlayScrollView.m in Sources */,
 				D42365A420A8315C00FFFD9E /* ViewController+MASAdditions.m in Sources */,
 				D42365A120A8315C00FFFD9E /* NSArray+MASAdditions.m in Sources */,
+				D4306B7821086C0500947AB6 /* ZPTableSlideCell.m in Sources */,
 				D423657E20A82A9600FFFD9E /* MainTableViewCell.m in Sources */,
 				D489967820D8AEAF00E71DCA /* JFSkinModel.m in Sources */,
 				D420DB9C20CE74BC0080C931 /* ZPButton.m in Sources */,
@@ -861,6 +886,7 @@
 				D465E9FD20FC639C00D3C957 /* ZPEditTableViewController.m in Sources */,
 				D423659E20A8315C00FFFD9E /* MASLayoutConstraint.m in Sources */,
 				D41CF5C220E6145900D10B3A /* ZPScreenGestureViewController.m in Sources */,
+				D4609465210EBE720060C61E /* ZPHomeTableViewCell.m in Sources */,
 				D423657B20A8296800FFFD9E /* SectionModel.m in Sources */,
 				D489967720D8AEAF00E71DCA /* JFSKinManager.m in Sources */,
 				D423657820A826FF00FFFD9E /* KnowledgeModel.m in Sources */,
@@ -904,6 +930,7 @@
 				D43D1BE020E35F0B00B776D6 /* ViewController+MASAdditions.m in Sources */,
 				D43D1BE120E35F0B00B776D6 /* NSArray+MASAdditions.m in Sources */,
 				D43D1BE220E35F0B00B776D6 /* MainTableViewCell.m in Sources */,
+				D460946B210EBEF90060C61E /* LYHomeCellModel.m in Sources */,
 				D43D1BE320E35F0B00B776D6 /* JFSkinModel.m in Sources */,
 				D43D1BE420E35F0B00B776D6 /* ZPButton.m in Sources */,
 				D43D1BE520E35F0B00B776D6 /* ZPWKWebViewController.m in Sources */,
@@ -912,6 +939,7 @@
 				D43D1BE720E35F0B00B776D6 /* UIButtonViewController.m in Sources */,
 				D4C76CE320E9E5AC00815A03 /* ZPImageBrowseModel.m in Sources */,
 				D4B1EF7520F7117500A01161 /* ZPFile3DScrollViewController.m in Sources */,
+				D4306B79210875FF00947AB6 /* ZPCellSlideTableViewController.m in Sources */,
 				D43D1BE820E35F0B00B776D6 /* MASViewConstraint.m in Sources */,
 				D43D1BE920E35F0B00B776D6 /* MASLayoutConstraint.m in Sources */,
 				D43D1BEA20E35F0B00B776D6 /* SectionModel.m in Sources */,
@@ -932,11 +960,13 @@
 				D43D1BF520E35F0B00B776D6 /* ViewController.m in Sources */,
 				D436843A20E39BCF0082BC58 /* ZPTestsGestureRecognizerViewController.m in Sources */,
 				D43D1BF620E35F0B00B776D6 /* ZPTestGestureRecognizerViewController.m in Sources */,
+				D4306B7A2108760400947AB6 /* ZPTableSlideCell.m in Sources */,
 				D4CC6D6620E48B1E00D5B059 /* ZPPanGestureTest1ViewController.m in Sources */,
 				D4CC6D6E20E4AE1C00D5B059 /* UIRotationGestureViewController.m in Sources */,
 				D43D1BF720E35F0B00B776D6 /* main.m in Sources */,
 				D43D1BF820E35F0B00B776D6 /* UIColor+Custom.m in Sources */,
 				D43D1BF920E35F0B00B776D6 /* AppDelegate.m in Sources */,
+				D460946A210EBEF60060C61E /* ZPHomeTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1166,6 +1196,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 3VENH5K5W4;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
@@ -1193,6 +1224,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 3VENH5K5W4;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
@@ -1201,6 +1233,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anXinZhuoYueOaSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1221,6 +1254,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				DEVELOPMENT_TEAM = 3VENH5K5W4;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
@@ -1248,6 +1282,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 3VENH5K5W4;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				GCC_PREFIX_HEADER = iOSDemo/PrefixHeader.pch;
