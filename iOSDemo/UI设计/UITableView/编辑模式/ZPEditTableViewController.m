@@ -33,25 +33,19 @@
     [super viewDidLoad];
     self.view.backgroundColor = [JFSKinManager skinManager].model.backColor;
     self.edgesForExtendedLayout = UIRectEdgeNone;
+    [self setTableViewProperty];
+    [self setRightNavigationBar:@"编辑"];
+    
+}
+#pragma mark - 初始化tableView属性
+- (void)setTableViewProperty
+{
     UITableView *tableView = [[UITableView alloc] init];
     [self.view addSubview:tableView];
     self.tableView = tableView;
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.top.right.bottom.equalTo(self.view);
     }];
-    
-    [self setTableViewProperty];
-    
-    UIButton *btn = [[UIButton alloc] init];
-    [btn setTitle:@"编辑" forState:UIControlStateNormal];
-    [btn setTitle:@"编辑" forState:UIControlStateHighlighted];
-    [btn addTarget:self action:@selector(openEdit:) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
-    
-}
-#pragma mark - 初始化tableView属性
-- (void)setTableViewProperty
-{
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     // 设置索引
@@ -75,6 +69,18 @@
     }
     
     
+}
+
+-(void)setRightNavigationBar:(NSString *)title
+{
+    if ([title isEqualToString:@"编辑"]) {
+        
+    }
+    UIButton *btn = [[UIButton alloc] init];
+    [btn setTitle:title forState:UIControlStateNormal];
+    [btn setTitle:title forState:UIControlStateHighlighted];
+    [btn addTarget:self action:@selector(openEdit:) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
 }
 
 #pragma mark - 数据源方法

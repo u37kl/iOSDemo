@@ -15,6 +15,27 @@ typedef NS_ENUM(NSInteger, ZPSideslipCellState) {
     ZPSideslipCellStateAnimating,
     ZPSideslipCellStateOpen
 };
+#define kLeftMoveEdge 10
+@interface ZPSideslipCellAction ()
+@property (nonatomic, copy) void (^handler)(ZPSideslipCellAction *action, NSIndexPath *indexPath);
+@property (nonatomic, assign) ZPSideslipCellActionStyle style;
+@end
+@implementation ZPSideslipCellAction
++ (instancetype)rowActionWithStyle:(ZPSideslipCellActionStyle)style title:(NSString *)title handler:(void (^)(ZPSideslipCellAction *action, NSIndexPath *indexPath))handler {
+    ZPSideslipCellAction *action = [ZPSideslipCellAction new];
+    action.title = title;
+    action.handler = handler;
+    action.style = style;
+    return action;
+}
+
+- (CGFloat)margin {
+    return _margin == 0 ? 15 : _margin;
+}
+@end
+
+
+
 
 @interface ZPTableSlideCell()
 @property(nonatomic, weak) UIPanGestureRecognizer *contentPan;
@@ -143,8 +164,9 @@ typedef NS_ENUM(NSInteger, ZPSideslipCellState) {
         CGPoint offset = [gesture translationInView:gesture.view];
         if (gestureFrame.origin.x+offset.x > 15) {
             gestureFrame.origin.x = 15;
-        }else if(gestureFrame.origin.x + offset.x < -_btnContainView.frame.size.width){
-            gestureFrame.origin.x = - _btnContainView.frame.size.width;
+        }else if(gestureFrame.origin.x + offset.x < -(_btnContainView.frame.size.width + kLeftMoveEdge)){
+            gestureFrame.origin.x = - (_btnContainView.frame.size.width + kLeftMoveEdge);
+            
         }else{
             gestureFrame.origin.x += offset.x;
         }
@@ -177,7 +199,16 @@ typedef NS_ENUM(NSInteger, ZPSideslipCellState) {
 #pragma mark - 按钮点击方法
 -(void)actionBtnDidClicked:(UIButton *)btn
 {
-    NSLog(@"点击");
+    // 向代理获取侧滑展示内容数组
+    if (self.weakDelegate && [self.weakDelegate respondsToSelector:@selector(slipdeCell:actionListIndexPath:)]) {
+        NSArray <ZPSideslipCellAction*> *actions = [self.weakDelegate slipdeCell:self actionListIndexPath:[self indexPath]];
+        if (actions != nil || actions.count != 0) {
+            ZPSideslipCellAction *action = actions[btn.tag];
+            action.handler(action, [self indexPath]);
+            [self resumeCell];
+        }
+    }
+    
 }
 
 #pragma mark - cell恢复初始状态的动画
@@ -297,25 +328,6 @@ typedef NS_ENUM(NSInteger, ZPSideslipCellState) {
 
 @end
 
-@interface ZPSideslipCellAction ()
-@property (nonatomic, copy) void (^handler)(ZPSideslipCellAction *action, NSIndexPath *indexPath);
-@property (nonatomic, assign) ZPSideslipCellActionStyle style;
-@end
-@implementation ZPSideslipCellAction
-+ (instancetype)rowActionWithStyle:(ZPSideslipCellActionStyle)style title:(NSString *)title handler:(void (^)(ZPSideslipCellAction *action, NSIndexPath *indexPath))handler {
-    ZPSideslipCellAction *action = [ZPSideslipCellAction new];
-    action.title = title;
-    action.handler = handler;
-    action.style = style;
-    return action;
-}
-
-- (CGFloat)margin {
-    return _margin == 0 ? 15 : _margin;
-}
-@end
-
-
 @implementation UITableView (ZPTableSlideCell)
 - (void)resumeAllCell {
     NSIndexPath *index = objc_getAssociatedObject(self, @selector(handleSlipe:));
@@ -323,3 +335,4 @@ typedef NS_ENUM(NSInteger, ZPSideslipCellState) {
     [cell resumeCell];
 }
 @end
+
