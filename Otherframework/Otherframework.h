@@ -11,4 +11,3 @@
 #import "JFScreenScale.h"
 #import "UIFont+Extension.h"
 
-

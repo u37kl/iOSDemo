@@ -8,6 +8,11 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "ZPRomateNotificationManager.h"
+#import <BuglyHotfix/Bugly.h>
+#import <BuglyHotfix/BuglyMender.h>
+#import "JPEngine.h"
+#import "ZPPushNotificationHeader.h"
 @interface AppDelegate ()
 
 @end
@@ -16,13 +21,68 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
     ViewController *mainVC = [[ViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mainVC];
      self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     [self load3DTouch];
+    
+    [ZPRomateNotificationManager shareManager];
+    
     return YES;
+}
+
+-(void)applicationDidBecomeActive:(UIApplication *)application
+{
+//    [self configBugly];
+}
+
+- (void)configBugly {
+    //初始化 Bugly 异常上报
+    BuglyConfig *config = [[BuglyConfig alloc] init];
+    
+    config.delegate = self;
+    config.debugMode = YES;
+    config.reportLogLevel = BuglyLogLevelInfo;
+    [Bugly startWithAppId:@"ebbb5873b9"
+     
+#ifdef MyTestRelease
+        developmentDevice:YES
+#endif
+    config:config];
+    
+    //捕获 JSPatch 异常并上报
+    [JPEngine handleException:^(NSString *msg) {
+        NSException *jspatchException = [NSException exceptionWithName:@"Hotfix Exception" reason:msg userInfo:nil];
+        [Bugly reportException:jspatchException];
+    }];
+    
+    NSDictionary *dict = [BuglyMender sharedMender].currentPatchInfo;
+    NSLog(@"%@ --- %@",dict[@"patchVersion"], dict[@"patchDesc"]);
+    //检测补丁策略
+    [[BuglyMender sharedMender] checkRemoteConfigWithEventHandler:^(BuglyHotfixEvent event, NSDictionary *patchInfo) {
+        //有新补丁或本地补丁状态正常
+        if (event == BuglyHotfixEventPatchValid || event == BuglyHotfixEventNewPatch) {
+            //获取本地补丁路径
+            NSString *patchDirectory = [[BuglyMender sharedMender] patchDirectory];
+            if (patchDirectory) {
+                //指定执行的 js 脚本文件名
+                NSString *patchFileName = @"main.js";
+                NSString *patchFile = [patchDirectory stringByAppendingPathComponent:patchFileName];
+                //执行补丁加载并上报激活状态
+                if ([[NSFileManager defaultManager] fileExistsAtPath:patchFile] &&
+                    [JPEngine evaluateScriptWithPath:patchFile] != nil) {
+                    BLYLogInfo(@"evaluateScript success");
+                    [[BuglyMender sharedMender] reportPatchStatus:BuglyHotfixPatchStatusActiveSucess];
+                }else {
+                    BLYLogInfo(@"evaluateScript failed");
+                    [[BuglyMender sharedMender] reportPatchStatus:BuglyHotfixPatchStatusActiveFail];
+                }
+            }
+        }
+    }];
 }
 
 -(void)load3DTouch
@@ -40,6 +100,61 @@
 
     
 }
+
+#pragma mark - 获取deviceToken
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    [[ZPRomateNotificationManager shareManager] didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
+{
+    [[ZPRomateNotificationManager shareManager] didFailToRegisterForRemoteNotificationsWithError:error];
+}
+
+#pragma mark - iOS10以下接收远程推送
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    [[ZPRomateNotificationManager shareManager] didReceiveRemoteNotification:userInfo];
+    
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+{
+    NSDictionary *dict = userInfo[@"aps"][kBackgroundFetch];
+    [[ZPRomateNotificationManager shareManager] didReceiveRemoteNotification:dict fetchCompletionHandler:completionHandler];
+}
+#pragma mark - iOS10以下接收本地推送
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    [[ZPRomateNotificationManager shareManager] didReceiveLocalNotification:notification];
+}
+
+#pragma mark - iOS8推送消息点击处理方法
+- (void)application:(UIApplication *)application handleActionWithIdentifier:(NSString *)identifier forLocalNotification:(UILocalNotification *)notification completionHandler:(void (^)())completionHandler
+{
+
+    completionHandler();
+}
+
+- (void)application:(UIApplication *)application handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo completionHandler:(void (^)())completionHandler
+{
+    completionHandler();
+}
+
+#pragma mark - iOS9推送消息点击处理方法
+- (void)application:(UIApplication *)application handleActionWithIdentifier:(nullable NSString *)identifier forLocalNotification:(UILocalNotification *)notification withResponseInfo:(NSDictionary *)responseInfo completionHandler:(void(^)())completionHandler{
+    
+    completionHandler();
+    
+}
+
+- (void)application:(UIApplication *)application handleActionWithIdentifier:(nullable NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo withResponseInfo:(NSDictionary *)responseInfo completionHandler:(void(^)())completionHandler{
+    
+    completionHandler();
+}
+
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -59,14 +174,12 @@
 }
 
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
 
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
 
 
 @end

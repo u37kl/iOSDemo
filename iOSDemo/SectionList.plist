@@ -93,5 +93,20 @@
 			</dict>
 		</array>
 	</dict>
+	<dict>
+		<key>description</key>
+		<string>iOS推送</string>
+		<key>dataSource</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>iOS本地推送</string>
+				<key>description</key>
+				<string>从iOS7～iOS10</string>
+				<key>className</key>
+				<string>ZPPushNotificationViewController</string>
+			</dict>
+		</array>
+	</dict>
 </array>
 </plist>
