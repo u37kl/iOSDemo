@@ -47,8 +47,6 @@ static ZPRomateNotificationManager *_manager = nil;
 {
     
     if (self = [super init]) {
-        [[UNUserNotificationCenter currentNotificationCenter] removeAllPendingNotificationRequests];
-        [[UNUserNotificationCenter currentNotificationCenter]removeAllDeliveredNotifications];
         double version = [[UIDevice currentDevice].systemVersion doubleValue];
         if(@available(iOS 10, *)){
             // 获取通知中心

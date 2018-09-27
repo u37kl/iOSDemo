@@ -11,7 +11,9 @@
 @protocol ZPRomationNotificationProtocol <NSObject>
 -(void)didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
 -(void)didFailToRegisterForRemoteNotificationsWithError:(NSError *)error;
+// iOS10以下的远程推送调用
 - (void)didReceiveRemoteNotification:(NSDictionary *)userInfo;
+// iOS静默推送调用
 - (void)didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler;
 
 - (void)didReceiveLocalNotification:(UILocalNotification *)notification;

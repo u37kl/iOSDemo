@@ -108,5 +108,50 @@
 			</dict>
 		</array>
 	</dict>
+	<dict>
+		<key>description</key>
+		<string>iOS动画</string>
+		<key>dataSource</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>基础动画</string>
+				<key>description</key>
+				<string>属性动画、关键帧动画</string>
+				<key>className</key>
+				<string>ZPBaseTableViewAnimiationController</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>绘图</string>
+		<key>dataSource</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>CALayer</string>
+				<key>description</key>
+				<string>CALayer基础属性</string>
+				<key>className</key>
+				<string>ZPCALayerViewController</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>网络</string>
+		<key>dataSource</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>获取基础信息</string>
+				<key>description</key>
+				<string>获取ip、mac地址</string>
+				<key>className</key>
+				<string>ZPURLSessionViewController</string>
+			</dict>
+		</array>
+	</dict>
 </array>
 </plist>

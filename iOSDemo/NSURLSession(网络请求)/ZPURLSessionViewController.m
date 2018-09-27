@@ -7,7 +7,7 @@
 //
 
 #import "ZPURLSessionViewController.h"
-
+#import "JFNetTool.h"
 @interface ZPURLSessionViewController ()<NSURLSessionDelegate>
 
 @end
@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     NSURLSessionConfiguration *con = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:con delegate:self delegateQueue:nil];
     
@@ -26,14 +27,18 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    NSURL *ipURL = [NSURL URLWithString:@"http://ip.taobao.com/service/getIpInfo.php?ip=myip"];    NSData *data = [NSData dataWithContentsOfURL:ipURL];    NSDictionary *ipDic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];     NSString *ipStr = nil;
+    if (ipDic && [ipDic[@"code"] integerValue] == 0) { //获取成功
+        ipStr = ipDic[@"data"][@"ip"];
+    }
+    
+    NSError *error;
+    NSURL *ipURLs = [NSURL URLWithString:@"http://ifconfig.me/ip"];
+    NSString *ip = [NSString stringWithContentsOfURL:ipURLs encoding:NSUTF8StringEncoding error:&error];
+    NSLog(@"");
+    
 }
-*/
 
 @end
