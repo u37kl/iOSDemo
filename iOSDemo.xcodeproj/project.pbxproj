@@ -97,8 +97,10 @@
 		D4669046213919DD009633B4 /* ZPBezierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4669044213919DD009633B4 /* ZPBezierViewController.m */; };
 		D4670F7F212EAA0E00A6A2EA /* ZPBaseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4670F7E212EAA0E00A6A2EA /* ZPBaseAnimationViewController.m */; };
 		D4670F80212EAC0400A6A2EA /* ZPBaseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4670F7E212EAA0E00A6A2EA /* ZPBaseAnimationViewController.m */; };
-		D473E501216F4DAE0043A9F6 /* ZPTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D473E500216F4DAE0043A9F6 /* ZPTabBarViewController.m */; };
-		D473E502216F4DAE0043A9F6 /* ZPTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D473E500216F4DAE0043A9F6 /* ZPTabBarViewController.m */; };
+		D469FF52217473FD00155E26 /* ZPBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D469FF51217473FD00155E26 /* ZPBaseTabBarController.m */; };
+		D469FF53217473FD00155E26 /* ZPBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D469FF51217473FD00155E26 /* ZPBaseTabBarController.m */; };
+		D469FF562174741000155E26 /* ZPTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D469FF552174741000155E26 /* ZPTabBarViewController.m */; };
+		D469FF572174741000155E26 /* ZPTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D469FF552174741000155E26 /* ZPTabBarViewController.m */; };
 		D473E52E21706C170043A9F6 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D473E52D21706C170043A9F6 /* NotificationCenter.framework */; };
 		D473E53221706C170043A9F6 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D473E53121706C170043A9F6 /* TodayViewController.m */; };
 		D473E53521706C170043A9F6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D473E53321706C170043A9F6 /* MainInterface.storyboard */; };
@@ -392,8 +394,10 @@
 		D4669044213919DD009633B4 /* ZPBezierViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPBezierViewController.m; sourceTree = "<group>"; };
 		D4670F7D212EAA0E00A6A2EA /* ZPBaseAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPBaseAnimationViewController.h; sourceTree = "<group>"; };
 		D4670F7E212EAA0E00A6A2EA /* ZPBaseAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPBaseAnimationViewController.m; sourceTree = "<group>"; };
-		D473E4FF216F4DAE0043A9F6 /* ZPTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPTabBarViewController.h; sourceTree = "<group>"; };
-		D473E500216F4DAE0043A9F6 /* ZPTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPTabBarViewController.m; sourceTree = "<group>"; };
+		D469FF50217473FD00155E26 /* ZPBaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPBaseTabBarController.h; sourceTree = "<group>"; };
+		D469FF51217473FD00155E26 /* ZPBaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPBaseTabBarController.m; sourceTree = "<group>"; };
+		D469FF542174741000155E26 /* ZPTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPTabBarViewController.h; sourceTree = "<group>"; };
+		D469FF552174741000155E26 /* ZPTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPTabBarViewController.m; sourceTree = "<group>"; };
 		D473E52C21706C170043A9F6 /* watch.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = watch.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D473E52D21706C170043A9F6 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		D473E53021706C170043A9F6 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
@@ -647,12 +651,13 @@
 		D423655B20A8231D00FFFD9E /* iOSDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D469FF582174746E00155E26 /* ThirdLib(第三方框架) */,
+				D469FF4E2174738400155E26 /* Main(主框架) */,
 				D49A94202147928C007C6B29 /* BaseLib(基础控件) */,
 				D4A43CE9212C192B00F59FA5 /* Animation(动画) */,
 				D4A43CE3212BE55500F59FA5 /* DrawImage(绘图) */,
 				D47D45042124295000E95DE4 /* resource(资源) */,
 				D47AA38D21198FC1004EA825 /* lib */,
-				D489966F20D8AEAE00E71DCA /* 皮肤管理 */,
 				D4D5496120D23B6F007E32B3 /* web */,
 				D420DB9220CE62E80080C931 /* UI设计 */,
 				D42365B720B7017300FFFD9E /* NSURLSession(网络请求) */,
@@ -837,6 +842,39 @@
 			path = "基本动画";
 			sourceTree = "<group>";
 		};
+		D469FF4E2174738400155E26 /* Main(主框架) */ = {
+			isa = PBXGroup;
+			children = (
+				D469FF5A217474CA00155E26 /* Manager(系统管理) */,
+				D469FF4F217473BA00155E26 /* TabBarController */,
+			);
+			path = "Main(主框架)";
+			sourceTree = "<group>";
+		};
+		D469FF4F217473BA00155E26 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				D469FF542174741000155E26 /* ZPTabBarViewController.h */,
+				D469FF552174741000155E26 /* ZPTabBarViewController.m */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		D469FF582174746E00155E26 /* ThirdLib(第三方框架) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "ThirdLib(第三方框架)";
+			sourceTree = "<group>";
+		};
+		D469FF5A217474CA00155E26 /* Manager(系统管理) */ = {
+			isa = PBXGroup;
+			children = (
+				D489966F20D8AEAE00E71DCA /* 皮肤管理 */,
+			);
+			path = "Manager(系统管理)";
+			sourceTree = "<group>";
+		};
 		D473E52F21706C170043A9F6 /* watch */ = {
 			isa = PBXGroup;
 			children = (
@@ -924,9 +962,9 @@
 				D49A9422214792B1007C6B29 /* ZPBaseViewController.m */,
 				D4DC729D215DEE6500439A8A /* ZPBlockButton.h */,
 				D4DC729E215DEE6500439A8A /* ZPBlockButton.m */,
-				D473E4FF216F4DAE0043A9F6 /* ZPTabBarViewController.h */,
-				D473E500216F4DAE0043A9F6 /* ZPTabBarViewController.m */,
 				D473E540217072730043A9F6 /* TabBarVCPlist.plist */,
+				D469FF50217473FD00155E26 /* ZPBaseTabBarController.h */,
+				D469FF51217473FD00155E26 /* ZPBaseTabBarController.m */,
 			);
 			path = "BaseLib(基础控件)";
 			sourceTree = "<group>";
@@ -1370,7 +1408,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D473E501216F4DAE0043A9F6 /* ZPTabBarViewController.m in Sources */,
+				D469FF52217473FD00155E26 /* ZPBaseTabBarController.m in Sources */,
 				D4CC6D7120E4D62700D5B059 /* ZPTapGestureViewController.m in Sources */,
 				D489967620D8AEAF00E71DCA /* JFDefaultSkin.m in Sources */,
 				D423659C20A8315C00FFFD9E /* MASConstraint.m in Sources */,
@@ -1378,6 +1416,7 @@
 				D423659F20A8315C00FFFD9E /* MASViewAttribute.m in Sources */,
 				D4609469210EBEC00060C61E /* LYHomeCellModel.m in Sources */,
 				D4670F7F212EAA0E00A6A2EA /* ZPBaseAnimationViewController.m in Sources */,
+				D469FF562174741000155E26 /* ZPTabBarViewController.m in Sources */,
 				D489966D20D8AD9700E71DCA /* ZPGestureRecognizerViewController.m in Sources */,
 				D420FF2520FF31AC00047B97 /* ZPCellSlideTableViewController.m in Sources */,
 				D4B1EF7420F6EDCB00A01161 /* ZPRepeatPlayScrollView.m in Sources */,
@@ -1451,7 +1490,6 @@
 				D4B1EF7A20F859EA00A01161 /* ZPPageControl.m in Sources */,
 				D49F0DCA212A92BA00EBC76E /* NotificationViewController.m in Sources */,
 				D4670F80212EAC0400A6A2EA /* ZPBaseAnimationViewController.m in Sources */,
-				D473E502216F4DAE0043A9F6 /* ZPTabBarViewController.m in Sources */,
 				D43D1BDE20E35F0B00B776D6 /* MASViewAttribute.m in Sources */,
 				D4B1EF7620F7119200A01161 /* ZPRepeatPlayScrollView.m in Sources */,
 				D43D1BDF20E35F0B00B776D6 /* ZPGestureRecognizerViewController.m in Sources */,
@@ -1488,6 +1526,7 @@
 				D47AA39D21199011004EA825 /* JPEngine.m in Sources */,
 				D43D1BEF20E35F0B00B776D6 /* ZPURLSessionViewController.m in Sources */,
 				D43D1BF020E35F0B00B776D6 /* iOSNotificationViewController.m in Sources */,
+				D469FF572174741000155E26 /* ZPTabBarViewController.m in Sources */,
 				D4C240D62122CA9A00077E21 /* ZPPushNotificationViewController.m in Sources */,
 				D43D1BF120E35F0B00B776D6 /* UIGestureRecognizer+Name.m in Sources */,
 				D43D1BF220E35F0B00B776D6 /* MASCompositeConstraint.m in Sources */,
@@ -1502,6 +1541,7 @@
 				D436843A20E39BCF0082BC58 /* ZPTestsGestureRecognizerViewController.m in Sources */,
 				D43D1BF620E35F0B00B776D6 /* ZPTestGestureRecognizerViewController.m in Sources */,
 				D4306B7A2108760400947AB6 /* ZPTableSlideCell.m in Sources */,
+				D469FF53217473FD00155E26 /* ZPBaseTabBarController.m in Sources */,
 				D4CC6D6620E48B1E00D5B059 /* ZPPanGestureTest1ViewController.m in Sources */,
 				D4CC6D6E20E4AE1C00D5B059 /* UIRotationGestureViewController.m in Sources */,
 				D4668E422137EF3E009633B4 /* ZPScaleAnimationViewController.m in Sources */,
