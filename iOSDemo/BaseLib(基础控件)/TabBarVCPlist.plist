@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>className</key>
+		<string>ZPUINavigationController</string>
+		<key>titleName</key>
+		<string>控件</string>
+		<key>iconName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>ZPAnimationNavigationController</string>
+		<key>titleName</key>
+		<string>特效</string>
+		<key>iconName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>ZPPracticalNavigationController</string>
+		<key>titleName</key>
+		<string>实用</string>
+		<key>iconName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>ZPDataNavigationController</string>
+		<key>titleName</key>
+		<string>数据</string>
+		<key>iconName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>ZPVideoNavigationController</string>
+		<key>titleName</key>
+		<string>音视频</string>
+		<key>iconName</key>
+		<string></string>
+	</dict>
+</array>
+</plist>

@@ -78,7 +78,6 @@
 		D43D1BF920E35F0B00B776D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D423655D20A8231D00FFFD9E /* AppDelegate.m */; };
 		D43D1BFE20E35F0B00B776D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D423656720A8231D00FFFD9E /* LaunchScreen.storyboard */; };
 		D43D1BFF20E35F0B00B776D6 /* SectionList.plist in Resources */ = {isa = PBXBuildFile; fileRef = D423657420A8258F00FFFD9E /* SectionList.plist */; };
-		D43D1C0220E35F0B00B776D6 /* iOSDemoiPad-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D48EE1F020DAB08600356465 /* iOSDemoiPad-info.plist */; };
 		D4609465210EBE720060C61E /* ZPHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4609464210EBE720060C61E /* ZPHomeTableViewCell.m */; };
 		D4609469210EBEC00060C61E /* LYHomeCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D4609468210EBEC00060C61E /* LYHomeCellModel.m */; };
 		D460946A210EBEF60060C61E /* ZPHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4609464210EBE720060C61E /* ZPHomeTableViewCell.m */; };
@@ -98,6 +97,14 @@
 		D4669046213919DD009633B4 /* ZPBezierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4669044213919DD009633B4 /* ZPBezierViewController.m */; };
 		D4670F7F212EAA0E00A6A2EA /* ZPBaseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4670F7E212EAA0E00A6A2EA /* ZPBaseAnimationViewController.m */; };
 		D4670F80212EAC0400A6A2EA /* ZPBaseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4670F7E212EAA0E00A6A2EA /* ZPBaseAnimationViewController.m */; };
+		D473E501216F4DAE0043A9F6 /* ZPTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D473E500216F4DAE0043A9F6 /* ZPTabBarViewController.m */; };
+		D473E502216F4DAE0043A9F6 /* ZPTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D473E500216F4DAE0043A9F6 /* ZPTabBarViewController.m */; };
+		D473E52E21706C170043A9F6 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D473E52D21706C170043A9F6 /* NotificationCenter.framework */; };
+		D473E53221706C170043A9F6 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D473E53121706C170043A9F6 /* TodayViewController.m */; };
+		D473E53521706C170043A9F6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D473E53321706C170043A9F6 /* MainInterface.storyboard */; };
+		D473E53921706C170043A9F6 /* watch.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D473E52C21706C170043A9F6 /* watch.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D473E541217072730043A9F6 /* TabBarVCPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = D473E540217072730043A9F6 /* TabBarVCPlist.plist */; };
+		D473E542217072730043A9F6 /* TabBarVCPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = D473E540217072730043A9F6 /* TabBarVCPlist.plist */; };
 		D47AA37221198C14004EA825 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D47AA37121198C13004EA825 /* libc++.tbd */; };
 		D47AA37421198C1F004EA825 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D47AA37321198C1F004EA825 /* libz.tbd */; };
 		D47AA39321198FEE004EA825 /* BuglyHotfix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47AA39221198FEE004EA825 /* BuglyHotfix.framework */; };
@@ -167,12 +174,8 @@
 		D49F0DCC212A92BA00EBC76E /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49F0DC1212A92BA00EBC76E /* NotificationViewController.m */; };
 		D49F0DCD212A92BA00EBC76E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D49F0DC2212A92BA00EBC76E /* MainInterface.storyboard */; };
 		D49F0DCF212A92BA00EBC76E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D49F0DC2212A92BA00EBC76E /* MainInterface.storyboard */; };
-		D49F0DD0212A92BA00EBC76E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D49F0DC5212A92BA00EBC76E /* Info.plist */; };
-		D49F0DD2212A92BA00EBC76E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D49F0DC5212A92BA00EBC76E /* Info.plist */; };
 		D49F0DD3212A92BA00EBC76E /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = D49F0DC7212A92BA00EBC76E /* NotificationService.m */; };
 		D49F0DD4212A92BA00EBC76E /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = D49F0DC7212A92BA00EBC76E /* NotificationService.m */; };
-		D49F0DD6212A92BA00EBC76E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D49F0DC9212A92BA00EBC76E /* Info.plist */; };
-		D49F0DD7212A92BA00EBC76E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D49F0DC9212A92BA00EBC76E /* Info.plist */; };
 		D4A0567C2113F037005520F4 /* ZPRomateNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B4B1BF2112B644009F61BF /* ZPRomateNotificationManager.m */; };
 		D4A2641420DCE41600E778B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D423655D20A8231D00FFFD9E /* AppDelegate.m */; };
 		D4A43CE6212BE57F00F59FA5 /* ZPAnimationBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A43CE5212BE57F00F59FA5 /* ZPAnimationBaseViewController.m */; };
@@ -198,11 +201,21 @@
 		D4D5496420D23B8E007E32B3 /* ZPWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D5496320D23B8E007E32B3 /* ZPWKWebViewController.m */; };
 		D4DC729B215CB3D100439A8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4DC729A215CB3D000439A8A /* Assets.xcassets */; };
 		D4DC729C215CB3D100439A8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4DC729A215CB3D000439A8A /* Assets.xcassets */; };
+		D4DC729F215DEE6500439A8A /* ZPBlockButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DC729E215DEE6500439A8A /* ZPBlockButton.m */; };
+		D4DC72A0215DEE6500439A8A /* ZPBlockButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DC729E215DEE6500439A8A /* ZPBlockButton.m */; };
+		D4DC72B9216B4D6700439A8A /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DC72B8216B4D6500439A8A /* GLKit.framework */; };
 		D4FFE02220F30D6A00ED8276 /* ZPScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FFE02120F30D6A00ED8276 /* ZPScrollViewController.m */; };
 		D4FFE02320F30F5200ED8276 /* ZPScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FFE02120F30D6A00ED8276 /* ZPScrollViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D473E53721706C170043A9F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D423655120A8231D00FFFD9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D473E52B21706C170043A9F6;
+			remoteInfo = watch;
+		};
 		D49F0D62212675A200EBC76E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D423655120A8231D00FFFD9E /* Project object */;
@@ -248,6 +261,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				D473E53921706C170043A9F6 /* watch.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +392,15 @@
 		D4669044213919DD009633B4 /* ZPBezierViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPBezierViewController.m; sourceTree = "<group>"; };
 		D4670F7D212EAA0E00A6A2EA /* ZPBaseAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPBaseAnimationViewController.h; sourceTree = "<group>"; };
 		D4670F7E212EAA0E00A6A2EA /* ZPBaseAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPBaseAnimationViewController.m; sourceTree = "<group>"; };
+		D473E4FF216F4DAE0043A9F6 /* ZPTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPTabBarViewController.h; sourceTree = "<group>"; };
+		D473E500216F4DAE0043A9F6 /* ZPTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPTabBarViewController.m; sourceTree = "<group>"; };
+		D473E52C21706C170043A9F6 /* watch.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = watch.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D473E52D21706C170043A9F6 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		D473E53021706C170043A9F6 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		D473E53121706C170043A9F6 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		D473E53421706C170043A9F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D473E53621706C170043A9F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D473E540217072730043A9F6 /* TabBarVCPlist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TabBarVCPlist.plist; sourceTree = "<group>"; };
 		D47AA37121198C13004EA825 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		D47AA37321198C1F004EA825 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		D47AA39221198FEE004EA825 /* BuglyHotfix.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BuglyHotfix.framework; sourceTree = "<group>"; };
@@ -453,6 +476,9 @@
 		D4D5496220D23B8E007E32B3 /* ZPWKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPWKWebViewController.h; sourceTree = "<group>"; };
 		D4D5496320D23B8E007E32B3 /* ZPWKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPWKWebViewController.m; sourceTree = "<group>"; };
 		D4DC729A215CB3D000439A8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4DC729D215DEE6500439A8A /* ZPBlockButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPBlockButton.h; sourceTree = "<group>"; };
+		D4DC729E215DEE6500439A8A /* ZPBlockButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPBlockButton.m; sourceTree = "<group>"; };
+		D4DC72B8216B4D6500439A8A /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		D4FFE02020F30D6A00ED8276 /* ZPScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPScrollViewController.h; sourceTree = "<group>"; };
 		D4FFE02120F30D6A00ED8276 /* ZPScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPScrollViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -470,12 +496,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4DC72B9216B4D6700439A8A /* GLKit.framework in Frameworks */,
 				D4618B9C215A097B005FFB28 /* libresolv.9.tbd in Frameworks */,
 				D47AA37221198C14004EA825 /* libc++.tbd in Frameworks */,
 				D47AA37421198C1F004EA825 /* libz.tbd in Frameworks */,
 				D47AA3A321199049004EA825 /* Security.framework in Frameworks */,
 				D47AA3A121199043004EA825 /* SystemConfiguration.framework in Frameworks */,
 				D47AA39421198FEF004EA825 /* BuglyHotfix.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D473E52921706C170043A9F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D473E52E21706C170043A9F6 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,6 +624,7 @@
 			children = (
 				D4A0567D21143268005520F4 /* iphoneTestRelease.entitlements */,
 				D423655B20A8231D00FFFD9E /* iOSDemo */,
+				D473E52F21706C170043A9F6 /* watch */,
 				D423655A20A8231D00FFFD9E /* Products */,
 				D4A2646E20DCF78200E778B3 /* Frameworks */,
 			);
@@ -603,6 +639,7 @@
 				D43D1C0A20E35F0B00B776D6 /* iphoneTestRelease.app */,
 				D49F0D5C212675A200EBC76E /* NotificationServer.appex */,
 				D49F0D90212A72F800EBC76E /* MyNotificationContentExtension.appex */,
+				D473E52C21706C170043A9F6 /* watch.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -800,6 +837,17 @@
 			path = "基本动画";
 			sourceTree = "<group>";
 		};
+		D473E52F21706C170043A9F6 /* watch */ = {
+			isa = PBXGroup;
+			children = (
+				D473E53021706C170043A9F6 /* TodayViewController.h */,
+				D473E53121706C170043A9F6 /* TodayViewController.m */,
+				D473E53321706C170043A9F6 /* MainInterface.storyboard */,
+				D473E53621706C170043A9F6 /* Info.plist */,
+			);
+			path = watch;
+			sourceTree = "<group>";
+		};
 		D47AA38D21198FC1004EA825 /* lib */ = {
 			isa = PBXGroup;
 			children = (
@@ -874,6 +922,11 @@
 			children = (
 				D49A9421214792B1007C6B29 /* ZPBaseViewController.h */,
 				D49A9422214792B1007C6B29 /* ZPBaseViewController.m */,
+				D4DC729D215DEE6500439A8A /* ZPBlockButton.h */,
+				D4DC729E215DEE6500439A8A /* ZPBlockButton.m */,
+				D473E4FF216F4DAE0043A9F6 /* ZPTabBarViewController.h */,
+				D473E500216F4DAE0043A9F6 /* ZPTabBarViewController.m */,
+				D473E540217072730043A9F6 /* TabBarVCPlist.plist */,
 			);
 			path = "BaseLib(基础控件)";
 			sourceTree = "<group>";
@@ -911,6 +964,7 @@
 		D4A2646E20DCF78200E778B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D4DC72B8216B4D6500439A8A /* GLKit.framework */,
 				D4618B9B215A097B005FFB28 /* libresolv.9.tbd */,
 				D47AA3A221199049004EA825 /* Security.framework */,
 				D47AA3A021199043004EA825 /* SystemConfiguration.framework */,
@@ -920,6 +974,7 @@
 				D4CC6D6120E4895100D5B059 /* Otherframework.framework */,
 				D49F0D6F2126AE2700EBC76E /* UserNotifications.framework */,
 				D49F0D712126AE2700EBC76E /* UserNotificationsUI.framework */,
+				D473E52D21706C170043A9F6 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1073,6 +1128,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				D473E53821706C170043A9F6 /* PBXTargetDependency */,
 			);
 			name = iOSDemoiPhone;
 			productName = iOSDemo;
@@ -1099,6 +1155,23 @@
 			productName = iOSDemo;
 			productReference = D43D1C0A20E35F0B00B776D6 /* iphoneTestRelease.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D473E52B21706C170043A9F6 /* watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D473E53E21706C170043A9F6 /* Build configuration list for PBXNativeTarget "watch" */;
+			buildPhases = (
+				D473E52821706C170043A9F6 /* Sources */,
+				D473E52921706C170043A9F6 /* Frameworks */,
+				D473E52A21706C170043A9F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = watch;
+			productName = watch;
+			productReference = D473E52C21706C170043A9F6 /* watch.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 		D48EE13E20DAAF7A00356465 /* iOSDemoiPad */ = {
 			isa = PBXNativeTarget;
@@ -1159,6 +1232,7 @@
 		D423655120A8231D00FFFD9E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Original;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = ww;
 				TargetAttributes = {
@@ -1176,6 +1250,10 @@
 								enabled = 1;
 							};
 						};
+					};
+					D473E52B21706C170043A9F6 = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
 					};
 					D48EE13E20DAAF7A00356465 = {
 						ProvisioningStyle = Automatic;
@@ -1216,6 +1294,7 @@
 				D43D1BDA20E35F0B00B776D6 /* iphoneTestRelease */,
 				D49F0D5B212675A200EBC76E /* NotificationServer */,
 				D49F0D8F212A72F800EBC76E /* MyNotificationContentExtension */,
+				D473E52B21706C170043A9F6 /* watch */,
 			);
 		};
 /* End PBXProject section */
@@ -1225,6 +1304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D473E541217072730043A9F6 /* TabBarVCPlist.plist in Resources */,
 				D423656920A8231D00FFFD9E /* LaunchScreen.storyboard in Resources */,
 				D47AA39E21199011004EA825 /* JSPatch.js in Resources */,
 				D423657520A8258F00FFFD9E /* SectionList.plist in Resources */,
@@ -1244,11 +1324,17 @@
 				D49F0DA4212A766F00EBC76E /* icon1.jpg in Resources */,
 				D43D1BFF20E35F0B00B776D6 /* SectionList.plist in Resources */,
 				D49F0DCD212A92BA00EBC76E /* MainInterface.storyboard in Resources */,
+				D473E542217072730043A9F6 /* TabBarVCPlist.plist in Resources */,
 				D47D452121242B2000E95DE4 /* Resource.bundle in Resources */,
-				D43D1C0220E35F0B00B776D6 /* iOSDemoiPad-info.plist in Resources */,
-				D49F0DD6212A92BA00EBC76E /* Info.plist in Resources */,
-				D49F0DD0212A92BA00EBC76E /* Info.plist in Resources */,
 				D47D452321242D3500E95DE4 /* minion_11.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D473E52A21706C170043A9F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D473E53521706C170043A9F6 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1265,7 +1351,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D49F0DD7212A92BA00EBC76E /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1275,7 +1360,6 @@
 			files = (
 				D49F0DA3212A75E200EBC76E /* icon1.jpg in Resources */,
 				D49F0DCF212A92BA00EBC76E /* MainInterface.storyboard in Resources */,
-				D49F0DD2212A92BA00EBC76E /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1286,6 +1370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D473E501216F4DAE0043A9F6 /* ZPTabBarViewController.m in Sources */,
 				D4CC6D7120E4D62700D5B059 /* ZPTapGestureViewController.m in Sources */,
 				D489967620D8AEAF00E71DCA /* JFDefaultSkin.m in Sources */,
 				D423659C20A8315C00FFFD9E /* MASConstraint.m in Sources */,
@@ -1323,6 +1408,7 @@
 				D49A9423214792B1007C6B29 /* ZPBaseViewController.m in Sources */,
 				D49A94582154C0D0007C6B29 /* ZPCALayerViewController.m in Sources */,
 				D42365BA20B701C700FFFD9E /* ZPURLSessionViewController.m in Sources */,
+				D4DC729F215DEE6500439A8A /* ZPBlockButton.m in Sources */,
 				D42365B620A9DDEF00FFFD9E /* iOSNotificationViewController.m in Sources */,
 				D43D1BD920E3394500B776D6 /* UIGestureRecognizer+Name.m in Sources */,
 				D423659B20A8315C00FFFD9E /* MASCompositeConstraint.m in Sources */,
@@ -1365,6 +1451,7 @@
 				D4B1EF7A20F859EA00A01161 /* ZPPageControl.m in Sources */,
 				D49F0DCA212A92BA00EBC76E /* NotificationViewController.m in Sources */,
 				D4670F80212EAC0400A6A2EA /* ZPBaseAnimationViewController.m in Sources */,
+				D473E502216F4DAE0043A9F6 /* ZPTabBarViewController.m in Sources */,
 				D43D1BDE20E35F0B00B776D6 /* MASViewAttribute.m in Sources */,
 				D4B1EF7620F7119200A01161 /* ZPRepeatPlayScrollView.m in Sources */,
 				D43D1BDF20E35F0B00B776D6 /* ZPGestureRecognizerViewController.m in Sources */,
@@ -1384,6 +1471,7 @@
 				D49A941F21479193007C6B29 /* ZPLayer.m in Sources */,
 				D4306B79210875FF00947AB6 /* ZPCellSlideTableViewController.m in Sources */,
 				D4A0567C2113F037005520F4 /* ZPRomateNotificationManager.m in Sources */,
+				D4DC72A0215DEE6500439A8A /* ZPBlockButton.m in Sources */,
 				D43D1BE820E35F0B00B776D6 /* MASViewConstraint.m in Sources */,
 				D43D1BE920E35F0B00B776D6 /* MASLayoutConstraint.m in Sources */,
 				D47BB94521362CCB0040607C /* ZPRotateAnimiationViewController.m in Sources */,
@@ -1422,6 +1510,14 @@
 				D43D1BF920E35F0B00B776D6 /* AppDelegate.m in Sources */,
 				D4668E3D2137C48A009633B4 /* ZPMoveAnimationViewController.m in Sources */,
 				D460946A210EBEF60060C61E /* ZPHomeTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D473E52821706C170043A9F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D473E53221706C170043A9F6 /* TodayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1479,6 +1575,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D473E53821706C170043A9F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D473E52B21706C170043A9F6 /* watch */;
+			targetProxy = D473E53721706C170043A9F6 /* PBXContainerItemProxy */;
+		};
 		D49F0D63212675A200EBC76E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D49F0D5B212675A200EBC76E /* NotificationServer */;
@@ -1498,6 +1599,14 @@
 				D423656820A8231D00FFFD9E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D473E53321706C170043A9F6 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D473E53421706C170043A9F6 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 		D49F0DC2212A92BA00EBC76E /* MainInterface.storyboard */ = {
@@ -1713,6 +1822,7 @@
 				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xingdong.OaSystem;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6e73e405-4864-4c94-8c3d-475f87dc888c";
 				PROVISIONING_PROFILE_SPECIFIER = xingdong0aSystem_Dev;
@@ -1748,6 +1858,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xingdong.OaSystem;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6e73e405-4864-4c94-8c3d-475f87dc888c";
 				PROVISIONING_PROFILE_SPECIFIER = xingdong0aSystem_Dev;
@@ -1783,6 +1894,7 @@
 				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xingdong.OaSystem;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6e73e405-4864-4c94-8c3d-475f87dc888c";
 				PROVISIONING_PROFILE_SPECIFIER = xingdong0aSystem_Dev;
@@ -1817,12 +1929,90 @@
 				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xingdong.OaSystem;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "77a25fb7-b442-44bf-a26f-eb2a22ce3751";
 				PROVISIONING_PROFILE_SPECIFIER = xingdong0aSystemDistribution;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/Release-iphoneos/**";
+			};
+			name = Release;
+		};
+		D473E53A21706C170043A9F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3VENH5K5W4;
+				INFOPLIST_FILE = watch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anXinZhuoYueOaSystem.watch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D473E53B21706C170043A9F6 /* MyTestRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3VENH5K5W4;
+				INFOPLIST_FILE = watch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anXinZhuoYueOaSystem.watch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = MyTestRelease;
+		};
+		D473E53C21706C170043A9F6 /* MyTestDev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3VENH5K5W4;
+				INFOPLIST_FILE = watch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anXinZhuoYueOaSystem.watch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = MyTestDev;
+		};
+		D473E53D21706C170043A9F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3VENH5K5W4;
+				INFOPLIST_FILE = watch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anXinZhuoYueOaSystem.watch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -2287,6 +2477,17 @@
 				D43D1C0720E35F0B00B776D6 /* MyTestRelease */,
 				D43D1C0820E35F0B00B776D6 /* MyTestDev */,
 				D43D1C0920E35F0B00B776D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D473E53E21706C170043A9F6 /* Build configuration list for PBXNativeTarget "watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D473E53A21706C170043A9F6 /* Debug */,
+				D473E53B21706C170043A9F6 /* MyTestRelease */,
+				D473E53C21706C170043A9F6 /* MyTestDev */,
+				D473E53D21706C170043A9F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

@@ -58,17 +58,20 @@ static ZPRomateNotificationManager *_manager = nil;
             [center getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings * _Nonnull settings) {
                 if (settings.authorizationStatus == UNAuthorizationStatusDenied) {
                     
-                    UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"友情提示" message:@"建议您开启通知功能，以便及时获取相关信息" preferredStyle:UIAlertControllerStyleAlert];
-                    [alertVC addAction:[UIAlertAction actionWithTitle:@"忽略" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
                         
-                    }]];
-                    
-                    [alertVC addAction:[UIAlertAction actionWithTitle:@"去开启" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"友情提示" message:@"建议您开启通知功能，以便及时获取相关信息" preferredStyle:UIAlertControllerStyleAlert];
+                        [alertVC addAction:[UIAlertAction actionWithTitle:@"忽略" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+                            
+                        }]];
                         
-                    }]];
-                    
-                    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-                    [delegate.window.rootViewController presentViewController:alertVC animated:YES completion:nil];
+                        [alertVC addAction:[UIAlertAction actionWithTitle:@"去开启" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                            
+                        }]];
+                        
+                        AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+                        [delegate.window.rootViewController presentViewController:alertVC animated:YES completion:nil];
+                    });
                     
                     
                 }else if(settings.authorizationStatus == UNAuthorizationStatusNotDetermined || settings.authorizationStatus == UNAuthorizationStatusAuthorized){

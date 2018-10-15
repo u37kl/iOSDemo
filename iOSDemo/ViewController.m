@@ -47,6 +47,11 @@
 //    [JFScreenScale getFloatFromScale:12];
 //    [@"sdf" getSizeFromStrFontSize:12];
 //      [@"呵呵" testStr];
+    
+    CGRect rect = [UIScreen mainScreen].bounds;
+    CGRect rect1 = [UIScreen mainScreen].nativeBounds;
+    CGSize rect2 = [UIScreen mainScreen].currentMode.size;
+    NSLog(@"");
 }
 
 
@@ -169,3 +174,6 @@
 }
 
 @end
+
+
+

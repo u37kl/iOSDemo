@@ -13,6 +13,7 @@
 #import <BuglyHotfix/BuglyMender.h>
 #import "JPEngine.h"
 #import "ZPPushNotificationHeader.h"
+#import "ZPCALayerViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -31,6 +32,25 @@
     
     [self setSystemData];
     
+    return YES;
+}
+
+-(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
+{
+    AppDelegate *delegate = (AppDelegate *)app.delegate;
+    UINavigationController *vc = delegate.window.rootViewController;
+    ZPCALayerViewController *vc1 = [[ZPCALayerViewController alloc] init];
+    [vc pushViewController:vc1 animated:YES];
+    return YES;
+}
+
+-(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
     return YES;
 }
 
