@@ -22,10 +22,19 @@
 
 #endif
 
+
 #include "BuglyHotfixConfuse_pch.h"
-
 #import "UIColor+Custom.h"
+#import "JFSKinManager.h"
+#import "UIFont+Style.h"
 
+#pragma mark - 系统版本
+#define iOS7  ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+#define iOS8  ([[UIDevice currentDevice].systemVersion doubleValue] >= 8.0)
+#define iOS9  ([[UIDevice currentDevice].systemVersion doubleValue] >= 9.0)
+#define iOS10  ([[UIDevice currentDevice].systemVersion doubleValue] >= 10.0)
+
+#pragma mark - 系统逻辑宽高
 #define kDeviceHeight [UIScreen mainScreen].bounds.size.height
 #define kDeviceWidth  [UIScreen mainScreen].bounds.size.width
 

@@ -13,6 +13,16 @@
 @end
 @implementation JFDefaultSkin
 
+- (UIColor *)themeColor
+{
+   return JFColorAlpha_v(0xFB7299, 1);
+}
+
+-(UIColor *)tabBarBtnTitleNormalColor
+{
+    return JFColorAlpha_v(0x757575, 1);
+}
+
 - (UIColor *)backColor
 {
     return JFColorAlpha_v(0xefeff4, 1);

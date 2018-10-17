@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+
+#import "ZPTabBarViewController.h"
+
 #import "ViewController.h"
 #import "ZPRomateNotificationManager.h"
 #import <BuglyHotfix/Bugly.h>
@@ -23,10 +26,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    ViewController *mainVC = [[ViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mainVC];
+//    ZPTabBarViewController *vc = [[ZPTabBarViewController alloc] init];
+    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    
      self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
-    self.window.rootViewController = nav;
+    
+    self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
     [self load3DTouch];
     

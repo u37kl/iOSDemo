@@ -7,7 +7,7 @@
 //
 
 #import "ZPBaseViewController.h"
-
+#import "JFSKinManager.h"
 @interface ZPBaseViewController ()
 
 @end
@@ -17,7 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.edgesForExtendedLayout = UIRectEdgeNone;
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [JFSKinManager skinManager].model.backColor;
+    
 }
 
 - (void)didReceiveMemoryWarning {

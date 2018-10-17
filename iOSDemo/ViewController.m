@@ -24,6 +24,7 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    
     UITableView *mainTableView = [[UITableView alloc] init];
     mainTableView.backgroundColor = [UIColor getUIColorFromRGB:0xe5e5e5];
     [self.view addSubview:mainTableView];

@@ -7,7 +7,10 @@
 //
 
 #import "ZPTabBarViewController.h"
-
+#import "ZPMainModuleManager.h"
+#import "ZPBaseNavigationController.h"
+#import "ZPInterfaceViewController.h"
+#import <Otherframework/Otherframework.h>
 @interface ZPTabBarViewController ()
 
 @end
@@ -16,12 +19,40 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self loadChildModule];
+    self.tabBar.backgroundColor = [JFSKinManager skinManager].model.frontColor;
+    self.tabBar.backgroundImage = [UIImage new];
     
 }
 
 -(void)loadChildModule
 {
-    
+    NSArray <ZPMainModuleModelProtocol>* modelList = [ZPMainModuleManager getMainModule];
+    for (short i = 0; i<modelList.count; i++) {
+        id<ZPMainModuleModelProtocol> model = modelList[i];
+        [self addChildViewControllerWithModel:model tabBarIndex:i];
+    }
+}
+
+-(void)addChildViewControllerWithModel:(id<ZPMainModuleModelProtocol>)model tabBarIndex:(NSInteger)tag
+{
+    UIViewController *vc = [[NSClassFromString(model.className) alloc] init];
+    vc.title = model.title;
+    // 配置tabBar按钮文字和图片
+    UIImage *selectedImage = [UIImage imageNamed:model.iconSelected];
+    if (iOS7) {
+       selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    }
+    UITabBarItem *item = [[UITabBarItem alloc] initWithTitle:model.title image:[UIImage imageNamed:model.iconNormal] selectedImage:selectedImage];
+    [item setTitleTextAttributes:@{NSFontAttributeName:[UIFont getPFRWithSize:10],NSForegroundColorAttributeName:[JFSKinManager skinManager].model.tabBarBtnTitleNormalColor}  forState:UIControlStateNormal];
+    [item setTitleTextAttributes:@{NSFontAttributeName:[UIFont getPFRWithSize:10],NSForegroundColorAttributeName:[JFSKinManager skinManager].model.themeColor} forState:UIControlStateSelected];
+
+    vc.tabBarItem = item;
+    vc.tabBarItem.tag = tag;
+
+    ZPBaseNavigationController *nav = [[ZPBaseNavigationController alloc] initWithRootViewController:vc];
+    [self addChildViewController:nav];
+    self.selectedIndex = 1;
 }
 
 /*

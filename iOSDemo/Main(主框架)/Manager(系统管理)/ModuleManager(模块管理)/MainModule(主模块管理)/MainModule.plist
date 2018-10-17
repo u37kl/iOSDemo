@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>className</key>
+		<string>ZPInterfaceViewController</string>
+		<key>titleName</key>
+		<string>界面</string>
+		<key>iconNameNormal</key>
+		<string>tab_ui_normal</string>
+		<key>iconNameSelected</key>
+		<string>tab_ui_selected</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>ZPThreadViewController</string>
+		<key>titleName</key>
+		<string>线程</string>
+		<key>iconNameNormal</key>
+		<string>tab_thread_normal</string>
+		<key>iconNameSelected</key>
+		<string>tab_thread_selected</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>ZPUseViewController</string>
+		<key>titleName</key>
+		<string>实用</string>
+		<key>iconNameNormal</key>
+		<string>tab_use_normal</string>
+		<key>iconNameSelected</key>
+		<string>tab_use_selected</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>ZPDataViewController</string>
+		<key>titleName</key>
+		<string>数据</string>
+		<key>iconNameNormal</key>
+		<string>tab_Data_normal</string>
+		<key>iconNameSelected</key>
+		<string>tab_Data_selected</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>ZPVideoViewController</string>
+		<key>titleName</key>
+		<string>音视频</string>
+		<key>iconNameNormal</key>
+		<string>tab_Video_normal</string>
+		<key>iconNameSelected</key>
+		<string>tab_Video_selected</string>
+	</dict>
+</array>
+</plist>

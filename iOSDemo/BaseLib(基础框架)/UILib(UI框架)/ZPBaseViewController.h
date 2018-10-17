@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ZPBaseViewController : UIViewController
-
+@property (nonatomic, copy) NSString *navTitle;
 @end

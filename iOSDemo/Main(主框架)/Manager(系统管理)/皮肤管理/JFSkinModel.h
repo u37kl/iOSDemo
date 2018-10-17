@@ -10,6 +10,10 @@
 
 @interface JFSkinModel : NSObject
 
+// 主题色
+@property (nonatomic, strong) UIColor *themeColor;
+// tab按钮默认颜色
+@property (nonatomic, strong) UIColor *tabBarBtnTitleNormalColor;
 // 背景色
 @property (nonatomic, strong) UIColor *backColor;
 // 分割线颜色
