@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cellName</key>
+	<string>ZPInterfaceCollectionCell</string>
+	<key>cellModelName</key>
+	<string>ZPInterfaceCollectionCellModel</string>
+	<key>contentList</key>
+	<array>
+		<dict>
+			<key>viewModelName</key>
+			<string>ZPBuildInterfaceViewModel</string>
+			<key>cellName</key>
+			<string>ZPControlOfInterfaceCollectionCell</string>
+		</dict>
+	</array>
+</dict>
+</plist>

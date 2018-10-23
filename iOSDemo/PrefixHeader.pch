@@ -27,6 +27,8 @@
 #import "UIColor+Custom.h"
 #import "JFSKinManager.h"
 #import "UIFont+Style.h"
+#import <Otherframework/Otherframework.h>
+
 
 #pragma mark - 系统版本
 #define iOS7  ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)

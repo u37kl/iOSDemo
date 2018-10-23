@@ -2,13 +2,19 @@
 //  NSString+Size.m
 //  iOSDemo
 //
-//  Created by ww on 2018/5/13.
+//  Created by ww on 2018/10/22.
 //  Copyright © 2018年 ww. All rights reserved.
 //
 
 #import "NSString+Size.h"
 
 @implementation NSString (Size)
+
+-(CGSize)getSizeFromStrFontSize:(CGFloat)size
+{
+    CGSize temp = [self boundingRectWithSize:CGSizeMake(2000, 200) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{@"NSFontAttributeName":[UIFont getPFRWithSize:size]} context:nil].size;
+    return CGSizeMake(temp.width + 1, temp.height);
+}
 
 - (CGSize)getSizeWithFont:(UIFont *)font constrainedToSize:(CGSize)size
 {

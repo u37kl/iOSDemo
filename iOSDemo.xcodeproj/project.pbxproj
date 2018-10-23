@@ -35,7 +35,6 @@
 		D42365A220A8315C00FFFD9E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D423659520A8315C00FFFD9E /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		D42365A320A8315C00FFFD9E /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D423659720A8315C00FFFD9E /* View+MASAdditions.m */; };
 		D42365A420A8315C00FFFD9E /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D423659A20A8315C00FFFD9E /* ViewController+MASAdditions.m */; };
-		D42365AC20A8849900FFFD9E /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = D42365AB20A8849900FFFD9E /* NSString+Size.m */; };
 		D42365B220A8971200FFFD9E /* UIColor+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = D42365B120A8971200FFFD9E /* UIColor+Custom.m */; };
 		D42365B620A9DDEF00FFFD9E /* iOSNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42365B520A9DDEF00FFFD9E /* iOSNotificationViewController.m */; };
 		D42365BA20B701C700FFFD9E /* ZPURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42365B920B701C700FFFD9E /* ZPURLSessionViewController.m */; };
@@ -64,7 +63,6 @@
 		D43D1BEB20E35F0B00B776D6 /* JFSKinManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D489967320D8AEAE00E71DCA /* JFSKinManager.m */; };
 		D43D1BEC20E35F0B00B776D6 /* KnowledgeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D423657720A826FF00FFFD9E /* KnowledgeModel.m */; };
 		D43D1BED20E35F0B00B776D6 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D423659720A8315C00FFFD9E /* View+MASAdditions.m */; };
-		D43D1BEE20E35F0B00B776D6 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = D42365AB20A8849900FFFD9E /* NSString+Size.m */; };
 		D43D1BEF20E35F0B00B776D6 /* ZPURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42365B920B701C700FFFD9E /* ZPURLSessionViewController.m */; };
 		D43D1BF020E35F0B00B776D6 /* iOSNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42365B520A9DDEF00FFFD9E /* iOSNotificationViewController.m */; };
 		D43D1BF120E35F0B00B776D6 /* UIGestureRecognizer+Name.m in Sources */ = {isa = PBXBuildFile; fileRef = D43D1BD820E3394500B776D6 /* UIGestureRecognizer+Name.m */; };
@@ -142,6 +140,30 @@
 		D47D452021242B2000E95DE4 /* Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D47D451F21242B1F00E95DE4 /* Resource.bundle */; };
 		D47D452121242B2000E95DE4 /* Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D47D451F21242B1F00E95DE4 /* Resource.bundle */; };
 		D47D452321242D3500E95DE4 /* minion_11.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D47D452221242D3500E95DE4 /* minion_11.mp4 */; };
+		D483259B21787B93000BDE4D /* ZPBaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D483259A21787B93000BDE4D /* ZPBaseLabel.m */; };
+		D483259C21787B93000BDE4D /* ZPBaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D483259A21787B93000BDE4D /* ZPBaseLabel.m */; };
+		D483259F217B7C0A000BDE4D /* UINavigationBar+ZPBorderMargin.m in Sources */ = {isa = PBXBuildFile; fileRef = D483259E217B7C0A000BDE4D /* UINavigationBar+ZPBorderMargin.m */; };
+		D48325A0217B7C0A000BDE4D /* UINavigationBar+ZPBorderMargin.m in Sources */ = {isa = PBXBuildFile; fileRef = D483259E217B7C0A000BDE4D /* UINavigationBar+ZPBorderMargin.m */; };
+		D48325A3217D961F000BDE4D /* UIColor+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = D48325A2217D961F000BDE4D /* UIColor+Gradient.m */; };
+		D48325A4217D961F000BDE4D /* UIColor+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = D48325A2217D961F000BDE4D /* UIColor+Gradient.m */; };
+		D48325A7217E1BF3000BDE4D /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = D48325A6217E1BF3000BDE4D /* NSString+Size.m */; };
+		D48325A8217E1BF3000BDE4D /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = D48325A6217E1BF3000BDE4D /* NSString+Size.m */; };
+		D48325AF217E2437000BDE4D /* ZPInterfaceCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D48325AE217E2437000BDE4D /* ZPInterfaceCollectionCell.m */; };
+		D48325B0217E2437000BDE4D /* ZPInterfaceCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D48325AE217E2437000BDE4D /* ZPInterfaceCollectionCell.m */; };
+		D48325B4217F1327000BDE4D /* ZPBuildInterfaceViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D48325B3217F1327000BDE4D /* ZPBuildInterfaceViewModel.m */; };
+		D48325B5217F1327000BDE4D /* ZPBuildInterfaceViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D48325B3217F1327000BDE4D /* ZPBuildInterfaceViewModel.m */; };
+		D48325B9217F137B000BDE4D /* ZPInterfaceCollectionCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D48325B8217F137B000BDE4D /* ZPInterfaceCollectionCellModel.m */; };
+		D48325BA217F137B000BDE4D /* ZPInterfaceCollectionCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D48325B8217F137B000BDE4D /* ZPInterfaceCollectionCellModel.m */; };
+		D48325BD217F1411000BDE4D /* infaceConfigureFile.plist in Resources */ = {isa = PBXBuildFile; fileRef = D48325BC217F1411000BDE4D /* infaceConfigureFile.plist */; };
+		D48325BE217F1411000BDE4D /* infaceConfigureFile.plist in Resources */ = {isa = PBXBuildFile; fileRef = D48325BC217F1411000BDE4D /* infaceConfigureFile.plist */; };
+		D48325C1217F6469000BDE4D /* ZPControlOfInterfaceCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D48325C0217F6469000BDE4D /* ZPControlOfInterfaceCollectionCell.m */; };
+		D48325C2217F6469000BDE4D /* ZPControlOfInterfaceCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D48325C0217F6469000BDE4D /* ZPControlOfInterfaceCollectionCell.m */; };
+		D48325C5217F6BCC000BDE4D /* ZPInterfaceContentCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D48325C4217F6BCC000BDE4D /* ZPInterfaceContentCollectionView.m */; };
+		D48325C6217F6BCC000BDE4D /* ZPInterfaceContentCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D48325C4217F6BCC000BDE4D /* ZPInterfaceContentCollectionView.m */; };
+		D48325C8217F714A000BDE4D /* buildInterfaceItem.plist in Resources */ = {isa = PBXBuildFile; fileRef = D48325C7217F714A000BDE4D /* buildInterfaceItem.plist */; };
+		D48325C9217F714A000BDE4D /* buildInterfaceItem.plist in Resources */ = {isa = PBXBuildFile; fileRef = D48325C7217F714A000BDE4D /* buildInterfaceItem.plist */; };
+		D48325CC217F72F4000BDE4D /* ZPBuildInterfaceCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D48325CB217F72F4000BDE4D /* ZPBuildInterfaceCellModel.m */; };
+		D48325CD217F72F4000BDE4D /* ZPBuildInterfaceCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D48325CB217F72F4000BDE4D /* ZPBuildInterfaceCellModel.m */; };
 		D489966D20D8AD9700E71DCA /* ZPGestureRecognizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D489966C20D8AD9600E71DCA /* ZPGestureRecognizerViewController.m */; };
 		D489967620D8AEAF00E71DCA /* JFDefaultSkin.m in Sources */ = {isa = PBXBuildFile; fileRef = D489967120D8AEAE00E71DCA /* JFDefaultSkin.m */; };
 		D489967720D8AEAF00E71DCA /* JFSKinManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D489967320D8AEAE00E71DCA /* JFSKinManager.m */; };
@@ -165,7 +187,6 @@
 		D48EE15320DAAF7A00356465 /* JFSKinManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D489967320D8AEAE00E71DCA /* JFSKinManager.m */; };
 		D48EE15420DAAF7A00356465 /* KnowledgeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D423657720A826FF00FFFD9E /* KnowledgeModel.m */; };
 		D48EE15520DAAF7A00356465 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D423659720A8315C00FFFD9E /* View+MASAdditions.m */; };
-		D48EE15620DAAF7A00356465 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = D42365AB20A8849900FFFD9E /* NSString+Size.m */; };
 		D48EE15820DAAF7A00356465 /* ZPURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42365B920B701C700FFFD9E /* ZPURLSessionViewController.m */; };
 		D48EE15920DAAF7A00356465 /* iOSNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42365B520A9DDEF00FFFD9E /* iOSNotificationViewController.m */; };
 		D48EE15A20DAAF7A00356465 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D423658320A8315C00FFFD9E /* MASCompositeConstraint.m */; };
@@ -226,6 +247,8 @@
 		D4DC72B9216B4D6700439A8A /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DC72B8216B4D6500439A8A /* GLKit.framework */; };
 		D4F607EE2175BA3F00476729 /* ZPCAShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F607ED2175BA3F00476729 /* ZPCAShapeLayerViewController.m */; };
 		D4F607EF2175BA3F00476729 /* ZPCAShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F607ED2175BA3F00476729 /* ZPCAShapeLayerViewController.m */; };
+		D4F607FF2177277A00476729 /* ZPCATextLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F607FE2177277A00476729 /* ZPCATextLayerViewController.m */; };
+		D4F608002177277A00476729 /* ZPCATextLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F607FE2177277A00476729 /* ZPCATextLayerViewController.m */; };
 		D4FFE02220F30D6A00ED8276 /* ZPScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FFE02120F30D6A00ED8276 /* ZPScrollViewController.m */; };
 		D4FFE02320F30F5200ED8276 /* ZPScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FFE02120F30D6A00ED8276 /* ZPScrollViewController.m */; };
 /* End PBXBuildFile section */
@@ -376,8 +399,6 @@
 		D423659920A8315C00FFFD9E /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		D423659A20A8315C00FFFD9E /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		D42365A520A8324800FFFD9E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		D42365AA20A8849900FFFD9E /* NSString+Size.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
-		D42365AB20A8849900FFFD9E /* NSString+Size.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
 		D42365AE20A88AAD00FFFD9E /* UIFont+Type.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+Type.h"; sourceTree = "<group>"; };
 		D42365B020A8971200FFFD9E /* UIColor+Custom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Custom.h"; sourceTree = "<group>"; };
 		D42365B120A8971200FFFD9E /* UIColor+Custom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Custom.m"; sourceTree = "<group>"; };
@@ -460,6 +481,28 @@
 		D47D45032124263E00E95DE4 /* ZPPushNotificationHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPPushNotificationHeader.h; sourceTree = "<group>"; };
 		D47D451F21242B1F00E95DE4 /* Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resource.bundle; sourceTree = "<group>"; };
 		D47D452221242D3500E95DE4 /* minion_11.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = minion_11.mp4; sourceTree = "<group>"; };
+		D483259921787B93000BDE4D /* ZPBaseLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPBaseLabel.h; sourceTree = "<group>"; };
+		D483259A21787B93000BDE4D /* ZPBaseLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPBaseLabel.m; sourceTree = "<group>"; };
+		D483259D217B7C0A000BDE4D /* UINavigationBar+ZPBorderMargin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+ZPBorderMargin.h"; sourceTree = "<group>"; };
+		D483259E217B7C0A000BDE4D /* UINavigationBar+ZPBorderMargin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+ZPBorderMargin.m"; sourceTree = "<group>"; };
+		D48325A1217D961F000BDE4D /* UIColor+Gradient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Gradient.h"; sourceTree = "<group>"; };
+		D48325A2217D961F000BDE4D /* UIColor+Gradient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Gradient.m"; sourceTree = "<group>"; };
+		D48325A5217E1BF3000BDE4D /* NSString+Size.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
+		D48325A6217E1BF3000BDE4D /* NSString+Size.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
+		D48325AD217E2437000BDE4D /* ZPInterfaceCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPInterfaceCollectionCell.h; sourceTree = "<group>"; };
+		D48325AE217E2437000BDE4D /* ZPInterfaceCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPInterfaceCollectionCell.m; sourceTree = "<group>"; };
+		D48325B2217F1327000BDE4D /* ZPBuildInterfaceViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPBuildInterfaceViewModel.h; sourceTree = "<group>"; };
+		D48325B3217F1327000BDE4D /* ZPBuildInterfaceViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPBuildInterfaceViewModel.m; sourceTree = "<group>"; };
+		D48325B7217F137B000BDE4D /* ZPInterfaceCollectionCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPInterfaceCollectionCellModel.h; sourceTree = "<group>"; };
+		D48325B8217F137B000BDE4D /* ZPInterfaceCollectionCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPInterfaceCollectionCellModel.m; sourceTree = "<group>"; };
+		D48325BC217F1411000BDE4D /* infaceConfigureFile.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = infaceConfigureFile.plist; sourceTree = "<group>"; };
+		D48325BF217F6469000BDE4D /* ZPControlOfInterfaceCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPControlOfInterfaceCollectionCell.h; sourceTree = "<group>"; };
+		D48325C0217F6469000BDE4D /* ZPControlOfInterfaceCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPControlOfInterfaceCollectionCell.m; sourceTree = "<group>"; };
+		D48325C3217F6BCC000BDE4D /* ZPInterfaceContentCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPInterfaceContentCollectionView.h; sourceTree = "<group>"; };
+		D48325C4217F6BCC000BDE4D /* ZPInterfaceContentCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPInterfaceContentCollectionView.m; sourceTree = "<group>"; };
+		D48325C7217F714A000BDE4D /* buildInterfaceItem.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = buildInterfaceItem.plist; sourceTree = "<group>"; };
+		D48325CA217F72F4000BDE4D /* ZPBuildInterfaceCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPBuildInterfaceCellModel.h; sourceTree = "<group>"; };
+		D48325CB217F72F4000BDE4D /* ZPBuildInterfaceCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPBuildInterfaceCellModel.m; sourceTree = "<group>"; };
 		D489966B20D8AD9600E71DCA /* ZPGestureRecognizerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPGestureRecognizerViewController.h; sourceTree = "<group>"; };
 		D489966C20D8AD9600E71DCA /* ZPGestureRecognizerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPGestureRecognizerViewController.m; sourceTree = "<group>"; };
 		D489967020D8AEAE00E71DCA /* JFDefaultSkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFDefaultSkin.h; sourceTree = "<group>"; };
@@ -524,6 +567,8 @@
 		D4DC72B8216B4D6500439A8A /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		D4F607EC2175BA3F00476729 /* ZPCAShapeLayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPCAShapeLayerViewController.h; sourceTree = "<group>"; };
 		D4F607ED2175BA3F00476729 /* ZPCAShapeLayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPCAShapeLayerViewController.m; sourceTree = "<group>"; };
+		D4F607FD2177277A00476729 /* ZPCATextLayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPCATextLayerViewController.h; sourceTree = "<group>"; };
+		D4F607FE2177277A00476729 /* ZPCATextLayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPCATextLayerViewController.m; sourceTree = "<group>"; };
 		D4FFE02020F30D6A00ED8276 /* ZPScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPScrollViewController.h; sourceTree = "<group>"; };
 		D4FFE02120F30D6A00ED8276 /* ZPScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPScrollViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -766,8 +811,6 @@
 		D42365A620A883FD00FFFD9E /* SystemClassCagetory */ = {
 			isa = PBXGroup;
 			children = (
-				D42365AA20A8849900FFFD9E /* NSString+Size.h */,
-				D42365AB20A8849900FFFD9E /* NSString+Size.m */,
 				D42365B020A8971200FFFD9E /* UIColor+Custom.h */,
 				D42365B120A8971200FFFD9E /* UIColor+Custom.m */,
 			);
@@ -925,6 +968,13 @@
 		D469FF5F21747BF400155E26 /* interface(界面) */ = {
 			isa = PBXGroup;
 			children = (
+				D48325BB217F13CE000BDE4D /* intefaceConfigureFile */,
+				D48325B6217F134B000BDE4D /* model */,
+				D48325B1217F12CD000BDE4D /* viewModel */,
+				D48325AC217E240F000BDE4D /* view */,
+				D48325AB217E23EB000BDE4D /* 动画 */,
+				D48325AA217E23E0000BDE4D /* 绘图 */,
+				D48325A9217E23BB000BDE4D /* UI控件 */,
 				D469FF7421747DD400155E26 /* ZPInterfaceViewController.h */,
 				D469FF7521747DD400155E26 /* ZPInterfaceViewController.m */,
 			);
@@ -1008,6 +1058,12 @@
 			children = (
 				D469FF8B2174903A00155E26 /* UIFont+Style.h */,
 				D469FF8C2174903A00155E26 /* UIFont+Style.m */,
+				D483259D217B7C0A000BDE4D /* UINavigationBar+ZPBorderMargin.h */,
+				D483259E217B7C0A000BDE4D /* UINavigationBar+ZPBorderMargin.m */,
+				D48325A1217D961F000BDE4D /* UIColor+Gradient.h */,
+				D48325A2217D961F000BDE4D /* UIColor+Gradient.m */,
+				D48325A5217E1BF3000BDE4D /* NSString+Size.h */,
+				D48325A6217E1BF3000BDE4D /* NSString+Size.m */,
 			);
 			path = "Extension(分类)";
 			sourceTree = "<group>";
@@ -1063,6 +1119,69 @@
 			children = (
 			);
 			path = "resource(资源)";
+			sourceTree = "<group>";
+		};
+		D48325A9217E23BB000BDE4D /* UI控件 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "UI控件";
+			sourceTree = "<group>";
+		};
+		D48325AA217E23E0000BDE4D /* 绘图 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "绘图";
+			sourceTree = "<group>";
+		};
+		D48325AB217E23EB000BDE4D /* 动画 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "动画";
+			sourceTree = "<group>";
+		};
+		D48325AC217E240F000BDE4D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				D48325AD217E2437000BDE4D /* ZPInterfaceCollectionCell.h */,
+				D48325AE217E2437000BDE4D /* ZPInterfaceCollectionCell.m */,
+				D48325BF217F6469000BDE4D /* ZPControlOfInterfaceCollectionCell.h */,
+				D48325C0217F6469000BDE4D /* ZPControlOfInterfaceCollectionCell.m */,
+				D48325C3217F6BCC000BDE4D /* ZPInterfaceContentCollectionView.h */,
+				D48325C4217F6BCC000BDE4D /* ZPInterfaceContentCollectionView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		D48325B1217F12CD000BDE4D /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D48325B2217F1327000BDE4D /* ZPBuildInterfaceViewModel.h */,
+				D48325B3217F1327000BDE4D /* ZPBuildInterfaceViewModel.m */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		D48325B6217F134B000BDE4D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D48325B7217F137B000BDE4D /* ZPInterfaceCollectionCellModel.h */,
+				D48325B8217F137B000BDE4D /* ZPInterfaceCollectionCellModel.m */,
+				D48325CA217F72F4000BDE4D /* ZPBuildInterfaceCellModel.h */,
+				D48325CB217F72F4000BDE4D /* ZPBuildInterfaceCellModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		D48325BB217F13CE000BDE4D /* intefaceConfigureFile */ = {
+			isa = PBXGroup;
+			children = (
+				D48325BC217F1411000BDE4D /* infaceConfigureFile.plist */,
+				D48325C7217F714A000BDE4D /* buildInterfaceItem.plist */,
+			);
+			path = intefaceConfigureFile;
 			sourceTree = "<group>";
 		};
 		D489966A20D8AD6200E71DCA /* 手势 */ = {
@@ -1160,12 +1279,15 @@
 		D4A43CE3212BE55500F59FA5 /* DrawImage(绘图) */ = {
 			isa = PBXGroup;
 			children = (
+				D4F607FC2177273700476729 /* CATextLayer(使用) */,
 				D4F607EB2175B9FC00476729 /* CAShapeLayer(使用) */,
 				D45879B9215A371F0088D952 /* CALayer介绍 */,
 				D4A43CE4212BE57F00F59FA5 /* ZPAnimationBaseViewController.h */,
 				D4A43CE5212BE57F00F59FA5 /* ZPAnimationBaseViewController.m */,
 				D49A941C21479193007C6B29 /* ZPLayer.h */,
 				D49A941D21479193007C6B29 /* ZPLayer.m */,
+				D483259921787B93000BDE4D /* ZPBaseLabel.h */,
+				D483259A21787B93000BDE4D /* ZPBaseLabel.m */,
 			);
 			path = "DrawImage(绘图)";
 			sourceTree = "<group>";
@@ -1298,6 +1420,15 @@
 				D4F607ED2175BA3F00476729 /* ZPCAShapeLayerViewController.m */,
 			);
 			path = "CAShapeLayer(使用)";
+			sourceTree = "<group>";
+		};
+		D4F607FC2177273700476729 /* CATextLayer(使用) */ = {
+			isa = PBXGroup;
+			children = (
+				D4F607FD2177277A00476729 /* ZPCATextLayerViewController.h */,
+				D4F607FE2177277A00476729 /* ZPCATextLayerViewController.m */,
+			);
+			path = "CATextLayer(使用)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1495,6 +1626,8 @@
 				D423656920A8231D00FFFD9E /* LaunchScreen.storyboard in Resources */,
 				D47AA39E21199011004EA825 /* JSPatch.js in Resources */,
 				D423657520A8258F00FFFD9E /* SectionList.plist in Resources */,
+				D48325BD217F1411000BDE4D /* infaceConfigureFile.plist in Resources */,
+				D48325C8217F714A000BDE4D /* buildInterfaceItem.plist in Resources */,
 				D47D452021242B2000E95DE4 /* Resource.bundle in Resources */,
 				D469FF7F21747E8C00155E26 /* MainModule.plist in Resources */,
 				D4DC729B215CB3D100439A8A /* Assets.xcassets in Resources */,
@@ -1507,12 +1640,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D43D1BFE20E35F0B00B776D6 /* LaunchScreen.storyboard in Resources */,
+				D48325BE217F1411000BDE4D /* infaceConfigureFile.plist in Resources */,
 				D47AA39F21199011004EA825 /* JSPatch.js in Resources */,
 				D4DC729C215CB3D100439A8A /* Assets.xcassets in Resources */,
 				D49F0DA4212A766F00EBC76E /* icon1.jpg in Resources */,
 				D43D1BFF20E35F0B00B776D6 /* SectionList.plist in Resources */,
 				D49F0DCD212A92BA00EBC76E /* MainInterface.storyboard in Resources */,
 				D47D452121242B2000E95DE4 /* Resource.bundle in Resources */,
+				D48325C9217F714A000BDE4D /* buildInterfaceItem.plist in Resources */,
 				D47D452321242D3500E95DE4 /* minion_11.mp4 in Resources */,
 				D469FF8021747E8C00155E26 /* MainModule.plist in Resources */,
 			);
@@ -1562,11 +1697,14 @@
 				D4CC6D7120E4D62700D5B059 /* ZPTapGestureViewController.m in Sources */,
 				D489967620D8AEAF00E71DCA /* JFDefaultSkin.m in Sources */,
 				D423659C20A8315C00FFFD9E /* MASConstraint.m in Sources */,
+				D48325A3217D961F000BDE4D /* UIColor+Gradient.m in Sources */,
 				D4FFE02220F30D6A00ED8276 /* ZPScrollViewController.m in Sources */,
 				D469FF7621747DD400155E26 /* ZPInterfaceViewController.m in Sources */,
 				D423659F20A8315C00FFFD9E /* MASViewAttribute.m in Sources */,
 				D4609469210EBEC00060C61E /* LYHomeCellModel.m in Sources */,
 				D4670F7F212EAA0E00A6A2EA /* ZPBaseAnimationViewController.m in Sources */,
+				D4F607FF2177277A00476729 /* ZPCATextLayerViewController.m in Sources */,
+				D48325AF217E2437000BDE4D /* ZPInterfaceCollectionCell.m in Sources */,
 				D469FF562174741000155E26 /* ZPTabBarViewController.m in Sources */,
 				D489966D20D8AD9700E71DCA /* ZPGestureRecognizerViewController.m in Sources */,
 				D420FF2520FF31AC00047B97 /* ZPCellSlideTableViewController.m in Sources */,
@@ -1577,19 +1715,24 @@
 				D4306B7821086C0500947AB6 /* ZPTableSlideCell.m in Sources */,
 				D423657E20A82A9600FFFD9E /* MainTableViewCell.m in Sources */,
 				D489967820D8AEAF00E71DCA /* JFSkinModel.m in Sources */,
+				D483259B21787B93000BDE4D /* ZPBaseLabel.m in Sources */,
 				D469FF832174817500155E26 /* ZPMainModuleModel.m in Sources */,
 				D420DB9C20CE74BC0080C931 /* ZPButton.m in Sources */,
+				D48325A7217E1BF3000BDE4D /* NSString+Size.m in Sources */,
 				D4D5496420D23B8E007E32B3 /* ZPWKWebViewController.m in Sources */,
 				D489967E20D8B1FD00E71DCA /* JFGestureListModel.m in Sources */,
 				D41CF5BD20E6063B00D10B3A /* ZPBasePropertyGestureViewController.m in Sources */,
 				D420DB9620CE631E0080C931 /* UIButtonViewController.m in Sources */,
 				D469FF6E21747DB500155E26 /* ZPDataViewController.m in Sources */,
 				D42365A020A8315C00FFFD9E /* MASViewConstraint.m in Sources */,
+				D48325B4217F1327000BDE4D /* ZPBuildInterfaceViewModel.m in Sources */,
 				D465E9FD20FC639C00D3C957 /* ZPEditTableViewController.m in Sources */,
+				D48325B9217F137B000BDE4D /* ZPInterfaceCollectionCellModel.m in Sources */,
 				D4C240D52122CA9400077E21 /* ZPPushNotificationViewController.m in Sources */,
 				D49A941E21479193007C6B29 /* ZPLayer.m in Sources */,
 				D469FF7C21747E6700155E26 /* ZPMainModuleManager.m in Sources */,
 				D423659E20A8315C00FFFD9E /* MASLayoutConstraint.m in Sources */,
+				D48325CC217F72F4000BDE4D /* ZPBuildInterfaceCellModel.m in Sources */,
 				D41CF5C220E6145900D10B3A /* ZPScreenGestureViewController.m in Sources */,
 				D4609465210EBE720060C61E /* ZPHomeTableViewCell.m in Sources */,
 				D423657B20A8296800FFFD9E /* SectionModel.m in Sources */,
@@ -1598,13 +1741,14 @@
 				D423657820A826FF00FFFD9E /* KnowledgeModel.m in Sources */,
 				D4B1EF7920F859E900A01161 /* ZPPageControl.m in Sources */,
 				D42365A320A8315C00FFFD9E /* View+MASAdditions.m in Sources */,
-				D42365AC20A8849900FFFD9E /* NSString+Size.m in Sources */,
 				D469FF5D21747B1800155E26 /* ZPBaseNavigationController.m in Sources */,
+				D48325C5217F6BCC000BDE4D /* ZPInterfaceContentCollectionView.m in Sources */,
 				D49A9423214792B1007C6B29 /* ZPBaseViewController.m in Sources */,
 				D49A94582154C0D0007C6B29 /* ZPCALayerViewController.m in Sources */,
 				D42365BA20B701C700FFFD9E /* ZPURLSessionViewController.m in Sources */,
 				D4DC729F215DEE6500439A8A /* ZPBlockButton.m in Sources */,
 				D42365B620A9DDEF00FFFD9E /* iOSNotificationViewController.m in Sources */,
+				D48325C1217F6469000BDE4D /* ZPControlOfInterfaceCollectionCell.m in Sources */,
 				D43D1BD920E3394500B776D6 /* UIGestureRecognizer+Name.m in Sources */,
 				D423659B20A8315C00FFFD9E /* MASCompositeConstraint.m in Sources */,
 				D4CC6D7620E4E14100D5B059 /* ZPLongPressViewController.m in Sources */,
@@ -1618,6 +1762,7 @@
 				D420FF1F20FEED6900047B97 /* ZPEditTableViewCell.m in Sources */,
 				D469FF6621747D9E00155E26 /* ZPVideoViewController.m in Sources */,
 				D4669045213919DD009633B4 /* ZPBezierViewController.m in Sources */,
+				D483259F217B7C0A000BDE4D /* UINavigationBar+ZPBorderMargin.m in Sources */,
 				D423656120A8231D00FFFD9E /* ViewController.m in Sources */,
 				D47BB92E213530DB0040607C /* ZPBaseTableViewAnimiationController.m in Sources */,
 				D4B4B1C02112B644009F61BF /* ZPRomateNotificationManager.m in Sources */,
@@ -1644,7 +1789,9 @@
 			files = (
 				D4CC6D7220E4E09900D5B059 /* ZPTapGestureViewController.m in Sources */,
 				D41CF5C920E632E600D10B3A /* ZPImageBrowseViewController.m in Sources */,
+				D48325CD217F72F4000BDE4D /* ZPBuildInterfaceCellModel.m in Sources */,
 				D43D1BDC20E35F0B00B776D6 /* JFDefaultSkin.m in Sources */,
+				D48325C6217F6BCC000BDE4D /* ZPInterfaceContentCollectionView.m in Sources */,
 				D4618B9A215A093E005FFB28 /* JFNetTool.m in Sources */,
 				D43D1BDD20E35F0B00B776D6 /* MASConstraint.m in Sources */,
 				D4B1EF7A20F859EA00A01161 /* ZPPageControl.m in Sources */,
@@ -1666,12 +1813,14 @@
 				D43D1BE720E35F0B00B776D6 /* UIButtonViewController.m in Sources */,
 				D469FF7721747DD400155E26 /* ZPInterfaceViewController.m in Sources */,
 				D4C76CE320E9E5AC00815A03 /* ZPImageBrowseModel.m in Sources */,
+				D48325A0217B7C0A000BDE4D /* UINavigationBar+ZPBorderMargin.m in Sources */,
 				D4B1EF7520F7117500A01161 /* ZPFile3DScrollViewController.m in Sources */,
 				D469FF7321747DBF00155E26 /* ZPThreadViewController.m in Sources */,
 				D4F607EF2175BA3F00476729 /* ZPCAShapeLayerViewController.m in Sources */,
 				D49A941F21479193007C6B29 /* ZPLayer.m in Sources */,
 				D4306B79210875FF00947AB6 /* ZPCellSlideTableViewController.m in Sources */,
 				D4A0567C2113F037005520F4 /* ZPRomateNotificationManager.m in Sources */,
+				D48325A4217D961F000BDE4D /* UIColor+Gradient.m in Sources */,
 				D4DC72A0215DEE6500439A8A /* ZPBlockButton.m in Sources */,
 				D469FF6F21747DB500155E26 /* ZPDataViewController.m in Sources */,
 				D43D1BE820E35F0B00B776D6 /* MASViewConstraint.m in Sources */,
@@ -1679,19 +1828,21 @@
 				D47BB94521362CCB0040607C /* ZPRotateAnimiationViewController.m in Sources */,
 				D49A9425214793EE007C6B29 /* ZPAnimationBaseViewController.m in Sources */,
 				D469FF6721747D9E00155E26 /* ZPVideoViewController.m in Sources */,
+				D48325A8217E1BF3000BDE4D /* NSString+Size.m in Sources */,
 				D49A94592154C0D6007C6B29 /* ZPCALayerViewController.m in Sources */,
 				D43D1BEA20E35F0B00B776D6 /* SectionModel.m in Sources */,
+				D48325B0217E2437000BDE4D /* ZPInterfaceCollectionCell.m in Sources */,
 				D43D1BEB20E35F0B00B776D6 /* JFSKinManager.m in Sources */,
 				D43D1BEC20E35F0B00B776D6 /* KnowledgeModel.m in Sources */,
 				D465E9FE20FC63A300D3C957 /* ZPEditTableViewController.m in Sources */,
 				D43D1BED20E35F0B00B776D6 /* View+MASAdditions.m in Sources */,
 				D49A9424214792B1007C6B29 /* ZPBaseViewController.m in Sources */,
-				D43D1BEE20E35F0B00B776D6 /* NSString+Size.m in Sources */,
 				D469FF842174817500155E26 /* ZPMainModuleModel.m in Sources */,
 				D420FF2020FEEE2000047B97 /* ZPEditTableViewCell.m in Sources */,
 				D47AA39D21199011004EA825 /* JPEngine.m in Sources */,
 				D43D1BEF20E35F0B00B776D6 /* ZPURLSessionViewController.m in Sources */,
 				D469FF5E21747B1800155E26 /* ZPBaseNavigationController.m in Sources */,
+				D48325B5217F1327000BDE4D /* ZPBuildInterfaceViewModel.m in Sources */,
 				D43D1BF020E35F0B00B776D6 /* iOSNotificationViewController.m in Sources */,
 				D469FF6B21747DAA00155E26 /* ZPUseViewController.m in Sources */,
 				D469FF572174741000155E26 /* ZPTabBarViewController.m in Sources */,
@@ -1703,13 +1854,16 @@
 				D43D1BF320E35F0B00B776D6 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				D43D1BF420E35F0B00B776D6 /* MASConstraintMaker.m in Sources */,
 				D4669046213919DD009633B4 /* ZPBezierViewController.m in Sources */,
+				D483259C21787B93000BDE4D /* ZPBaseLabel.m in Sources */,
 				D4FFE02320F30F5200ED8276 /* ZPScrollViewController.m in Sources */,
 				D47BB92F213530DB0040607C /* ZPBaseTableViewAnimiationController.m in Sources */,
+				D4F608002177277A00476729 /* ZPCATextLayerViewController.m in Sources */,
 				D43D1BF520E35F0B00B776D6 /* ViewController.m in Sources */,
 				D436843A20E39BCF0082BC58 /* ZPTestsGestureRecognizerViewController.m in Sources */,
 				D43D1BF620E35F0B00B776D6 /* ZPTestGestureRecognizerViewController.m in Sources */,
 				D4306B7A2108760400947AB6 /* ZPTableSlideCell.m in Sources */,
 				D469FF53217473FD00155E26 /* ZPBaseTabBarController.m in Sources */,
+				D48325BA217F137B000BDE4D /* ZPInterfaceCollectionCellModel.m in Sources */,
 				D4CC6D6620E48B1E00D5B059 /* ZPPanGestureTest1ViewController.m in Sources */,
 				D4CC6D6E20E4AE1C00D5B059 /* UIRotationGestureViewController.m in Sources */,
 				D4668E422137EF3E009633B4 /* ZPScaleAnimationViewController.m in Sources */,
@@ -1719,6 +1873,7 @@
 				D469FF8E2174903A00155E26 /* UIFont+Style.m in Sources */,
 				D43D1BF920E35F0B00B776D6 /* AppDelegate.m in Sources */,
 				D4668E3D2137C48A009633B4 /* ZPMoveAnimationViewController.m in Sources */,
+				D48325C2217F6469000BDE4D /* ZPControlOfInterfaceCollectionCell.m in Sources */,
 				D460946A210EBEF60060C61E /* ZPHomeTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1754,7 +1909,6 @@
 				D48EE15320DAAF7A00356465 /* JFSKinManager.m in Sources */,
 				D48EE15420DAAF7A00356465 /* KnowledgeModel.m in Sources */,
 				D48EE15520DAAF7A00356465 /* View+MASAdditions.m in Sources */,
-				D48EE15620DAAF7A00356465 /* NSString+Size.m in Sources */,
 				D48EE15820DAAF7A00356465 /* ZPURLSessionViewController.m in Sources */,
 				D48EE15920DAAF7A00356465 /* iOSNotificationViewController.m in Sources */,
 				D48EE15A20DAAF7A00356465 /* MASCompositeConstraint.m in Sources */,
@@ -2320,6 +2474,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 3VENH5K5W4;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/iOSDemo/iOSNotification/iOS推送/NotificationExtension/NotificationServer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -2341,6 +2496,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 3VENH5K5W4;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/iOSDemo/iOSNotification/iOS推送/NotificationExtension/NotificationServer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -2363,6 +2519,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 3VENH5K5W4;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/iOSDemo/iOSNotification/iOS推送/NotificationExtension/NotificationServer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -2381,16 +2538,17 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 3VENH5K5W4;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/iOSDemo/iOSNotification/iOS推送/NotificationExtension/NotificationServer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xingdong.OaSystem.serverNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "f9212d1c-ce81-4c13-901a-8e9a3d708bc9";
-				PROVISIONING_PROFILE_SPECIFIER = XingDongServerNotification;
+				PROVISIONING_PROFILE_SPECIFIER = XingDongServerNotification_Distribution;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

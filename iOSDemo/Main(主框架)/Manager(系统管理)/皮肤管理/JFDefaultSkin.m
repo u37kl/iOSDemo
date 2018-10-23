@@ -15,13 +15,33 @@
 
 - (UIColor *)themeColor
 {
-   return JFColorAlpha_v(0xFB7299, 1);
+    return JFColorAlpha_v(0xFB7299, 1);
 }
 
--(UIColor *)tabBarBtnTitleNormalColor
+- (UIColor *)navTitleNormalColor
 {
-    return JFColorAlpha_v(0x757575, 1);
+    return JFColorAlpha_v(0xfee2ea, 1);
 }
+
+- (UIColor *)navTitleSelectedColor
+{
+    return JFColorAlpha_v(0xffffff, 1);
+}
+
+- (UIColor *)tabBarTitleNormalColor
+{
+    return JFColorAlpha_v(0xa5a4a4, 1);
+}
+
+-(UIColor *)tabBarTitleSelectedColor
+{
+    return JFColorAlpha_v(0xFB7299, 1);
+}
+
+//-(UIColor *)tabBarBtnTitleNormalColor
+//{
+//    return JFColorAlpha_v(0x757575, 1);
+//}
 
 - (UIColor *)backColor
 {

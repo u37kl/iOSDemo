@@ -7,8 +7,7 @@
 //
 
 #import "ZPButton.h"
-#import <Otherframework/NSString+Extension.h>
-
+#import "NSString+Size.h"
 
 @interface ZPButton()
 @property(nonatomic, weak) UIImage *normalImg;

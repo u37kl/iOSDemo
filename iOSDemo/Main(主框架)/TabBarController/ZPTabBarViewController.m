@@ -32,6 +32,7 @@
         id<ZPMainModuleModelProtocol> model = modelList[i];
         [self addChildViewControllerWithModel:model tabBarIndex:i];
     }
+    self.selectedIndex = 0;
 }
 
 -(void)addChildViewControllerWithModel:(id<ZPMainModuleModelProtocol>)model tabBarIndex:(NSInteger)tag
@@ -44,15 +45,15 @@
        selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     }
     UITabBarItem *item = [[UITabBarItem alloc] initWithTitle:model.title image:[UIImage imageNamed:model.iconNormal] selectedImage:selectedImage];
-    [item setTitleTextAttributes:@{NSFontAttributeName:[UIFont getPFRWithSize:10],NSForegroundColorAttributeName:[JFSKinManager skinManager].model.tabBarBtnTitleNormalColor}  forState:UIControlStateNormal];
-    [item setTitleTextAttributes:@{NSFontAttributeName:[UIFont getPFRWithSize:10],NSForegroundColorAttributeName:[JFSKinManager skinManager].model.themeColor} forState:UIControlStateSelected];
+    [item setTitleTextAttributes:@{NSFontAttributeName:[UIFont getPFRWithSize:10],NSForegroundColorAttributeName:[JFSKinManager skinManager].model.tabBarTitleNormalColor}  forState:UIControlStateNormal];
+    [item setTitleTextAttributes:@{NSFontAttributeName:[UIFont getPFRWithSize:10],NSForegroundColorAttributeName:[JFSKinManager skinManager].model.tabBarTitleSelectedColor} forState:UIControlStateSelected];
 
     vc.tabBarItem = item;
     vc.tabBarItem.tag = tag;
 
     ZPBaseNavigationController *nav = [[ZPBaseNavigationController alloc] initWithRootViewController:vc];
     [self addChildViewController:nav];
-    self.selectedIndex = 1;
+    
 }
 
 /*

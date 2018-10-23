@@ -11,8 +11,6 @@
 		D4AE8FD620DCFAB6006A24AB /* JFDateFormatTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AE8FCE20DCFAB6006A24AB /* JFDateFormatTool.m */; };
 		D4AE8FD720DCFAB6006A24AB /* JFScreenScale.h in Headers */ = {isa = PBXBuildFile; fileRef = D4AE8FCF20DCFAB6006A24AB /* JFScreenScale.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4AE8FD820DCFAB6006A24AB /* JFScreenScale.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AE8FD020DCFAB6006A24AB /* JFScreenScale.m */; };
-		D4AE8FD920DCFAB6006A24AB /* NSString+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = D4AE8FD120DCFAB6006A24AB /* NSString+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D4AE8FDA20DCFAB6006A24AB /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AE8FD220DCFAB6006A24AB /* NSString+Extension.m */; };
 		D4AE901F20DD03E4006A24AB /* JFDateFormatTool.h in Headers */ = {isa = PBXBuildFile; fileRef = D4AE8FCD20DCFAB6006A24AB /* JFDateFormatTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -24,8 +22,6 @@
 		D4AE8FCE20DCFAB6006A24AB /* JFDateFormatTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFDateFormatTool.m; sourceTree = "<group>"; };
 		D4AE8FCF20DCFAB6006A24AB /* JFScreenScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFScreenScale.h; sourceTree = "<group>"; };
 		D4AE8FD020DCFAB6006A24AB /* JFScreenScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFScreenScale.m; sourceTree = "<group>"; };
-		D4AE8FD120DCFAB6006A24AB /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
-		D4AE8FD220DCFAB6006A24AB /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +68,6 @@
 				D4AE8FCE20DCFAB6006A24AB /* JFDateFormatTool.m */,
 				D4AE8FCF20DCFAB6006A24AB /* JFScreenScale.h */,
 				D4AE8FD020DCFAB6006A24AB /* JFScreenScale.m */,
-				D4AE8FD120DCFAB6006A24AB /* NSString+Extension.h */,
-				D4AE8FD220DCFAB6006A24AB /* NSString+Extension.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -86,7 +80,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4AE8FBE20DCF9A5006A24AB /* Otherframework.h in Headers */,
-				D4AE8FD920DCFAB6006A24AB /* NSString+Extension.h in Headers */,
 				D4AE901F20DD03E4006A24AB /* JFDateFormatTool.h in Headers */,
 				D4AE8FD720DCFAB6006A24AB /* JFScreenScale.h in Headers */,
 			);
@@ -161,7 +154,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4AE8FD820DCFAB6006A24AB /* JFScreenScale.m in Sources */,
-				D4AE8FDA20DCFAB6006A24AB /* NSString+Extension.m in Sources */,
 				D4AE8FD620DCFAB6006A24AB /* JFDateFormatTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

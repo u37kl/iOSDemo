@@ -12,6 +12,7 @@
 #import "UIFont+Type.h"
 #import "KnowledgeModel.h"
 
+
 @interface MainTableViewCell()
 @property (nonatomic, weak) UILabel *titleLabel;
 @property (nonatomic, weak) UILabel *descLabel;

@@ -568,7 +568,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadBtnView];
-    
 //    [self createLayerForShadow];    // 设置图层的阴影
 //    [self createLayerForMask];        // 设置图层蒙版
 //    [self createLayerForAlpha]; // 组透明

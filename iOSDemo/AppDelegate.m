@@ -26,8 +26,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-//    ZPTabBarViewController *vc = [[ZPTabBarViewController alloc] init];
-    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    ZPTabBarViewController *vc = [[ZPTabBarViewController alloc] init];
+//    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
     
      self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     
@@ -83,8 +83,6 @@
         UIApplicationShortcutItem *item3= [[UIApplicationShortcutItem alloc] initWithType:@"item3" localizedTitle:@"搜索寻味师" localizedSubtitle:nil icon:icon3 userInfo:nil];
         [[UIApplication sharedApplication] setShortcutItems:@[item3,item2,item1]];
     }
-
-    
 }
 
 #pragma mark - 获取deviceToken

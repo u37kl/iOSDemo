@@ -12,6 +12,15 @@
 
 // 主题色
 @property (nonatomic, strong) UIColor *themeColor;
+// 导航栏文字_normal
+@property (nonatomic, strong) UIColor *navTitleNormalColor;
+// 导航栏文字_selected
+@property (nonatomic, strong) UIColor *navTitleSelectedColor;
+// TabBar文字_selected
+@property (nonatomic, strong) UIColor *tabBarTitleNormalColor;
+// TabBar文字_selected
+@property (nonatomic, strong) UIColor *tabBarTitleSelectedColor;
+
 // tab按钮默认颜色
 @property (nonatomic, strong) UIColor *tabBarBtnTitleNormalColor;
 // 背景色

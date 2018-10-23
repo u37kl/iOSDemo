@@ -8,7 +8,7 @@
 
 #import "UIButtonViewController.h"
 #import <Otherframework/Otherframework.h>
-#import <Otherframework/NSString+Extension.h>
+#import "NSString+Size.h"
 #import "ZPButton.h"
 #import "Masonry.h"
 @interface UIButtonViewController ()

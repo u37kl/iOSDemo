@@ -144,6 +144,14 @@
 				<key>className</key>
 				<string>ZPCAShapeLayerViewController</string>
 			</dict>
+			<dict>
+				<key>name</key>
+				<string>CALayer</string>
+				<key>description</key>
+				<string>CALayer基础属性</string>
+				<key>className</key>
+				<string>ZPCATextLayerViewController</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>
