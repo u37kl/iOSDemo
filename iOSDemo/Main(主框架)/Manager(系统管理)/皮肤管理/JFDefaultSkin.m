@@ -38,10 +38,10 @@
     return JFColorAlpha_v(0xFB7299, 1);
 }
 
-//-(UIColor *)tabBarBtnTitleNormalColor
-//{
-//    return JFColorAlpha_v(0x757575, 1);
-//}
+-(UIColor *)hightedColor
+{
+    return JFColorAlpha_v(0xC0C0C0, 1);
+}
 
 - (UIColor *)backColor
 {
@@ -55,7 +55,12 @@
                            
 - (UIColor *)titleColor
 {
-    return JFColorAlpha_v(0x4A4A4A, 1);
+    return JFColorAlpha_v(0x424242, 1);
+}
+
+- (UIColor *)flagTitleColor
+{
+    return JFColorAlpha_v(0xC0C0C0, 1);
 }
 
 - (UIColor *)contentDataColor
@@ -68,10 +73,7 @@
 {
     return JFColorAlpha_v(0x9B9B9B, 1);
 }
-- (UIColor *)flagTitleColor
-{
-    return JFColorAlpha_v(0x4A90E2, 1);
-}
+
 
 - (UIColor *)flagTitleOrangeColor
 {

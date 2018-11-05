@@ -9,17 +9,21 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
-#ifdef MyDev
+#if DEBUG == 1
 
+#define testM @"MyDev"
 // 可以在此定义项目中网络请求路径
 #define ZPLog(n) NSLog(@"MyDev")
 
-#elif MyReleaseDev
+#elif MyTestRelease == 3
 #define ZPLog(n) NSLog(@"MyReleaseDev")
+
+#define testM @"MyReleaseDev"
 
 #else
 #define ZPLog(n) NSLog(@"Dev")
 
+#define testM @"MyRelease"
 #endif
 
 
@@ -28,6 +32,9 @@
 #import "JFSKinManager.h"
 #import "UIFont+Style.h"
 #import <Otherframework/Otherframework.h>
+#import "UIView+ViewController.h"
+#import "Masonry.h"
+#import "ZPBaseViewController.h"
 
 
 #pragma mark - 系统版本

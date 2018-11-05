@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Color</key>
+		<integer>16478873</integer>
+		<key>imageName</key>
+		<string>interface_second_1</string>
+		<key>titleName</key>
+		<string>Quarze基础</string>
+		<key>viewControllerName</key>
+		<string>ZPBaseQuarzeViewController</string>
+	</dict>
+	<dict>
+		<key>Color</key>
+		<integer>16478873</integer>
+		<key>viewControllerName</key>
+		<string>ZPTextQuarzeViewController</string>
+		<key>imageName</key>
+		<string>interface_second_1</string>
+		<key>titleName</key>
+		<string>Quarze绘制文字</string>
+	</dict>
+	<dict>
+		<key>Color</key>
+		<integer>16478873</integer>
+		<key>viewControllerName</key>
+		<string>ZPImageQuarzeViewController</string>
+		<key>imageName</key>
+		<string>interface_second_1</string>
+		<key>titleName</key>
+		<string>Quarze绘制图片</string>
+	</dict>
+	<dict>
+		<key>viewControllerName</key>
+		<string>ZPClipImageViewController</string>
+		<key>Color</key>
+		<real>4146110</real>
+		<key>imageName</key>
+		<string>interface_second_1</string>
+		<key>titleName</key>
+		<string>图片裁剪</string>
+	</dict>
+</array>
+</plist>

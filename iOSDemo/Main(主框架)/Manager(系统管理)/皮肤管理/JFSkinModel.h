@@ -21,10 +21,14 @@
 // TabBar文字_selected
 @property (nonatomic, strong) UIColor *tabBarTitleSelectedColor;
 
-// tab按钮默认颜色
-@property (nonatomic, strong) UIColor *tabBarBtnTitleNormalColor;
 // 背景色
 @property (nonatomic, strong) UIColor *backColor;
+// 背景色
+@property (nonatomic, strong) UIColor *hightedColor;
+
+// tab按钮默认颜色
+@property (nonatomic, strong) UIColor *tabBarBtnTitleNormalColor;
+
 // 分割线颜色
 @property (nonatomic, strong) UIColor *separatorLineColor;
 // 主界面颜色

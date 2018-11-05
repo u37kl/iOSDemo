@@ -9,11 +9,14 @@
 #import "ZPInterfaceViewController.h"
 #import "Masonry.h"
 #import "UIColor+Gradient.h"
-#import <AFile/UIView+Frame.h>
+#import "UIView+Frame.h"
 #import <Otherframework/Otherframework.h>
 
 #import "ZPInterfaceCollectionCell.h"
+#import "ZPInterfaceCollectionCell_2.h"
 #import "ZPInterfaceCollectionCellModel.h"
+#import "ZPInterfaceCollectionCellModelProtocol.h"
+
 #define kAnimationOfInterfaceViewControllerNavBottomLineLayer @"kAnimationOfInterfaceViewControllerNavBottomLineLayer"
 @interface ZPInterfaceViewController () <CAAnimationDelegate, UICollectionViewDataSource, UICollectionViewDelegate>
 @property (nonatomic ,weak) CAShapeLayer *navViewBottomLineLayer;
@@ -27,17 +30,30 @@
 
 @implementation ZPInterfaceViewController
 
+#pragma mark - 生命周期方法
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self loadConfigureFile];
+    [self setLeftNavigationBtn];
+    [self setNavigationMiddleView];
+    [self createCollectionView];
+    
+    NSLog(@"%@",testM);
+    
+}
+
 -(void)loadConfigureFile
 {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"infaceConfigureFile" ofType:@"plist"];
     NSDictionary *fileDict = [NSDictionary dictionaryWithContentsOfFile:path];
-    self.cellName = fileDict[@"cellName"];
 
     NSArray *arr = fileDict[@"contentList"];
     self.dateSource = [NSMutableArray arrayWithCapacity:arr.count];
     for (NSDictionary *dict in arr) {
         ZPInterfaceCollectionCellModel *model = [[ZPInterfaceCollectionCellModel alloc] init];
         model.viewModelName = dict[@"viewModelName"];
+        model.viewModelItemCellName = dict[@"viewModelItemCellName"];
         model.cellName = dict[@"cellName"];
         [self.dateSource addObject:model];
     }
@@ -82,7 +98,7 @@
     }];
     
     UIButton *btn2 = [[UIButton alloc] init];
-    [btn2 setTitle:@"直播" forState:UIControlStateNormal];
+    [btn2 setTitle:@"绘图" forState:UIControlStateNormal];
     btn2.titleLabel.font = [UIFont getPFRWithSize:fontSize];
     btn2.tag = 1;
     [btn2 setTitleColor:normalColor forState:UIControlStateNormal];
@@ -180,71 +196,15 @@
     collectionView.dataSource = self;
     collectionView.delegate = self;
     collectionView.pagingEnabled = YES;
-    [collectionView registerClass:ZPInterfaceCollectionCell.class forCellWithReuseIdentifier:self.cellName];
+    
+    for (ZPInterfaceCollectionCellModel *model in self.dateSource) {
+        [collectionView registerClass:NSClassFromString(model.cellName) forCellWithReuseIdentifier:model.cellName];
+    }
+    
     [self.view addSubview:collectionView];
     [collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.top.right.bottom.equalTo(self.view);
     }];
-}
-
-#pragma mark - 生命周期方法
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    [self loadConfigureFile];
-    [self setLeftNavigationBtn];
-    [self setNavigationMiddleView];
-    [self createCollectionView];
-    
-    
-    NSInteger i = self.index % 6;
-    switch (i) {
-        case 0:
-        {
-            self.view.backgroundColor = [UIColor redColor];
-            break;
-        }
-            
-        case 1:
-        {
-            self.view.backgroundColor = [UIColor blueColor];
-            break;
-        }
-            
-        case 2:
-        {
-            self.view.backgroundColor = [UIColor orangeColor];
-            break;
-        }
-            
-        case 3:
-        {
-            self.view.backgroundColor = [UIColor greenColor];
-            break;
-        }
-            
-        case 4:
-        {
-            self.view.backgroundColor = [UIColor grayColor];
-            break;
-        }
-            
-        case 5:
-        {
-            self.view.backgroundColor = [UIColor whiteColor];
-            break;
-        }
-            
-        default:
-            break;
-    }
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(50, 100, 100, 50)];
-    btn.backgroundColor = [UIColor redColor];
-    [btn addTarget:self action:@selector(test) forControlEvents:UIControlEventTouchUpInside];
-//    [self.view addSubview:btn];
-    [btn setTitle:@"哈哈" forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    
 }
 
 #pragma mark - collectionView方法
@@ -260,10 +220,14 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    ZPInterfaceCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:self.cellName forIndexPath:indexPath];
+    
     ZPInterfaceCollectionCellModel *model = self.dateSource[indexPath.row];
-    [cell setModel:(id<ZPInterfaceCollectionCellProtocol>)model];
-    return cell;
+    id<ZPInterfaceCollectionCellProtocol> cell = [collectionView dequeueReusableCellWithReuseIdentifier:model.cellName forIndexPath:indexPath];
+    if (!((UICollectionViewCell *)cell).belongViewController) {
+        ((UICollectionViewCell *)cell).belongViewController = self;
+    }
+    [cell setModel:(id<ZPInterfaceCollectionCellModelProtocol>)model];
+    return (UICollectionViewCell *)cell;
 }
 
 

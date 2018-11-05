@@ -82,15 +82,15 @@
     }
     
     if (@available(iOS 11.0 , *)) {
-        self.navigationItem.leftBarButtonItems = rightBarList;
+        self.navigationItem.rightBarButtonItems = rightBarList;
     }else{
         
         UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
         item.width = -8;
         NSMutableArray<UIBarButtonItem *> *arrM = [NSMutableArray arrayWithCapacity:rightBarList.count];
-        [arrM addObject:item];
         [arrM addObjectsFromArray:rightBarList];
-        self.navigationItem.leftBarButtonItems = arrM;
+        [arrM addObject:item];
+        self.navigationItem.rightBarButtonItems = arrM;
     }
     
 }
@@ -103,15 +103,15 @@
     }
     
     if (@available(iOS 11.0 , *)) {
-        self.navigationItem.leftBarButtonItem = rightBar;
+        self.navigationItem.rightBarButtonItem = rightBar;
     }else{
         
         UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
         item.width = -8;
         NSMutableArray<UIBarButtonItem *> *arrM = [NSMutableArray arrayWithCapacity:2];
-        [arrM addObject:item];
         [arrM addObject:rightBar];
-        self.navigationItem.leftBarButtonItems = arrM;
+        [arrM addObject:item];
+        self.navigationItem.rightBarButtonItems = arrM;
     }
 }
 

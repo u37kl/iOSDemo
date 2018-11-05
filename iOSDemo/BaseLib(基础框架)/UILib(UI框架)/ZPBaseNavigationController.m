@@ -44,14 +44,24 @@
         ZPBaseViewController *vc = (ZPBaseViewController *)viewController;
         [navigationController setNavigationBarHidden:vc.isHiddleNavBar animated:YES];
     }
-    
-    if (navigationController.viewControllers.count <= 1) {
-        viewController.hidesBottomBarWhenPushed = NO;
-    }else{
-        viewController.hidesBottomBarWhenPushed = YES;
-    }
-    
 
+}
+
+// hidesBottomBarWhenPushed共享
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    if (self.childViewControllers.count == 1) {
+        self.childViewControllers.firstObject.hidesBottomBarWhenPushed = YES;
+    }
+    [super pushViewController:viewController animated:animated];
+}
+//
+- (UIViewController *)popViewControllerAnimated:(BOOL)animated
+{
+    if (self.childViewControllers.count == 2) {
+        self.childViewControllers.firstObject.hidesBottomBarWhenPushed = NO;
+    }
+    return [super popViewControllerAnimated:animated];
 }
 
 // 当在执行push或者pop动画时，将导航控制器interactivePopGestureRecognizer.enabled = NO;，导致app卡死。

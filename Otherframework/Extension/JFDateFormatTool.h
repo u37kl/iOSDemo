@@ -11,4 +11,6 @@
 @interface JFDateFormatTool : NSDateFormatter
 + (NSString *) getFormatTime:(NSString *)str;
 + (NSString *) getFormatData:(NSString *)str;
+// 获取当前时间
++(NSString *)getCurrentData;
 @end

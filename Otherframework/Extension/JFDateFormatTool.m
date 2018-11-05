@@ -102,4 +102,12 @@ static JFDateFormatTool *_tool = nil;
     NSDate* destinationDateNow = [[NSDate alloc] initWithTimeInterval:interval sinceDate:anyDate];
     return destinationDateNow;
 }
+
++(NSString *)getCurrentData
+{
+    NSDate *date = [NSDate date];
+    JFDateFormatTool *tool = [JFDateFormatTool dateTool];
+    [tool setDateFormat:@"yyyy_MM_dd_HH_mm_ss"];
+    return [tool stringFromDate:date];
+}
 @end

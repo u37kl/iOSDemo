@@ -44,6 +44,8 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>是否允许用户定位</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>App需要您的同意,才能保存图片到您的相册</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>
